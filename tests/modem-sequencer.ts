@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict'
+import {ModemSequencer,Sample} from '../firmware/modem-sequencer'
+let t=0;const q=new ModemSequencer()
+const x:Sample={now:0,requestOn:true,releaseApproved:false,vbatt:0,status:false,atReady:false,shutdownConfirmed:false,railsValid:false}
+const tick=(patch:Partial<Sample>={})=>q.step(Object.assign(x,patch,{now:t+=50}))
+assert.equal(tick().stage,'off')
+assert.equal(tick({releaseApproved:true,vbatt:.7}).stage,'off','residual voltage must block restart')
+assert.equal(tick({vbatt:0}).stage,'settle')
+for(let i=0;i<20;i++)assert.equal(tick({vbatt:3.8,railsValid:true}).pwrkeyLow,false)
+tick({railsValid:false});tick({railsValid:true})
+for(let i=0;i<41;i++)assert.equal(tick().pwrkeyLow,false,'interrupted stable dwell must restart')
+assert.equal(tick().stage,'key-on')
+for(let i=0;i<41;i++)assert.equal(tick().pwrkeyLow,true)
+assert.equal(tick().stage,'boot')
+assert.equal(tick({status:true}).stage,'boot','status without AT response is insufficient')
+assert.equal(tick({atReady:true}).stage,'on')
+assert.equal(tick({requestOn:false}).stage,'key-off')
+for(let i=0;i<61;i++)assert.equal(tick().pwrkeyLow,true)
+assert.equal(tick().stage,'shutdown')
+assert.equal(tick({status:false}).supplyEnable,true,'status alone cannot authorize power cut')
+assert.equal(tick({shutdownConfirmed:true}).stage,'discharge')
+assert.equal(tick({vbatt:.6,requestOn:true}).stage,'discharge')
+assert.equal(tick({vbatt:.4}).stage,'off')
+assert.equal(tick().stage,'settle')
+const fault=q.step({...x,now:t+1000})
+assert.equal(fault.stage,'fault');assert.equal(fault.supplyEnable,true);assert.equal(fault.pwrkeyLow,false)
+assert.equal(q.step({...x,now:t+1050}).stage,'fault','fault must latch')
+for(const bad of [NaN,Infinity,-1,5]){
+ const s=new ModemSequencer();assert.equal(s.step({...x,vbatt:bad}).stage,'fault')
+}
+console.log('PASS: startup/shutdown dwell, interrupted qualification, residual voltage, missing AT, missing shutdown proof, stale polling, fault latch. No physical timing validation.')

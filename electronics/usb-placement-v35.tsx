@@ -1,0 +1,12 @@
+import React from 'react'
+import {ReviewedLandV24} from './reviewed-lands-v24'
+import '@tscircuit/core'
+import {UsbPlacementV29,placementV29} from './usb-placement-v29'
+import {UsbIntegrated} from './usb-integrated'
+import {sourcePassives} from './sourced-passives'
+export const placementV35={...placementV29,U_USB_PROTECT:{x:20,y:-75,rotation:0},C_USB_RAW:{x:19,y:-78.3,rotation:0},C_USB_DVDT:{x:20,y:-64,rotation:0},R_USB_ILM:{x:24,y:-70,rotation:0},R_USB_OV_TOP:{x:24,y:-74.5,rotation:0},R_USB_OV_BOTTOM:{x:24,y:-72,rotation:0},R_USB_FAULT:{x:24,y:-63,rotation:0},C_CC_PROTECT:{x:7.8,y:-79.3,rotation:-90},R_USB_OFF:{x:0,y:-64.2,rotation:0},U_USB_AUX:{x:-7,y:-75,rotation:0},C_USB_AUX_IN:{x:-10.8,y:-73.9,rotation:180},C_USB_AUX_OUT:{x:-7.2,y:-72.4,rotation:180},U_USB_3A:{x:-7,y:-63,rotation:0},C_USB_3A:{x:-3.1,y:-62.05,rotation:0},R_USB_3A_DRIVE:{x:-3.1,y:-64.2,rotation:0},R_CC_OUT1:{x:-10.5,y:-62.05,rotation:0},R_CC_OUT2:{x:-10.5,y:-64.2,rotation:0}}
+/** Manufacturer-dimensioned DBV5 candidate; independent visual audit and process qualification pending. */
+function Dbv5(){return <footprint>{[[1,-1.3,.95],[2,-1.3,0],[3,-1.3,-.95],[4,1.3,-.95],[5,1.3,.95]].map(([p,x,y])=><React.Fragment key={p}><smtpad portHints={[`pin${p}`]} shape="rect" pcbX={x} pcbY={y} width={1.1} height={.6} cornerRadius={.05} solderMaskMargin={.05} noSolderPaste/></React.Fragment>)}</footprint>}
+export function UsbPlacementV35(){const prior:any=moveInherited(UsbPlacementV29()),full:any=sourcePassives(UsbIntegrated());const extra=Object.keys(placementV35).filter(n=>!(n in placementV29));return React.cloneElement(prior,{layers:4},<>{prior.props.children}{React.Children.toArray(full.props.children).filter((el:any)=>extra.includes(el.props?.name)).map((el:any)=>{const p=placementV35[el.props.name as keyof typeof placementV35],big=['C_USB_AUX_IN','C_USB_AUX_OUT','C_USB_RAW'].includes(el.props.name),g=big?[1.05,1.2,1.65]:[.85,1,1.15];return React.cloneElement(el,{pcbX:p.x,pcbY:p.y+12,pcbRotation:p.rotation,footprint:el.props.name==='U_USB_PROTECT'?<ReviewedLandV24 kind="RPW0010A"/>:el.props.name.startsWith('U_')?<Dbv5/>:<footprint>{[1,2].map(n=><React.Fragment key={n}><smtpad portHints={[`pin${n}`]} shape="rect" pcbX={(n===1?-1:1)*g[0]} width={g[1]} height={g[2]} noSolderPaste/></React.Fragment>)}</footprint>})})}</>)}
+
+function moveInherited(el:any):any {if(!React.isValidElement(el))return el; const e:any=el; return React.cloneElement(e,e.props.name==='C_CC_PROTECT'?{pcbY:-79.3+12}:{},React.Children.map(e.props.children,moveInherited))}

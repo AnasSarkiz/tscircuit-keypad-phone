@@ -1,0 +1,25 @@
+pin,signal,proposed_function,status
+1,GND,Ground,Datasheet
+2,IOVDD,Panel logic supply maximum 3.3V,3.15V candidate supply sheet; transient validation pending
+3,VDD,3.0V panel supply,3.15V candidate supply sheet; transient validation pending
+4,/CS,MCU SPI chip select,Mapped in gpio-proposal.csv and display schematic; not routed
+5,/RST,MCU reset,Mapped in gpio-proposal.csv and display schematic; not routed
+6,SDIO,MCU SPI data,Mapped GPIO11; bidirectional SDIO readback firmware pending
+7,GND,Ground,Datasheet
+8,D/C,MCU data-command select,Mapped in gpio-proposal.csv and display schematic; not routed
+9,SCL,MCU SPI clock,Mapped in gpio-proposal.csv and display schematic; not routed
+10,GND,Ground,Datasheet
+11,SPI4W,Tie high for four-wire SPI,Use panel logic rail
+12,TE,No connect if unused,Datasheet
+13,NC,No connect,Datasheet
+14,NC,No connect,Datasheet
+15,NC,No connect,Datasheet
+16,NC,No connect,Datasheet
+17,LED-A,Backlight anode,Current driver pending
+18,LED-K1,Backlight cathode 1,Current driver pending
+19,LED-K2,Backlight cathode 2,Current driver pending
+20,GND,Ground,Datasheet
+21,NC,No connect,Datasheet
+22,NC,No connect,Datasheet
+23,NC,No connect,Datasheet
+24,NC,No connect,Datasheet

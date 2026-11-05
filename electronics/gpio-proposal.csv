@@ -1,0 +1,26 @@
+function,ESP32_GPIO,module_pad,net,status
+ROW0,5,5,ROW0,drive low only while selected; otherwise high impedance
+ROW1,6,6,ROW1,drive low only while selected; otherwise high impedance
+ROW2,7,7,ROW2,drive low only while selected; otherwise high impedance
+ROW3,8,12,ROW3,drive low only while selected; otherwise high impedance
+ROW4,9,17,ROW4,drive low only while selected; otherwise high impedance
+COL0,10,18,COL0,external pullup required
+COL1,13,21,COL1,external pullup required
+COL2,14,22,COL2,external pullup required
+DISPLAY_CS,21,23,LCD_CS_N,pullup required
+DISPLAY_RST,38,31,LCD_RST_N,reset timing required
+DISPLAY_SDIO,11,19,LCD_SDIO,SPI half duplex; no separate MISO pin
+DISPLAY_DC,39,32,LCD_DC,4-wire mode
+DISPLAY_SCL,12,20,LCD_SCL,SPI clock
+MODEM_TX,17,10,HOST_TX,through translator to modem pin34 MAIN_RXD
+MODEM_RX,18,11,HOST_RX,through translator from modem pin35 MAIN_TXD
+MODEM_RTS,15,8,HOST_RTS,through translator to modem pin37 MAIN_RTS
+MODEM_CTS,16,9,HOST_CTS,through translator from modem pin36 MAIN_CTS
+POWER_BUTTON_INT,1,39,BUTTON_INT_N,open-drain interrupt with logic rail pullup; separate physical button required
+MODEM_STATUS,2,38,MODEM_STATUS_HOST_PENDING,through translator from modem pin20 STATUS; not shutdown proof alone
+MODEM_PWRKEY,35,28,ON_OFF_MCU,buffered open-drain AO3400A candidate; physical validation pending
+MODEM_RESET,36,29,RESET_MCU,buffered open-drain AO3400A candidate; physical validation pending
+BACKLIGHT_PWM,42,35,BACKLIGHT_PWM,driver required
+BATTERY_ADC,4,4,VBAT_SENSE,divider and power-off leakage isolation required
+CHARGE_REQUEST,47,24,CHARGE_REQUEST_MCU,external pulldown; REGN-qualified request; firmware defaults off
+SYSTEM_OFF,48,25,SYSTEM_OFF_REQUEST,active high final shutdown request; default low; modem shutdown proof required

@@ -1,0 +1,19 @@
+flowchart TD
+ USB[USB-C power only: CC detection / input protection] --> CHG[Power-path charger: design unresolved]
+ PACK[Protected cell + qualified NTC: not selected] <--> CHG
+ CHG --> MRAIL[Modem rail 3.3–4.3 V; transient and cutoff validation]
+ MRAIL --> MODEM[EG912U-GL candidate]
+ CHG --> MCU3[MCU regulator]
+ MCU3 --> MCU[ESP32-S3 module]
+ MCU <--> LVL[1.8 V UART translation]
+ LVL <--> MODEM
+ MCU --> KEYS[5 x 3 single-key matrix]
+ MCU --> DSP[Display level translation + 3.0 V rail]
+ DSP --> LCD[NHD raw SPI panel]
+ CHG --> BL[Current-controlled backlight driver]
+ BL --> LCD
+ MODEM --> SIM[SIM socket + ESD]
+ MODEM --> RF[50 ohm feed + matching + U.FL + qualified antenna]
+ MIC[Biased electret mic + filter] --> MODEM
+ MODEM --> EAR[32 ohm earpiece + acoustic/drive validation]
+ MODEM --> DBG[Reserved USB service interface]

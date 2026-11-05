@@ -1,0 +1,52 @@
+{
+  "name": "anas-phone",
+  "version": "0.66.0",
+  "description": "Provisional four-layer keypad cellular phone engineering study; incomplete and not fabrication-ready",
+  "main": "index.tsx",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsx tests/build.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx tests/build.tsx && tsx tests/interfaces.tsx && tsx tests/firmware.ts && tsx tests/keypad-clock.ts && tsx tests/sms.ts && tsx tests/pin-contracts.ts",
+    "test:power": "python tests/thermal_v5.py && python tests/boost_v5.py && python tests/charge_v5.py && python tests/input_v5.py && tsx tests/power-policy.ts",
+    "test:footprint": "tsx tests/footprints.tsx",
+    "test:integration": "tsx tests/usb-integrated.tsx && tsx tests/power-integrated.tsx && python tests/usb_startup_v6.py",
+    "test:control": "tsx tests/power-policy.ts && tsx tests/charge-qualification.ts && tsx tests/modem-sequencer.ts",
+    "test:modem-safety": "tsx tests/modem-clearance-v21.tsx && python3 tests/modem-clearance-v21.py",
+    "check:placement": "python3 engineering/modem_clearance.py",
+    "test:placement": "tsx tests/usb-placement-v66.tsx",
+    "check:board": ".venv/bin/python engineering/usb_layered_v66.py",
+    "check:current": ".venv/bin/python scripts/check-current.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@tscircuit/copper-pour-solver": "^0.0.67",
+    "@tscircuit/core": "^0.0.2272",
+    "@tscircuit/image-utils": "^0.0.10",
+    "@tscircuit/infer-cable-insertion-point": "^0.0.5",
+    "@tscircuit/manifold-2d": "^0.0.8",
+    "@tscircuit/math-utils": "^0.0.38",
+    "@tscircuit/miniflex": "^0.0.4",
+    "@tscircuit/modelprinter": "^0.0.37",
+    "@tscircuit/soup-util": "^0.0.41",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "circuit-json-to-gltf": "^0.0.164",
+    "circuit-to-svg": "^0.0.456",
+    "graphics-debug": "^0.0.101",
+    "jscad-fiber": "^0.0.93",
+    "minicssgrid": "^0.0.9",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-reconciler": "^0.32.0",
+    "spicey": "^0.0.14",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}

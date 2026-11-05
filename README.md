@@ -1,0 +1,9 @@
+# Physical-keypad phone study
+
+Early tscircuit cellular-phone engineering study. **Incomplete and not fabrication-ready.** Preferred architecture is a single custom rigid four-layer PCB with separate display ribbon, wired battery and audio. The carrier, exact modem SKU, power path and physical assembly remain unqualified.
+
+The V66 placement study contains 133 of 210 electronic components and 186 open minimum joins. This release publishes project-authored design, host firmware and test sources. It does not include historical generated CAD, supplier models, raw catalog records, prior build outputs or private archives. These omissions mean full board and mechanical tests require regenerating fixtures and obtaining appropriately licensed parts through the standard `tsci import <LCSC-ID> --jlcpcb --download` workflow. Verify supplier symbols, pads, model orientation, stock and assembly process before use. JLCEDA/EasyEDA Official Library: https://lceda.cn/ and https://easyeda.com.
+
+Major gates: exact modem/VoLTE acceptance for intended country and carrier; battery and protection pulse impedance; charging control under faults; capacitor bias and transient limits; display and SIM fit; RF/audio and antenna validation; actual enclosure fit, factory mask/stencil acceptance and physical testing. No fabrication, purchase or operational readiness is implied.
+
+Install dependencies with `npm ci`. Run `mkdir -p output && npx tsx tests/build.tsx` for keypad geometry/net generation (routing disabled). Host logic checks: `npx tsx tests/keypad-clock.ts`, `npx tsx tests/firmware.ts`, and `npx tsx tests/sms.ts`. The original full engineering history and generated fixtures are not part of this clean public release. Upstream import improvements: https://github.com/tscircuit/easyeda-converter/pull/645 and https://github.com/tscircuit/easyeda-converter/pull/646 (draft, unmerged).

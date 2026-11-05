@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict'
+import {SmsTransaction} from '../firmware/sms-transaction'
+const t=new SmsTransaction()
+assert.deepEqual(t.start('+12025550123','Test 1',0),['AT+CMGF=1\r'])
+assert.deepEqual(t.line('RING',1),[])
+assert.deepEqual(t.line('OK',1),['AT+CSCS="GSM"\r'])
+assert.deepEqual(t.line('OK',2),['AT+CMGS="+12025550123"\r'])
+assert.throws(()=>t.start('123','busy',3),/busy/)
+assert.deepEqual(t.prompt(4),['Test 1\x1a'])
+t.line('OK',5);assert.equal(t.state,'result')
+t.line('+CMGS: 4',6);t.line('OK',7);assert.equal(t.state,'sent')
+for(const [n,b] of [['123\rATH','x'],['123','x\x1a'],['123','A'.repeat(161)],['123','€'],['123','hello\nworld']])assert.throws(()=>t.start(n,b,0),/unsupported/)
+t.start('123','Timeout',0);t.line('OK',1);t.line('OK',2);assert.deepEqual(t.tick(5003),['\x1b']);assert.equal(t.state,'failed')
+t.start('123','No retry',0);t.line('OK',1);t.line('OK',2);t.prompt(3);assert.deepEqual(t.tick(120004),[]);assert.equal(t.state,'unknown')
+t.start('123','Rejected',0);t.line('+CMS ERROR: 500',1);assert.equal(t.state,'failed')
+console.log('PASS: SMS staged commands, prompt, acknowledgement order, busy guard, input validation, pre-submit cancel and ambiguous post-submit timeout')

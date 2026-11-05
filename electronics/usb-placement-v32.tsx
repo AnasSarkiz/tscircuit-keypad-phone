@@ -1,0 +1,9 @@
+import React from 'react'
+import '@tscircuit/core'
+import {UsbPlacementV29,placementV29} from './usb-placement-v29'
+import {UsbIntegrated} from './usb-integrated'
+import {sourcePassives} from './sourced-passives'
+export const placementV32={...placementV29,U_USB_AUX:{x:-7,y:-75,rotation:0},C_USB_AUX_IN:{x:-10.8,y:-73.9,rotation:180},C_USB_AUX_OUT:{x:-3.1,y:-74.05,rotation:0},U_USB_3A:{x:-7,y:-63,rotation:0},C_USB_3A:{x:-3.1,y:-62.05,rotation:0},R_USB_3A_DRIVE:{x:-3.1,y:-64.2,rotation:0},R_CC_OUT1:{x:-10.5,y:-62.05,rotation:0},R_CC_OUT2:{x:-10.5,y:-64.2,rotation:0}}
+/** Manufacturer-dimensioned DBV5 candidate; independent visual audit and process qualification pending. */
+function Dbv5(){return <footprint>{[[1,-1.3,.95],[2,-1.3,0],[3,-1.3,-.95],[4,1.3,-.95],[5,1.3,.95]].map(([p,x,y])=><React.Fragment key={p}><smtpad portHints={[`pin${p}`]} shape="rect" pcbX={x} pcbY={y} width={1.1} height={.6} cornerRadius={.05} solderMaskMargin={.05} noSolderPaste/></React.Fragment>)}</footprint>}
+export function UsbPlacementV32(){const prior:any=UsbPlacementV29(),full:any=sourcePassives(UsbIntegrated());const extra=Object.keys(placementV32).filter(n=>!(n in placementV29));return React.cloneElement(prior,{},<>{prior.props.children}{React.Children.toArray(full.props.children).filter((el:any)=>extra.includes(el.props?.name)).map((el:any)=>{const p=placementV32[el.props.name as keyof typeof placementV32],big=['C_USB_AUX_IN','C_USB_AUX_OUT'].includes(el.props.name),g=big?[1.05,1.2,1.65]:[.85,1,1.15];return React.cloneElement(el,{pcbX:p.x,pcbY:p.y+12,pcbRotation:p.rotation,footprint:el.props.name.startsWith('U_')?<Dbv5/>:<footprint>{[1,2].map(n=><React.Fragment key={n}><smtpad portHints={[`pin${n}`]} shape="rect" pcbX={(n===1?-1:1)*g[0]} width={g[1]} height={g[2]} noSolderPaste/></React.Fragment>)}</footprint>})})}</>)}

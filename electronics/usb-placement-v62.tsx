@@ -1,0 +1,7 @@
+import React from 'react'
+import {UsbPlacementV61,placementV61} from './usb-placement-v61'
+import {SupervisorLandV29} from './usb-placement-v29'
+import {ChargeEnableCandidate} from './charge-enable'
+import {sourcePassives} from './sourced-passives'
+export const placementV62={...placementV61,U_CHARGE_POR:{x:4,y:52,rotation:0,layer:'top' as const},R_CHARGE_SENSE_TOP:{x:12,y:51,rotation:0,layer:'top' as const},R_CHARGE_SENSE_BOTTOM:{x:16,y:51,rotation:0,layer:'top' as const},C_CHARGE_SENSE:{x:14,y:54,rotation:0,layer:'top' as const},C_CHARGE_POR:{x:7.5,y:54,rotation:0,layer:'top' as const},R_CHARGE_READY_PULLUP:{x:5,y:57,rotation:0,layer:'top' as const},R_CHARGE_CT:{x:1,y:57,rotation:0,layer:'top' as const}}
+export function UsbPlacementV62(){const prior:any=UsbPlacementV61(),block:any=sourcePassives(ChargeEnableCandidate());const names=Object.keys(placementV62).filter(n=>!(n in placementV61));return React.cloneElement(prior,{},<>{prior.props.children}{React.Children.toArray(block.props.children).filter((e:any)=>names.includes(e?.props?.name)).map((e:any)=>{const p=(placementV62 as any)[e.props.name];return React.cloneElement(e,{key:e.props.name,pcbX:p.x,pcbY:p.y+12,layer:p.layer,footprint:e.props.name==='U_CHARGE_POR'?<SupervisorLandV29/>:<footprint>{[1,2].map(n=><React.Fragment key={n}><smtpad portHints={['pin'+n]} shape="rect" pcbX={n===1?-.85:.85} width={1} height={1.15} noSolderPaste/></React.Fragment>)}</footprint>})})}</>)}
