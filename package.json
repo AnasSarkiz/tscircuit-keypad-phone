@@ -13,7 +13,7 @@
     "test:power": "python tests/thermal_v5.py && python tests/boost_v5.py && python tests/charge_v5.py && python tests/input_v5.py && node --import tsx tests/power-policy.ts",
     "test:footprint": "node --import tsx tests/footprints.tsx",
     "test:integration": "node --import tsx tests/usb-integrated.tsx && node --import tsx tests/power-integrated.tsx && python tests/usb_startup_v6.py",
-    "test:control": "node --import tsx tests/power-policy.ts && node --import tsx tests/charge-qualification.ts && node --import tsx tests/modem-sequencer.ts && node --import tsx tests/system-shutdown-v16.ts",
+    "test:control": "node --import tsx tests/power-policy.ts && node --import tsx tests/charge-qualification.ts && node --import tsx tests/modem-sequencer.ts && node --import tsx tests/system-shutdown-v16.ts && node --import tsx tests/modem-startup-faults.ts && node --import tsx tests/modem-brownout-v44.ts",
     "test:modem-safety": "node --import tsx tests/modem-clearance-v21.tsx && python3 tests/modem-clearance-v21.py",
     "check:placement": "python3 engineering/modem_clearance.py",
     "test:placement": "node --import tsx tests/usb-placement-v66.tsx",

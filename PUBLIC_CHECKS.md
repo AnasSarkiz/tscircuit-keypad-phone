@@ -8,8 +8,8 @@ Use Node.js 24, npm 11 and Python 3. Install the locked dependencies with `npm c
 
 Run `npm run check:public` from the repository root. It runs:
 
-- `npm run typecheck:host`: strict TypeScript checks of all host firmware plus the eight included host/contract test files. This separate configuration does not modify or weaken the full-project TypeScript check.
-- `npm run test:host`: dialing/keypad, invalid-clock recovery, SMS, GPIO contracts, power policy, charge freshness, modem sequencing and system-shutdown host tests. These are executable contracts, not MCU firmware or hardware safety validation. The shutdown suite is now part of `test:control` and therefore the existing `npm test` command too.
+- `npm run typecheck:host`: strict TypeScript checks of all host firmware plus the ten included host/contract test files. This separate configuration does not modify or weaken the full-project TypeScript check.
+- `npm run test:host`: dialing/keypad, invalid-clock recovery, SMS, GPIO contracts, power policy, charge freshness, modem sequencing, startup fault, shutdown brownout and system-shutdown host tests. These are executable contracts, not MCU firmware or hardware safety validation. The shutdown suite is now part of `test:control` and therefore the existing `npm test` command too.
 - `npm run test:battery`: eight tests of the V113 necessary-power calculation. The 50 cases are illustrative sustained simultaneous allocations, not measured modem waveforms, pack qualification or transient validation.
 - `npm run build:keypad`: emitted keypad geometry and net assertions plus an assembly API smoke test. It creates its output directory on a clean checkout. Copper routing is disabled. The referenced assembly mesh is intentionally absent; this command does not load it or validate physical fit. `npm run build` remains the same keypad-only study for compatibility.
 

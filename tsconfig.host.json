@@ -9,6 +9,8 @@
     "tests/power-policy.ts",
     "tests/charge-qualification.ts",
     "tests/modem-sequencer.ts",
-    "tests/system-shutdown-v16.ts"
+    "tests/system-shutdown-v16.ts",
+    "tests/modem-startup-faults.ts",
+    "tests/modem-brownout-v44.ts"
   ]
 }

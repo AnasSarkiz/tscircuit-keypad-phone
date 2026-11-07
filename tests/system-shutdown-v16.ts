@@ -12,4 +12,14 @@ assert(s.step({...off,now:450}).systemOffRequest)
 assert(!s.step({...off,now:700}).systemOffRequest)
 assert(!s.step({...off,now:750}).systemOffRequest)
 for(const bad of [NaN,Infinity,-1]){const t=new SystemShutdown();assert(!t.step({...off,uiShutdownRequest:true,modemRailV:bad}).systemOffRequest)}
+for(const now of [-1,-1000]){
+ const t=new SystemShutdown()
+ const invalid=t.step({...off,now,uiShutdownRequest:true})
+ assert.equal(invalid.fault,true,'negative initial time must fault')
+ assert.equal(invalid.systemOffRequest,false,'negative time cannot authorize shutdown')
+ assert.equal(invalid.allowModemOn,false)
+ const later=t.step({...off,now:0})
+ assert.equal(later.fault,true,'clock fault must remain latched')
+ assert.equal(later.systemOffRequest,false)
+}
 console.log('PASS shutdown sequencing gate, latched request, residual rail, storage, unvalidated hardware and stale-input fault; host policy only')
