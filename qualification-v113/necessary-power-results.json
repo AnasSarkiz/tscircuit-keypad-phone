@@ -1,0 +1,459 @@
+{
+  "scope": "necessary sustained-power condition under stated simultaneous design allocation; no waveform, impedance or converter qualification",
+  "modem_output_W": 7.6,
+  "host_input_W": 0.4125,
+  "backlight_input_W": 0.9257333333333334,
+  "rows": [
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 4.2,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.516743,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 4.2,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": 0.551453,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 3.8,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.572828,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 3.8,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": 0.615795,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 3.6,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.605698,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 3.6,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": 0.653945,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 3.3,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.662743,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 3.3,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": 0.720942,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 3.0,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.731649,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Jauch 246524 conservative PCM budget",
+      "current_limit_A": 3.6,
+      "loaded_terminal_V": 3.0,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": 0.803233,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 4.2,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.723293,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 4.2,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": 0.793173,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 3.8,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.802746,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 3.8,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": 0.889746,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 3.6,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.849399,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 3.6,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": 0.947422,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 3.3,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.930517,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 3.3,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 3.0,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST pack-only optimistic ceiling",
+      "current_limit_A": 2.6,
+      "loaded_terminal_V": 3.0,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 4.2,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.951487,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 4.2,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.8,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.8,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.6,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.6,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.3,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.3,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.0,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "USE-18650-2600PCBJST hypothetical JST PH rated path",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.0,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 4.2,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": 0.951487,
+      "necessary_condition": "not_ruled_out_only"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 4.2,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.8,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.8,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.6,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.6,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.3,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.3,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.0,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "Adafruit 2011 linked cell sheet",
+      "current_limit_A": 2.0,
+      "loaded_terminal_V": 3.0,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 4.2,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 4.2,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 3.8,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 3.8,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 3.6,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 3.6,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 3.3,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 3.3,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 3.0,
+      "backlight": false,
+      "allocated_aux_input_W": 0.4125,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    },
+    {
+      "pack": "US Electronics USE-104060-3K-PCBJST",
+      "current_limit_A": 1.5,
+      "loaded_terminal_V": 3.0,
+      "backlight": true,
+      "allocated_aux_input_W": 1.338233,
+      "minimum_modem_conversion_efficiency": null,
+      "necessary_condition": "not_met_even_ideally"
+    }
+  ],
+  "pack_or_hardware_approved": false
+}
