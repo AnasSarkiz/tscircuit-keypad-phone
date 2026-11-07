@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsx tests/build.tsx",
     "typecheck": "tsc --noEmit",
-    "test": "tsx tests/build.tsx && tsx tests/interfaces.tsx && tsx tests/firmware.ts && tsx tests/keypad-clock.ts && tsx tests/sms.ts && tsx tests/pin-contracts.ts",
+    "test": "tsx tests/build.tsx && tsx tests/interfaces.tsx && tsx tests/firmware.ts && tsx tests/keypad-clock.ts && tsx tests/sms.ts && tsx tests/pin-contracts.ts && npm run test:control",
     "test:power": "python tests/thermal_v5.py && python tests/boost_v5.py && python tests/charge_v5.py && python tests/input_v5.py && tsx tests/power-policy.ts",
     "test:footprint": "tsx tests/footprints.tsx",
     "test:integration": "tsx tests/usb-integrated.tsx && tsx tests/power-integrated.tsx && python tests/usb_startup_v6.py",
