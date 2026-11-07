@@ -6,6 +6,9 @@ import { convertCircuitJsonToPcbSvg, convertCircuitJsonToSchematicSvg } from 'ci
 import Keypad, {keyRows,keyCols} from '../electronics/keypad'
 import PhoneAssembly from '../electronics/assembly'
 
+// A fresh checkout has no generated output directory.
+fs.mkdirSync('output', { recursive: true })
+
 const circuit = new Circuit()
 circuit.add(<Keypad />)
 await circuit.renderUntilSettled()

@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "firmware/**/*.ts",
+    "tests/firmware.ts",
+    "tests/keypad-clock.ts",
+    "tests/sms.ts",
+    "tests/pin-contracts.ts",
+    "tests/power-policy.ts",
+    "tests/charge-qualification.ts",
+    "tests/modem-sequencer.ts",
+    "tests/system-shutdown-v16.ts"
+  ]
+}
