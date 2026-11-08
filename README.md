@@ -46,6 +46,7 @@ The `.obj` and `.step` imports use ordinary bundler asset handling. Node-only ge
 - [Datum-aware board migration](qualification-board-migration/README.md): preserved datums, net checks, pad-clearance evidence and remaining routing limitations.
 - [Routing recovery](qualification-routing-recovery/README.md): recovered source lineage, clearance repairs, connectivity and negative-test scope.
 - [Verified tscircuit issue list](qualification-jlc-imports/tscircuit-issues.md): old-core grounding problem already resolved upstream; current explicit paste-region omission recorded separately.
+- [Standard modem power evidence](qualification-modem-supply/README.md): visually verified non-QuecOpen supply guidance, exact catalog identity, separate rail-floor/burst-drop requirements and disconnected-USB timing scope. Actual current waveforms and shipped-revision applicability remain open.
 - [Quarantined keypad import](qualification-keypad-import/README.md): source-faithful C93151 import, explicit contact-pair review, wrong-height catalog model, and unresolved finished-hole tolerance/physical-fit gates. It does not replace the live board's switches.
 - [Preserved historical source/tests](historical-footprints/before-jlc-migration/): previous consumers are retained for comparison, not hidden by invented JSON.
 

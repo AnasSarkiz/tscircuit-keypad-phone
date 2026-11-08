@@ -1,0 +1,359 @@
+{
+  "checked_date_utc": "2026-11-08",
+  "status": "Family-level documentary evidence verified; exact-lot applicability and power qualification remain open",
+  "fabrication_ready": false,
+  "selected_mpn": "EG912UGLAC-I05-SNNSA",
+  "selected_catalog_part": "C7472750",
+  "page_convention": "All PDF page numbers are one-based. Printed page numbers exclude the cover.",
+  "verification_method": "Downloaded public official/manufacturer-authored PDFs; extracted text for location; rendered relevant pages with PyMuPDF and visually inspected page pixels. No waveform digitization or measurement performed.",
+  "sources": [
+    {
+      "id": "standard_v1_1",
+      "title": "Quectel EG912U-GL Hardware Design",
+      "revision": "1.1",
+      "document_date": "2023-08-17",
+      "url": "https://quectel.com/content/uploads/2024/02/Quectel_EG912U-GL_Hardware_Design_V1.1.pdf",
+      "sha256": "fd1d17d88ac452638eed19295378a31a51ef2d081fdd07bef2dd0289e2cf5a96",
+      "bytes": 2017572,
+      "pdf_pages": 91,
+      "retention": "Original PDF retained outside repository; no redistribution authorized by this checkpoint."
+    },
+    {
+      "id": "quecopen_v1_0",
+      "title": "Quectel EG912U-GL QuecOpen Hardware Design",
+      "revision": "1.0",
+      "document_date": "2023-08-17",
+      "url": "https://developer.quectel.com/en/wp-content/uploads/sites/2/2024/11/Quectel_EG912U-GL_QuecOpen_Hardware_Design_V1.0.pdf",
+      "sha256": "18e339fa38809ed460be668e12d4259fa85ab73f6e3401d88a35e239afb98737",
+      "bytes": 2002622,
+      "pdf_pages": 94,
+      "retention": "Original PDF retained outside repository; no redistribution authorized by this checkpoint."
+    },
+    {
+      "id": "spec_v1_2",
+      "title": "Quectel EG912U-GL LTE Standard Specification",
+      "revision": "1.2",
+      "document_date": null,
+      "url": "https://developer.quectel.com/en/wp-content/uploads/sites/2/2024/11/Quectel_EG912U-GL_LTE_Standard_Specification_V1.2.pdf",
+      "sha256": "90197d16a51c0ff486f4036cd738f04f730a20727e15852760087ad978c786e1",
+      "bytes": 197597,
+      "pdf_pages": 2,
+      "retention": "Original PDF retained outside repository; no redistribution authorized by this checkpoint."
+    },
+    {
+      "id": "pcn",
+      "title": "Quectel Product Change Notification",
+      "revision": "Quectel_PCN202603310001EN01",
+      "document_date": "2026-04-23",
+      "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8921/Quectel_PCN202603310001EN01.pdf",
+      "sha256": "b8df8546c023573c332e7612bb0efee3bf267df7fb5bc75f09a3902b09ad663c",
+      "bytes": 146041,
+      "pdf_pages": 2,
+      "retention": "Original PDF retained outside repository; no redistribution authorized by this checkpoint."
+    },
+    {
+      "id": "jlc",
+      "url": "https://jlcpcb.com/partdetail/Quectel-EG912UGLAC_I05SNNSA/C7472750",
+      "read_result": "Exact MPN/catalog pairing and 3.3-4.3 V listing verified. Signed datasheet download returned HTTP403; no source PDF obtained from this link.",
+      "html_sha256": "4e7799ead1e205a63f67ed43e1d43d9176546e1056e0f9702278b51850d77843"
+    },
+    {
+      "id": "current_official_listing",
+      "url": "https://www.quectel.com/product/lte-cat-1-bis-eg912u-gl/",
+      "listed_document": "Quectel_EG912U_Series_Hardware_Design_V1.4",
+      "listed_bytes_human": "1.81 MB",
+      "access": "Login link only; contents/date/hash unverified. No login attempted.",
+      "html_sha256": "f35a8f51cf79e2dcee3048e362a2046d6e021703d23170bbcf26f1c10d413046"
+    }
+  ],
+  "visual_checks": {
+    "standard_v1_1": {
+      "pdf_pages": [
+        1,
+        20,
+        21,
+        28,
+        31,
+        33,
+        34,
+        35,
+        37,
+        38,
+        39,
+        42,
+        43,
+        70,
+        71
+      ],
+      "cover_status": "Released"
+    },
+    "quecopen_v1_0": {
+      "pdf_pages": [
+        1,
+        32,
+        33,
+        73,
+        74
+      ],
+      "cover_status": "Released"
+    },
+    "spec_v1_2": {
+      "pdf_pages": [
+        2
+      ]
+    },
+    "pcn": {
+      "pdf_pages": [
+        1
+      ]
+    }
+  },
+  "sku_provenance": {
+    "jlc_mpn_matches_repo_import": true,
+    "pcn_pdf_page": 1,
+    "pcn_model_for_ordering_code": "EG912U-GL",
+    "limits": "Family membership and exact catalog code verified; no shipped lot, silicon revision, firmware identity, VoLTE profile, carrier acceptance or certification established."
+  },
+  "standard_supply": {
+    "source": "standard_v1_1",
+    "rails": {
+      "table": 9,
+      "printed_page": 32,
+      "pdf_page": 33,
+      "VBAT_BB_pins": [
+        32,
+        33
+      ],
+      "VBAT_RF_pins": [
+        52,
+        53
+      ],
+      "min_V": 3.3,
+      "typ_V": 3.8,
+      "max_V": 4.3
+    },
+    "source_capability": {
+      "section": "3.5.2",
+      "printed_page": 32,
+      "pdf_page": 33,
+      "LTE_only_min_A": 2.0,
+      "GSM_or_GSM_plus_LTE_available_min_A": 3.0,
+      "meaning": "Recommendation for module power source capability, not sustained draw or a measured pulse waveform."
+    },
+    "table_currents": {
+      "table": 39,
+      "caption": "Power Supply Ratings",
+      "printed_pages": [
+        69,
+        70
+      ],
+      "pdf_pages": [
+        70,
+        71
+      ],
+      "parameter": "IVBAT",
+      "description_exact": "Peak power consumption",
+      "condition_exact": "At maximum power control level",
+      "typ_A": 1.7,
+      "max_A": 2.5,
+      "min_A": null,
+      "radio_mode": null,
+      "pulse_duration_s": null,
+      "duty_cycle": null,
+      "bb_rf_split": null,
+      "measurement_setup": null,
+      "limits": "A general IVBAT row: do not silently label it LTE-only, GSM-only, BB-only or RF-only."
+    },
+    "burst_drop": {
+      "table": 39,
+      "printed_page": 70,
+      "pdf_page": 71,
+      "max_mV": 400,
+      "condition_ref": "table_currents.condition_exact",
+      "requirement_independent_of_3_3V_floor": true
+    },
+    "burst_figure": {
+      "figure": 9,
+      "caption": "Power Supply Limits during Burst Transmission",
+      "printed_page": 33,
+      "pdf_page": 34,
+      "numeric_time_axis_present": false,
+      "numeric_current_amplitude_present": false,
+      "duration_or_repetition_derivable": false,
+      "scope": "Conceptual current pulses with supply ripple/drop; not a measured waveform."
+    },
+    "pin_current_comments": {
+      "table": 6,
+      "printed_pages": [
+        19,
+        20
+      ],
+      "pdf_pages": [
+        20,
+        21
+      ],
+      "BB_min_source_capability_A": 1.0,
+      "RF_min_source_capability_A": 2.5,
+      "additive_simultaneous_consumption_proven": false
+    },
+    "absolute_maximum_table": {
+      "table": 38,
+      "printed_page": 69,
+      "pdf_page": 70,
+      "VBAT_min_V": -0.3,
+      "VBAT_max_V": 6.0,
+      "BB_peak_A": 1.0,
+      "RF_peak_A": 2.5,
+      "limits": "Absolute maximum values are not an operating-voltage allowance or simultaneous waveform."
+    },
+    "reference_distribution": {
+      "section": "3.5.3",
+      "printed_pages": [
+        33,
+        34
+      ],
+      "pdf_pages": [
+        34,
+        35
+      ],
+      "figure": 10,
+      "source": "Single source split into BB/RF star branches",
+      "bulk_each_branch_uF": 100,
+      "bulk_ESR_max_ohm": 0.7,
+      "MLCC_each_branch": [
+        {
+          "nF": 100
+        },
+        {
+          "pF": 33
+        },
+        {
+          "pF": 10
+        }
+      ],
+      "BB_trace_min_width_mm": 2.0,
+      "RF_trace_min_width_mm": 2.5,
+      "placement": "Local to module supply pins",
+      "limits": "Reference guidance does not validate effective capacitance, loop stability, rail transient response or current/thermal limits on this board."
+    }
+  },
+  "quecopen_crosscheck": {
+    "source": "quecopen_v1_0",
+    "supply_section": "3.5.2",
+    "supply_printed_page": 31,
+    "supply_pdf_page": 32,
+    "table": 41,
+    "table_printed_pages": [
+      72,
+      73
+    ],
+    "table_pdf_pages": [
+      73,
+      74
+    ],
+    "current_description_exact": "Peak supply current",
+    "current_condition_exact": "Maximum power control level",
+    "current_typ_A": 1.7,
+    "current_max_A": 2.5,
+    "burst_drop_max_mV": 400,
+    "burst_figure": 7,
+    "burst_printed_page": 32,
+    "burst_pdf_page": 33,
+    "matches_standard_numeric_supply_facts": true,
+    "extends_exact_sku_firmware_approval": false
+  },
+  "timing_and_usb": {
+    "source": "standard_v1_1",
+    "startup_pdf_pages": [
+      35,
+      37,
+      38
+    ],
+    "shutdown_reset_pdf_pages": [
+      38,
+      39
+    ],
+    "pwrkey_start_min_ms": 2000,
+    "pwrkey_shutdown_min_ms": 3000,
+    "reset_low_min_ms": 100,
+    "pre_power_on_VBAT_max_exclusive_V": 0.5,
+    "normal_VBAT_stable_before_key_min_ms": 30,
+    "USB_first_then_VBAT_stable_before_key_min_ms": 2000,
+    "VBAT_first_then_USB_connected_before_key_min_ms": 2000,
+    "late_USB_note_location": {
+      "printed_page": 37,
+      "pdf_page": 38,
+      "note": 3
+    },
+    "startup_figure_14": {
+      "printed_page": 36,
+      "pdf_page": 37,
+      "STATUS_annotation_min_s": 5.05,
+      "UART_annotation_min_s": 4,
+      "USB_annotation_min_s": 2.23,
+      "limits": "No maximum-ready-time guarantee supplied by these minimum annotations."
+    },
+    "shutdown_figure_15": {
+      "printed_page": 38,
+      "pdf_page": 39,
+      "post_key_release_annotation_s": 30,
+      "annotation_relation": ">=",
+      "limits": "Do not rewrite as a maximum; accompanying note says shutdown depends on network state."
+    },
+    "usb_pin_table": {
+      "table": 12,
+      "printed_page": 41,
+      "pdf_page": 42,
+      "VBUS_pin": 8,
+      "VBUS_type": "AI",
+      "VBUS_function": "USB connection detection",
+      "VBUS_min_V": 3.5,
+      "VBUS_max_V": 5.25,
+      "DP_pin": 9,
+      "DM_pin": 10,
+      "service_test_points_required": true
+    },
+    "unused_pin8_explicit_termination_found": false,
+    "unused_pin8_review_scope": "Pin descriptions and USB section. Section 3.2.2.3 printed30/PDF31 permits VBUS disconnection as part of a USB sleep scenario; not a blanket leave-floating instruction.",
+    "repo_state": {
+      "checked_commit": "7e647528c3742705c1234abb9b130db2c406155f",
+      "modem_sequencer_sha256": "6643213da38d75652e97a0e3afe8225b24fc911ec142264691866bebb989b8ec",
+      "modem_support_sha256": "4769fefa11605e417af309200df75d6294391d06d99ddd6a219fc8d0cd2670b3",
+      "usb_c_sha256": "61a3b3087cef13e143ca4938c1e9bdc4414c70d2b0a005d611b7b748c1a47b42",
+      "modem_usb_pins_unmapped": [
+        8,
+        9,
+        10
+      ],
+      "charging_net": "USB_VBUS_RAW",
+      "charging_net_connected_to_modem_usb_vbus": false,
+      "sequencer_usb_vbus_sample_present": false,
+      "future_integration_constraint": "If modem USB_VBUS is connected later, track its connection time separately. VBAT-only settling does not prove the late-USB wait. No current connected-board timing defect asserted.",
+      "design_choices_not_vendor_guarantees": [
+        "2100 ms settling/key-on margin",
+        "3100 ms key-off margin",
+        "60000 ms readiness/shutdown fault timeout",
+        "100 ms maximum software sample gap"
+      ]
+    }
+  },
+  "must_not_infer": [
+    "2 A continuous modem consumption",
+    "A complete pulse envelope from Table 39 or Figure 9",
+    "Simultaneous 3.5 A from adding per-rail comments",
+    "GSM is disabled persistently by default",
+    "2.5 A table row overrides 3 A GSM source recommendation",
+    "400 mV allowable drop permits falling below 3.3 V",
+    "Current battery or converter is qualified",
+    "Newest V1.4 contents match V1.1",
+    "Exact shipped hardware/firmware or carrier certification verified"
+  ],
+  "remaining_evidence": [
+    "Applicable current document and exact SKU/lot/hardware/firmware scope",
+    "Permitted LTE/GSM/fallback/reset modes",
+    "Simultaneous BB/RF current envelope with time axis, operating conditions and probe locations",
+    "Complete battery/PCM/harness/converter/drop/thermal validation over intended conditions",
+    "Unused USB termination and production debug/update access plan"
+  ],
+  "actions": "Source research plus placed-board open-USB regression checks; no supplier communication, firmware-logic changes, wiring changes, radio-mode changes, purchases or fabrication."
+}

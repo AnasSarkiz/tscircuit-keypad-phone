@@ -31,6 +31,8 @@ Original V66 routing and modem-clearance sources have now been recovered and ver
 
 Install the isolated geometry dependencies with `python3 -m venv .venv` and `.venv/bin/python -m pip install -r requirements-routing.txt`. Run `npm run check:current` for the recovered aggregate, or `.venv/bin/python scripts/check-current.py --negative` to include the full routing-mutation suite. `check:board` now runs the recovered layered-copper checker. `test:modem-safety` now passes its historical boundary checks using the hardened recovered module; it still does not validate every physical body in the complete board.
 
+The modem supply review adds standard-module documentary evidence, not a power-path approval. `test:placement` now explicitly checks disconnected modem USB pins 8/9/10 and rejects three wrong-VBUS connection mutations. The existing logical-net test checks the same open pins. See [source evidence and USB scope](qualification-modem-supply/README.md).
+
 The routed candidate retains539 routes,249 vias and95 historical copper islands. Coverage is freshly reproduced at133/210 electronic components placed,336/522 minimum joins completed and186 open. See [routing recovery](qualification-routing-recovery/README.md).
 
 ## Checks that remain unavailable or unqualified

@@ -1,6 +1,9 @@
 /** Executable timing contract, not flashed firmware. Inputs must be measured by
- * qualified hardware; no current prototype provides all of them. QuecOpen V1.0
- * timing applicability to the eventual AT SKU is an unresolved release gate. */
+ * qualified hardware; no current prototype provides all of them. Standard
+ * Hardware Design V1.1 corroborates the key dwell values, but exact SKU/revision
+ * applicability remains a release gate. Modem USB is disconnected in the current
+ * board: its late-USB startup timing is not modeled here. See
+ * qualification-modem-supply/ before integrating USB. */
 export type Stage='off'|'settle'|'key-on'|'boot'|'on'|'key-off'|'shutdown'|'discharge'|'fault'
 export interface Sample {now:number;requestOn:boolean;releaseApproved:boolean;vbatt:number;status:boolean;atReady:boolean;shutdownConfirmed:boolean;railsValid:boolean}
 export class ModemSequencer {

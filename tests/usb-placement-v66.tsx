@@ -31,7 +31,21 @@ const modem=padsFor('U_MODEM_LOGICAL_ONLY');assert.equal(modem.length,126)
 const modemPlacement=(placementV66 as any).U_MODEM_LOGICAL_ONLY
 for(const [pin,x,y]of [[1,-9.175,9.7],[19,-7.45,-11.025],[49,9.175,9.7],[119,-.85,2.55],[126,.85,2.55]])anchor('U_MODEM_LOGICAL_ONLY',pin,modemPlacement.x-x,modemPlacement.y+y,.05)
 for(const [pin,net]of [[15,'MODEM_PWRKEY_OD'],[17,'MODEM_RESET_OD'],[20,'MODEM_STATUS'],[32,'MODEM_BB_SUPPLY_UNQUALIFIED'],[33,'MODEM_BB_SUPPLY_UNQUALIFIED'],[47,'GND'],[52,'MODEM_RF_SUPPLY_UNQUALIFIED'],[53,'MODEM_RF_SUPPLY_UNQUALIFIED']] as const)assert.deepEqual(netNames(modem.find(p=>p.port_hints.includes(`pin${pin}`))),[net])
-for(const pin of [123,124,125])assert.deepEqual(netNames(modem.find(p=>p.port_hints.includes(`pin${pin}`))),[],'unverified headphone pins must stay open')
+// Modem USB is deliberately disconnected in this candidate. Charging USB VBUS
+// does not qualify modem USB timing, termination or service access. See the
+// Standard Hardware Design review under qualification-modem-supply/.
+const assertOpenModemPin=(pin:number)=>assert.deepEqual(netNames(modem.find(p=>p.port_hints.includes(`pin${pin}`))),[],`unverified modem pin${pin} must stay open`)
+for(const pin of [8,9,10,123,124,125])assertOpenModemPin(pin)
+// Negative controls prove these guards reject an accidental charging-VBUS tie.
+const rawVbus=j.find(x=>x.type==='source_net'&&x.name==='USB_VBUS_RAW');assert(rawVbus)
+for(const pin of [8,9,10]){
+ const pad=modem.find(p=>p.port_hints.includes(`pin${pin}`))
+ const port=j.find(x=>x.type==='pcb_port'&&x.pcb_port_id===pad.pcb_port_id);assert(port)
+ const mutation={type:'source_trace',source_trace_id:`usb-scope-mutation-${pin}`,connected_source_port_ids:[port.source_port_id],connected_source_net_ids:[rawVbus.source_net_id]}
+ j.push(mutation)
+ try {assert.throws(()=>assertOpenModemPin(pin),new RegExp(`unverified modem pin${pin} must stay open`))}
+ finally {assert.equal(j.pop(),mutation)}
+}
 const cc=padsFor('U_CC_PROTECT');assert.equal(cc.length,21);for(const pin of [8,13,16,17,18,21])assert.deepEqual(netNames(cc.find(p=>p.port_hints.includes(`pin${pin}`))),['GND'])
 const efuse=padsFor('U_USB_PROTECT');assert.equal(efuse.length,10);assert.equal(efuse.filter(p=>p.shape==='polygon').length,4);assert.deepEqual(netNames(efuse.find(p=>p.port_hints.includes('pin8'))),['GND'])
 anchor('U_CC_PROTECT',1,5.500003,-74.199773,1e-6)
@@ -52,5 +66,5 @@ for(const pad of j.filter(x=>x.type==='pcb_smtpad')) {
 }
 assert.equal(j.filter(x=>x.type==='pcb_solder_paste').length,0);assert.deepEqual(j.filter(x=>/error$/.test(x.type)),[])
 const board=j.find(x=>x.type==='pcb_board');assert.equal(board.width,56);assert.equal(board.height,144);assert.equal(board.center.y,-12)
-fs.writeFileSync('output/board-migration-report.json',JSON.stringify({components:sources.length,placementMapEntries:Object.keys(placementV66).length,migrated:[...migrated],mcuGroundPads:ep.length,pasteApertures:0,scope:'Placement, physical pad anchors and source-net contracts only. No routed-board/ERC/DRC or manufacturing approval.'},null,2))
-console.log('PASS139 components, preserved unmigrated placements, manufacturer anchors, mapped MCU EP, modem safety nets and open pins, zero paste. Routing not recovered.')
+fs.writeFileSync('output/board-migration-report.json',JSON.stringify({components:sources.length,placementMapEntries:Object.keys(placementV66).length,migrated:[...migrated],mcuGroundPads:ep.length,pasteApertures:0,modemUsbPinsHeldOpen:[8,9,10],modemUsbConnectionMutationsRejected:3,scope:'Placement, physical pad anchors and source-net contracts only. No routed-board/ERC/DRC or manufacturing approval.'},null,2))
+console.log('PASS139 components, preserved unmigrated placements, manufacturer anchors, mapped MCU EP, modem safety nets and open pins, zero paste; modem USB remains open. Routed copper is checked separately.')

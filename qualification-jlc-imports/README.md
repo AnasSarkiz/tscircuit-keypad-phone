@@ -51,9 +51,9 @@ The import test checks exact identities, all terminals and222 copper primitives,
 
 ## Remaining integration work
 
-Follow-up migration now replaces the three active JSON consumers with actual imported copper while preserving component datums and logical nets. Full-project typecheck and active PCB-input checks pass. See [the migration checkpoint](../qualification-board-migration/README.md). Original historical sources/tests are retained; they were not replaced by invented JSON or relabeled catalog records. Routed-output requalification remains open.
+Follow-up migration now replaces the three active JSON consumers with actual imported copper while preserving component datums and logical nets. Full-project typecheck and active PCB-input checks pass. See [the migration checkpoint](../qualification-board-migration/README.md). Original historical sources/tests are retained; they were not replaced by invented JSON or relabeled catalog records. Subsequent routing recovery revalidated the migrated geometry after 17 clearance repairs; see [the routing checkpoint](../qualification-routing-recovery/README.md).
 
-V66 routing and the enclosure are unchanged. There is no complete-board DRC, mask/stencil approval, model-fit approval or fabrication release. Battery/protection pulse capability and exact modem variant/carrier remain open.
+Component placements and the enclosure remain unchanged. The subsequently repaired partial routing is screened, but the phone still has open joins. There is no complete-board sign-off, mask/stencil approval, model-fit approval or fabrication release. Battery/protection pulse capability and exact modem variant/carrier remain open.
 
 ### Manufacturer references
 

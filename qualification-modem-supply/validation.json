@@ -1,0 +1,31 @@
+{
+  "checked_date_utc": "2026-11-08",
+  "baseline_commit": "7e647528c3742705c1234abb9b130db2c406155f",
+  "commands_passed": [
+    "npm run typecheck",
+    "npm run test:placement",
+    "npm run test:logical-phone",
+    ".venv/bin/python scripts/check-current.py"
+  ],
+  "source_pdf_hash_and_size_checks_passed": 4,
+  "modem_usb_pins_held_open": [
+    8,
+    9,
+    10
+  ],
+  "accidental_charging_vbus_connections_rejected": 3,
+  "components_placed_electronic": 133,
+  "components_candidate_electronic": 210,
+  "minimum_joins_completed": 336,
+  "minimum_joins_total": 522,
+  "minimum_joins_open": 186,
+  "full_22_route_fault_suite_rerun": false,
+  "full_22_route_fault_suite_note": "Previously passed at a1b24bbbff3f61d3b26d33ef73a57df021f1d865; routing and its checker are unchanged by this checkpoint.",
+  "schematic_wiring_changed": false,
+  "pcb_geometry_changed": false,
+  "firmware_logic_changed": false,
+  "waveform_measured": false,
+  "exact_shipped_revision_qualified": false,
+  "fabrication_ready": false,
+  "scope": "Standard-family document corroboration and software regression tests; no electrical, physical-safety, process or carrier approval."
+}
