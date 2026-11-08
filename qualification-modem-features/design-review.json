@@ -1,0 +1,89 @@
+{
+  "baseline_commit": "6eb8da0309544f28956d91eb9349d2ad5697fde2",
+  "checked_date_utc": "2026-11-08",
+  "modem_mpn": "EG912UGLAC-I05-SNNSA",
+  "jlc_part_id": "C7472750",
+  "optional_features_required_by_current_design": {
+    "modem_gnss": false,
+    "modem_bluetooth": false,
+    "modem_wifi_scan": false
+  },
+  "current_optional_endpoints": [
+    {
+      "pin": 49,
+      "generic_import_label": "ANT_GNSS",
+      "live_label": "UNREVIEWED_49",
+      "connected": false
+    },
+    {
+      "pin": 51,
+      "generic_import_label": "1PPS",
+      "live_label": "UNREVIEWED_51",
+      "connected": false
+    },
+    {
+      "pin": 56,
+      "generic_import_labels": [
+        "ANT_BT",
+        "WIFI_SCAN"
+      ],
+      "live_label": "UNREVIEWED_56",
+      "connected": false
+    }
+  ],
+  "cellular_antenna_endpoint": {
+    "pin": 60,
+    "net": "ANT_MAIN_MATCH_IN_PENDING",
+    "rf_qualified": false
+  },
+  "host_command_scope": [
+    "ATD<number>;",
+    "ATA",
+    "ATH",
+    "AT+CMGF=1",
+    "AT+CSCS=\"GSM\"",
+    "AT+CMGS=\"<recipient>\""
+  ],
+  "host_limit": "Host prototypes only; no flashed modem driver, IMS provisioning or measured voice/SMS outcome.",
+  "modem_enable_evidence_required": [
+    "lteOnlyVerifiedAcrossReset",
+    "carrierVoiceVerified",
+    "powerPathValidated"
+  ],
+  "unreleased_evidence_flags_changed": false,
+  "actual_deployment_country": null,
+  "actual_carrier": null,
+  "actual_modem_firmware": null,
+  "actual_sim_profile": null,
+  "regulatory_grants_and_integration_conditions_qualified": false,
+  "exact_sku_voice_qualified": false,
+  "negative_controls": {
+    "optional_endpoint_cellular_RF_ties_rejected": [
+      49,
+      51,
+      56
+    ],
+    "USB_charging_VBUS_ties_rejected": [
+      8,
+      9,
+      10
+    ]
+  },
+  "source_imports_changed": false,
+  "board_or_firmware_logic_changed": false,
+  "render_comparisons": [
+    {
+      "render": "placement",
+      "all_records": 3033,
+      "byte_identical": true,
+      "sha256": "cbc9b49e36c16119ce68c50f8e3cf92ab464716c42f74a4a7625a0f3da76dd9e"
+    },
+    {
+      "render": "logical",
+      "all_records": 4151,
+      "byte_identical": true,
+      "sha256": "d8812f8fae7566fda6acb37c93e4e60a6ff6a4e0ecd4d0b8912197e790a441a0"
+    }
+  ],
+  "fabrication_ready": false
+}

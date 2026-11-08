@@ -38,16 +38,20 @@ for(const [pin,net]of [[15,'MODEM_PWRKEY_OD'],[17,'MODEM_RESET_OD'],[20,'MODEM_S
 // does not qualify modem USB timing, termination or service access. See the
 // Standard Hardware Design review under qualification-modem-supply/.
 const assertOpenModemPin=(pin:number)=>assert.deepEqual(netNames(modem.find(p=>p.port_hints.includes(`pin${pin}`))),[],`unverified modem pin${pin} must stay open`)
-for(const pin of [8,9,10,123,124,125])assertOpenModemPin(pin)
-// Negative controls prove these guards reject an accidental charging-VBUS tie.
-const rawVbus=j.find(x=>x.type==='source_net'&&x.name==='USB_VBUS_RAW');assert(rawVbus)
-for(const pin of [8,9,10]){
- const pad=modem.find(p=>p.port_hints.includes(`pin${pin}`))
- const port=j.find(x=>x.type==='pcb_port'&&x.pcb_port_id===pad.pcb_port_id);assert(port)
- const mutation={type:'source_trace',source_trace_id:`usb-scope-mutation-${pin}`,connected_source_port_ids:[port.source_port_id],connected_source_net_ids:[rawVbus.source_net_id]}
- j.push(mutation)
- try {assert.throws(()=>assertOpenModemPin(pin),new RegExp(`unverified modem pin${pin} must stay open`))}
- finally {assert.equal(j.pop(),mutation)}
+// Generic catalog optional-radio labels do not establish exact-SKU features.
+for(const pin of [8,9,10,49,51,56,123,124,125])assertOpenModemPin(pin)
+// Negative controls reject charging-VBUS ties on USB pins and accidental
+// cellular-RF ties on the unused GNSS/PPS/BT/Wi-Fi endpoints.
+for(const [pins,netName] of [[[8,9,10],'USB_VBUS_RAW'],[[49,51,56],'ANT_MAIN_MATCH_IN_PENDING']] as const){
+ const targetNet=j.find(x=>x.type==='source_net'&&x.name===netName);assert(targetNet)
+ for(const pin of pins){
+  const pad=modem.find(p=>p.port_hints.includes(`pin${pin}`))
+  const port=j.find(x=>x.type==='pcb_port'&&x.pcb_port_id===pad.pcb_port_id);assert(port)
+  const mutation={type:'source_trace',source_trace_id:`modem-scope-mutation-${pin}`,connected_source_port_ids:[port.source_port_id],connected_source_net_ids:[targetNet.source_net_id]}
+  j.push(mutation)
+  try {assert.throws(()=>assertOpenModemPin(pin),new RegExp(`unverified modem pin${pin} must stay open`))}
+  finally {assert.equal(j.pop(),mutation)}
+ }
 }
 const cc=padsFor('U_CC_PROTECT');assert.equal(cc.length,21);for(const pin of [8,13,16,17,18,21])assert.deepEqual(netNames(cc.find(p=>p.port_hints.includes(`pin${pin}`))),['GND'])
 const efuse=padsFor('U_USB_PROTECT');assert.equal(efuse.length,10);assert.equal(efuse.filter(p=>p.shape==='polygon').length,4);assert.deepEqual(netNames(efuse.find(p=>p.port_hints.includes('pin8'))),['GND'])
@@ -69,5 +73,5 @@ for(const pad of j.filter(x=>x.type==='pcb_smtpad')) {
 }
 assert.equal(j.filter(x=>x.type==='pcb_solder_paste').length,0);assert.deepEqual(j.filter(x=>/error$/.test(x.type)),[])
 const board=j.find(x=>x.type==='pcb_board');assert.equal(board.width,56);assert.equal(board.height,144);assert.equal(board.center.y,-12)
-fs.writeFileSync('output/board-migration-report.json',JSON.stringify({components:sources.length,placementMapEntries:Object.keys(placementV66).length,migrated:[...migrated],mcuGroundPads:ep.length,pasteApertures:0,modemUsbPinsHeldOpen:[8,9,10],modemUsbConnectionMutationsRejected:3,scope:'Placement, physical pad anchors and source-net contracts only. No routed-board/ERC/DRC or manufacturing approval.'},null,2))
-console.log('PASS139 components, preserved unmigrated placements, manufacturer anchors, mapped MCU EP, modem safety nets and open pins, zero paste; modem USB remains open. Routed copper is checked separately.')
+fs.writeFileSync('output/board-migration-report.json',JSON.stringify({components:sources.length,placementMapEntries:Object.keys(placementV66).length,migrated:[...migrated],mcuGroundPads:ep.length,pasteApertures:0,modemUsbPinsHeldOpen:[8,9,10],modemUsbConnectionMutationsRejected:3,modemOptionalPinsHeldOpen:[49,51,56],modemOptionalConnectionMutationsRejected:3,scope:'Placement, physical pad anchors and source-net contracts only. No routed-board/ERC/DRC or manufacturing approval.'},null,2))
+console.log('PASS139 components, preserved unmigrated placements, manufacturer anchors, mapped MCU EP, modem safety nets and open pins, zero paste; modem USB and optional-radio pins remain open. Routed copper is checked separately.')

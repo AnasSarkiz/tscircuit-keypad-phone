@@ -48,3 +48,7 @@ The saved public-safe history was restored at `1baed9a26356d5fa335dd4993838d121b
 ## Candidate modem identity
 
 The live modem candidate now carries exact MPN `EG912UGLAC-I05-SNNSA` and JLC ID `C7472750`, rather than a synthetic QuecOpen placeholder. Both logical and placed-board tests check these fields. The repaired identity does not qualify firmware, carrier service or the battery path; the standard-source review records the remaining gates.
+
+## Optional modem feature scope
+
+Both logical and placed-board checks require unused optional modem pins49/51/56 to remain open. The placed-board test rejects three injected cellular-RF connections on those pins while retaining the three USB wrong-VBUS mutations. No optional feature is enabled, and current renders are unchanged. See [the exact-SKU feature review](qualification-modem-features/README.md) for the distinction between optional-radio support, family-level VoLTE and actual country/carrier/firmware qualification.

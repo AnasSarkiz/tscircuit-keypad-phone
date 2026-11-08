@@ -21,7 +21,8 @@ for(const [net,pad] of Object.entries({VLOGIC_3V15:2,MCU_EN:3,LCD_CS_N:23,LCD_RS
 for(const [net,required] of Object.entries({MODEM_RX:['U_TX.4','U_MODEM_LOGICAL_ONLY.34'],MODEM_TX:['U_RX.4','U_MODEM_LOGICAL_ONLY.35'],MODEM_CTS:['U_CTS.4','U_MODEM_LOGICAL_ONLY.36'],MODEM_RTS:['U_RTS.4','U_MODEM_LOGICAL_ONLY.37'],USIM1_VDD_PENDING:['U_MODEM_LOGICAL_ONLY.43','C_SIM_VDD.1'],USIM1_RST_MODEM_PENDING:['U_MODEM_LOGICAL_ONLY.44'],USIM1_DATA_MODEM_PENDING:['U_MODEM_LOGICAL_ONLY.45'],USIM1_CLK_MODEM_PENDING:['U_MODEM_LOGICAL_ONLY.46'],MODEM_PWRKEY_OD:['U_MODEM_LOGICAL_ONLY.15','Q_MODEM_KEY.3'],MODEM_RESET_OD:['U_MODEM_LOGICAL_ONLY.17','Q_MODEM_RESET.3'],MODEM_STATUS:['U_MODEM_LOGICAL_ONLY.20','U_STATUS.4']})) for(const p of required)assert.ok(pins(net).includes(p),net+': '+p)
 for(const name of ['U_DTR','U_RI'])assert.ok(!comps.some(c=>c.name===name),'startup-contention path must not be fitted')
 assert.ok(!pins('MODEM_3V8_CANDIDATE').some(p=>p.startsWith('U_MODEM_LOGICAL_ONLY.')),'power gate must remain open')
-for(const pin of [8,9,10,30,39,75,121,122]){
+// Optional modem GNSS/PPS/BT/Wi-Fi pins are unused, not implied by catalog labels.
+for(const pin of [8,9,10,30,39,49,51,56,75,121,122]){
  const p=all('source_port').find(p=>p.source_component_id===comps.find(c=>c.name==='U_MODEM_LOGICAL_ONLY').source_component_id&&p.pin_number===pin)
  assert.ok(p);assert.ok(!all('source_trace').some(t=>t.connected_source_port_ids.includes(p.source_port_id)),`unverified modem endpoint ${pin} must stay open`)
 }

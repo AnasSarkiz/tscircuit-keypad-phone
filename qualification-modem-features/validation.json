@@ -1,0 +1,26 @@
+{
+  "checked_date_utc": "2026-11-08",
+  "baseline_commit": "6eb8da0309544f28956d91eb9349d2ad5697fde2",
+  "commands_passed": [
+    "npm run typecheck",
+    "npm run test:placement",
+    "npm run test:logical-phone",
+    "npm run test:control",
+    ".venv/bin/python scripts/check-current.py",
+    "git diff --check"
+  ],
+  "source_hash_and_size_checks_passed": 6,
+  "new_optional_endpoint_mutations_rejected": 3,
+  "retained_USB_endpoint_mutations_rejected": 3,
+  "complete_render_outputs_byte_identical": true,
+  "electronic_components_placed": 133,
+  "electronic_components_total": 210,
+  "minimum_joins_completed": 336,
+  "minimum_joins_open": 186,
+  "full_22_route_fault_suite_rerun": false,
+  "full_22_route_fault_suite_note": "Last passed at a1b24bbbff3f61d3b26d33ef73a57df021f1d865; routing and checker are unchanged in this checkpoint.",
+  "hardware_test_performed": false,
+  "firmware_qualified": false,
+  "carrier_qualified": false,
+  "fabrication_ready": false
+}

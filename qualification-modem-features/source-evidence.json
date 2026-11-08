@@ -1,0 +1,182 @@
+{
+  "checked_date_utc": "2026-11-08",
+  "selected_mpn": "EG912UGLAC-I05-SNNSA",
+  "selected_catalog_part": "C7472750",
+  "status": "Exact ordering-code feature statement verified in manufacturer support forum; family-level specification verified; no lot, firmware, carrier, circuit or fabrication qualification.",
+  "sources": {
+    "forum_reply": {
+      "url": "https://forums.quectel.com/t/what-is-full-part-number-for-eg912u-gl-with-optional-wifi-scan/49052/2",
+      "sha256": "7ef5de0b572cec3a067aa71142525af9cb674ed5e08820e2c8beed61c06c79fc",
+      "bytes": 15753,
+      "retrieval_url": "https://forums.quectel.com/t/49052.json",
+      "title": "What is full part number for EG912U-GL with optional WiFi scan",
+      "topic_id": 49052,
+      "post_id": 122693,
+      "post_number": 2,
+      "author_username": "mandy.wang",
+      "created_at_utc": "2025-08-19T06:10:28.507Z",
+      "updated_at_utc": "2025-08-19T06:10:28.507Z",
+      "author_metadata": {
+        "staff": true,
+        "moderator": true,
+        "title": "Support",
+        "primary_group_name": "Support-team"
+      }
+    },
+    "forum_author": {
+      "url": "https://forums.quectel.com/u/mandy.wang",
+      "sha256": "4e33d8c5e3ff744563fc213441a0482065eb1301626bda1a3f5fe968189b8d0d",
+      "bytes": 4216,
+      "retrieval_url": "https://forums.quectel.com/u/mandy.wang.json",
+      "relevant_profile_metadata": {
+        "moderator": true,
+        "title": "Support",
+        "primary_group_name": "Support-team",
+        "group_full_name": "Quectel technical support team"
+      },
+      "limit": "Retrieved account metadata identifies support status at check time; no independent employment or historical role audit."
+    },
+    "series_spec_v1_5": {
+      "url": "https://www.quectel.com/content/uploads/2024/03/Quectel_EG912U_Series_LTE_Standard_Specification_V1.5.pdf?wpId=126964",
+      "sha256": "da8db56e891110fc7052ee63e54cfe4b2a4d88c0928652264de712def3a2bc34",
+      "bytes": 196161,
+      "title": "Quectel EG912U Series LTE Standard Specification",
+      "revision": "1.5",
+      "status": "Released",
+      "pdf_pages": 2,
+      "visually_checked_pdf_pages": [
+        1,
+        2
+      ],
+      "copyright_year": 2025,
+      "printed_release_date": null,
+      "pdf_metadata_creation_date": "2025-02-25T02:36:56+01:00",
+      "date_limit": "PDF metadata creation date and upload URL path are not a verified publication/release date.",
+      "revision_limit": "Officially hosted and currently retrievable; no claim that no newer specification exists."
+    },
+    "jlc_catalog": {
+      "url": "https://jlcpcb.com/partdetail/Quectel-EG912UGLAC_I05SNNSA/C7472750",
+      "sha256": "eeab14f026bf9aca5605b1b71eda6c4ac650b8091788758cb844e7d581d25200",
+      "bytes": 336827,
+      "finding": "Catalog identifies manufacturer Quectel, MFR.Part # EG912UGLAC-I05-SNNSA and JLCPCB Part # C7472750."
+    },
+    "official_product_page": {
+      "url": "https://www.quectel.com/product/lte-cat-1-bis-eg912u-gl/",
+      "sha256": "fec434f57061036f383a6ef13daa296fe377fa221e0ca8a262891a8b9560224d",
+      "bytes": 329536,
+      "finding": "Product family page labels Bluetooth, GNSS and Wi-Fi Scan optional; Series Hardware Design V1.4 is listed behind login.",
+      "access_limit": "No form submitted and no login attempted. This page did not supply exact ordering-code feature confirmation."
+    },
+    "forum_volte_thread": {
+      "url": "https://forums.quectel.com/t/eg912u-gl-how-to-enable-volte-ims-never-registers-cireg-0-0/61860",
+      "retrieval_url": "https://forums.quectel.com/t/61860.json",
+      "sha256": "f7fdaa4ccd06a01bb73450ee7df18d16c938443fd7b07aa4d91f48ee1387d1e7",
+      "bytes": 16373,
+      "topic_id": 61860,
+      "posts_count": 2,
+      "user_post": {
+        "author": "Pasindu_Deemantha",
+        "staff": false,
+        "created_at_utc": "2026-10-14T06:16:45.656Z",
+        "post_number": 1
+      },
+      "support_post": {
+        "author": "Felix.feng-Q",
+        "staff": true,
+        "moderator": true,
+        "title": "Support",
+        "primary_group_name": "Support-team",
+        "created_at_utc": "2026-10-16T02:47:41.952Z",
+        "updated_at_utc": "2026-10-16T02:47:42.367Z",
+        "post_number": 2
+      }
+    }
+  },
+  "forum_context": {
+    "question_author": "Wilson",
+    "question_created_at_utc": "2025-07-21T16:10:08.887Z",
+    "question_author_staff": false,
+    "question_summary": "Asked for an EG912U-GL ordering code offering Wi-Fi scanning without Bluetooth.",
+    "reply_exact_short_quote": "EG912UGLAC-I05-SNNSA: doesn\u2019t support BT/wifiscan/GNSS",
+    "reply_reported_variants": [
+      {
+        "mpn": "EG912UGLAC-I05-SNNSA",
+        "bluetooth_supported": false,
+        "wifi_scan_supported": false,
+        "gnss_supported": false
+      },
+      {
+        "mpn": "EG912UGLAB-I05-SNNSA",
+        "bluetooth_supported": true,
+        "wifi_scan_supported": true,
+        "gnss_supported": false
+      },
+      {
+        "mpn": "EG912UGLAA-I05-SGNSA",
+        "bluetooth_supported": true,
+        "wifi_scan_supported": true,
+        "gnss_supported": true
+      }
+    ],
+    "reply_other_statement": "The reply says no EG912UGL variant offers Wi-Fi scanning without Bluetooth.",
+    "scope": "A manufacturer-hosted technical-support statement about exact ordering codes, not a laboratory result, signed SKU datasheet, shipment inspection or permission to substitute variants."
+  },
+  "family_specification": {
+    "source": "series_spec_v1_5",
+    "pdf_page": 2,
+    "column": "EG912U-GL",
+    "volte_listed": true,
+    "bluetooth_optional": true,
+    "bluetooth_description": "Bluetooth 4.2 (BR/EDR + BLE)",
+    "wifi_scan_optional": true,
+    "wifi_scan_description": "2.4 GHz 802.11b (Rx)",
+    "gnss_optional": true,
+    "scope": "Family-level capability; the document does not assign features or firmware to the complete EG912UGLAC-I05-SNNSA ordering code.",
+    "regulatory_listings": {
+      "America": "FCC",
+      "Canada": "IC"
+    },
+    "regulatory_limit": "Family-level listing is not an exact-SKU FCC ID/grant review, integration approval or carrier voice acceptance."
+  },
+  "supported_conclusion": "Do not budget GNSS, Bluetooth or Wi-Fi scanning as available in the selected EG912UGLAC-I05-SNNSA candidate. Quectel support explicitly reports them unsupported. Family documentation positively lists VoLTE but does not close exact-SKU firmware or carrier qualification.",
+  "must_not_infer": [
+    "Unsupported means physically absent silicon, a known pin electrical state, or a proven termination rule.",
+    "Generic library pad names establish selected-SKU optional features.",
+    "An alternate AB or AA ordering code is an approved replacement.",
+    "Wi-Fi scanning means Wi-Fi data networking, access-point operation or Wi-Fi calling.",
+    "The selected AC SKU cannot support cellular voice because optional Bluetooth, Wi-Fi scanning and GNSS are unsupported.",
+    "Family-level VoLTE listing establishes installed firmware, IMS profile, carrier acceptance, regional emergency-calling behavior, certification or end-product approval."
+  ],
+  "remaining_gates": [
+    "Obtain applicable exact-SKU and shipped-lot hardware/firmware documentation before production claims or procurement.",
+    "Resolve the published-specification versus forum-support VoLTE/certification discrepancy for the exact ordering code, firmware and intended deployment; no blanket negative or carrier approval is established.",
+    "Validate intended network/firmware/SIM combination, carrier acceptance and voice/emergency-call requirements separately.",
+    "Use the applicable hardware guide to determine electrical treatment of unused pads; a feature-support statement alone is insufficient."
+  ],
+  "work_scope": "Public-source research and current-design regression review. No source PDF/raw forum redistribution, sign-ins, form submissions, supplier contact, purchases, hardware changes or firmware-logic changes.",
+  "retention": "Source downloads and page images are retained outside the repository. Share original URLs and this summary; source retention does not authorize redistribution of vendor PDFs or raw forum/profile responses.",
+  "forum_volte_conflict": {
+    "source": "forum_volte_thread",
+    "user_reported_firmware": "EG912UGLAAR03A01M08_OCPU_QPY",
+    "user_reported_runtime": "QuecPython",
+    "user_reported_operator_string": "DIALOG",
+    "user_reported_ims_registration": "Failed",
+    "user_reported_voice_behavior": "2G fallback",
+    "intended_deployment_country": "USA",
+    "actual_test_country": null,
+    "complete_ordering_code": null,
+    "US_carriers_named_in_question_only": [
+      "AT&T",
+      "Verizon",
+      "T-Mobile"
+    ],
+    "support_claims": {
+      "specific_model_requested": true,
+      "volte": "Tentative negative statement, explicitly requiring another check.",
+      "US_certification": "Unspecified negative assertion; no grant, SKU or certification type cited.",
+      "roaming_SIM": "Asked about roaming; no answer present."
+    },
+    "interpretation": "Unresolved report for a named QuecPython firmware; not evidence of AC-candidate or US-carrier testing. The VoLTE assertion conflicts with the released family specification. The US-certification assertion cannot erase the specification\u2019s FCC listing or establish carrier approval. No later clarification appears in the two-post thread.",
+    "wording_limit": "Only the VoLTE sentence is explicitly tentative. Do not misquote the US-certification sentence as itself containing that qualifier; report it as an unresolved, underspecified support assertion."
+  }
+}
