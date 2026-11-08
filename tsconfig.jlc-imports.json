@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["imports/**/*.tsx", "imports/**/*.d.ts", "electronics/jlc-review-candidates.tsx", "tests/jlc-imports.tsx"]
+}

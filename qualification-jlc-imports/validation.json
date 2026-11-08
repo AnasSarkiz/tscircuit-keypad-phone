@@ -1,0 +1,30 @@
+{
+  "date_utc": "2026-11-08",
+  "node": "24.22.1",
+  "core": "0.0.2302",
+  "passed": [
+    "npm ci --ignore-scripts",
+    "npm run typecheck:jlc-imports",
+    "npm run test:jlc-imports",
+    "npm run check:public",
+    "npm test",
+    "npm run test:power",
+    "git diff --check"
+  ],
+  "isolated_import_checks": {
+    "parts": 6,
+    "modes": [
+      "catalog",
+      "review"
+    ],
+    "copper_primitives_per_mode": 222,
+    "raw_import_files_hash_checked": 16,
+    "mcu_exposed_ground_pads": 9,
+    "review_paste_apertures": 0
+  },
+  "known_blocked": {
+    "npm run typecheck": "exit2: three omitted legacy JSON footprint sources and consequent errors",
+    "npm run check:pcb-inputs": "exit1: three omitted legacy JSON footprint sources"
+  },
+  "scope": "Import identity/geometry/connectivity and existing host/keypad/power calculations. No complete PCB routing, fabrication, physical model fit, battery pulse or carrier qualification."
+}

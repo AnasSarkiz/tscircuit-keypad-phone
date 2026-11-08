@@ -1,0 +1,17 @@
+{
+  "lcsc_id": "C2876380",
+  "manufacturer_part_number": "TPD6S300ARUKR",
+  "component_uuid": "40f3a587d8874f0da21e782c0c3b838f",
+  "package_uuid": "40983648651a4edba8cffb22572ae653",
+  "source_url": "https://easyeda.com/api/components/40f3a587d8874f0da21e782c0c3b838f?version=6.4.7&uuid=40f3a587d8874f0da21e782c0c3b838f&datastrid=",
+  "full_response_sha256": "d72101487e8a5b158ebf62a4961230d88c5bbd9da9b3d1fd81f0b8ea51a2e949",
+  "source_layer_declaration": [
+    "5~TopPasteMaskLayer~#808080~true~true~true~"
+  ],
+  "source_paste_region_count": 21,
+  "source_ep_region": [
+    "SOLIDREGION~5~~M 4003.1777 3002.6777 L 4003.1777 2997.32334 L 3997.82334 2997.32334 L 3997.82334 3002.6777 Z ~solid~gge214~~~~0"
+  ],
+  "generated_explicit_paste_region_count": 0,
+  "status": "Explicit catalog paste geometry is absent from generated TSX. Actual stencil export not yet checked."
+}

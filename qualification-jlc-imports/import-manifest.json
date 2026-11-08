@@ -1,0 +1,138 @@
+{
+  "imported_at_utc": "2026-11-08",
+  "tscircuit_version": "0.0.3120",
+  "cli_version": "0.1.2446",
+  "command": "tsci import <id> --jlcpcb --download --use-exact-footprint",
+  "footprint_source": "Exact EasyEDA/JLCPCB catalog geometry, not a substituted generic footprinter pattern",
+  "fabrication_ready": false,
+  "parts": [
+    {
+      "lcsc_id": "C2913199",
+      "manufacturer_part_number": "ESP32-S3-WROOM-1-N16",
+      "catalog_url": "https://www.lcsc.com/product-detail/C2913199.html",
+      "files": [
+        {
+          "path": "imports/ESP32_S3_WROOM_1_N16/ESP32_S3_WROOM_1_N16.obj",
+          "bytes": 164164,
+          "sha256": "b5b1082125f49189c767308d343dfab3d65c962e7d04ef13fd5d3e46bdd40c9b"
+        },
+        {
+          "path": "imports/ESP32_S3_WROOM_1_N16/ESP32_S3_WROOM_1_N16.step",
+          "bytes": 2364511,
+          "sha256": "c217687b8370df91ff6100bea185727fa777c76910a42a28e4c33d6de2b50df9"
+        },
+        {
+          "path": "imports/ESP32_S3_WROOM_1_N16/ESP32_S3_WROOM_1_N16.tsx",
+          "bytes": 26137,
+          "sha256": "22febc0eaa33e404a69126de03e30e8fceb9dc97456cc191153aa63f622f726b"
+        }
+      ],
+      "model_present": true
+    },
+    {
+      "lcsc_id": "C7472750",
+      "manufacturer_part_number": "EG912UGLAC-I05-SNNSA",
+      "catalog_url": "https://www.lcsc.com/product-detail/C7472750.html",
+      "files": [
+        {
+          "path": "imports/EG912UGLAC_I05_SNNSA/EG912UGLAC_I05_SNNSA.tsx",
+          "bytes": 20711,
+          "sha256": "acc64cf55e0b1df97acceca47fb3fcca274ee30442a1fae44dcb9e07f0aca53b"
+        }
+      ],
+      "model_present": false
+    },
+    {
+      "lcsc_id": "C2845237",
+      "manufacturer_part_number": "TPS63802DLAR",
+      "catalog_url": "https://www.lcsc.com/product-detail/C2845237.html",
+      "files": [
+        {
+          "path": "imports/TPS63802DLAR/TPS63802DLAR.obj",
+          "bytes": 62198,
+          "sha256": "cd6b6ef43aaf7e122c55486d6e0947c06db337a580ef5467c26bd91900646fe9"
+        },
+        {
+          "path": "imports/TPS63802DLAR/TPS63802DLAR.step",
+          "bytes": 1760834,
+          "sha256": "c97c37d950cd0a6ba11e51b1e5803038b90cc50ba68a89ca5317362bc7b0ce3c"
+        },
+        {
+          "path": "imports/TPS63802DLAR/TPS63802DLAR.tsx",
+          "bytes": 3589,
+          "sha256": "56ad746966cf963bff64d15f4e14be8acbb572ae1c185e0951cbb6c04c2bcbe5"
+        }
+      ],
+      "model_present": true
+    },
+    {
+      "lcsc_id": "C2876380",
+      "manufacturer_part_number": "TPD6S300ARUKR",
+      "catalog_url": "https://www.lcsc.com/product-detail/C2876380.html",
+      "files": [
+        {
+          "path": "imports/TPD6S300ARUKR/TPD6S300ARUKR.obj",
+          "bytes": 172856,
+          "sha256": "9431d72c2fc07acb19dd2a8a41e2fc5b08d20c67dfc0048ff1267f633c7d18e2"
+        },
+        {
+          "path": "imports/TPD6S300ARUKR/TPD6S300ARUKR.step",
+          "bytes": 2938608,
+          "sha256": "0d4118e344f3c11275817e23ff882d7c483771883b9435f79aefa8f78db6e4f3"
+        },
+        {
+          "path": "imports/TPD6S300ARUKR/TPD6S300ARUKR.tsx",
+          "bytes": 4965,
+          "sha256": "4713584e808fab1088a17f43eb2d0208ae8fec1df93b140140ac07a1aee63360"
+        }
+      ],
+      "model_present": true
+    },
+    {
+      "lcsc_id": "C3189972",
+      "manufacturer_part_number": "TPS62827ADMQR",
+      "catalog_url": "https://www.lcsc.com/product-detail/C3189972.html",
+      "files": [
+        {
+          "path": "imports/TPS62827ADMQR/TPS62827ADMQR.obj",
+          "bytes": 89307,
+          "sha256": "f1ba8e7452225966c9624f088ce2cbdd91eaf1af1082b1179592f107d60f3b39"
+        },
+        {
+          "path": "imports/TPS62827ADMQR/TPS62827ADMQR.step",
+          "bytes": 1066508,
+          "sha256": "93b21eec5f6730ed200ddcc517c6c8a4db1ac893b3cd4a3e93bd2924e5370d18"
+        },
+        {
+          "path": "imports/TPS62827ADMQR/TPS62827ADMQR.tsx",
+          "bytes": 2386,
+          "sha256": "8870fcc4fc2263702aa6823e2f72849470594bd5e8375886bc16096d3bcf8ff2"
+        }
+      ],
+      "model_present": true
+    },
+    {
+      "lcsc_id": "C3662793",
+      "manufacturer_part_number": "TPS259470LRPWR",
+      "catalog_url": "https://www.lcsc.com/product-detail/C3662793.html",
+      "files": [
+        {
+          "path": "imports/TPS259470LRPWR/TPS259470LRPWR.obj",
+          "bytes": 115695,
+          "sha256": "906e299ffa34a390c458b5664c2ac7e88431eb1c7f51fc33e0b5053284d4f138"
+        },
+        {
+          "path": "imports/TPS259470LRPWR/TPS259470LRPWR.step",
+          "bytes": 1363415,
+          "sha256": "2cc166f3b0fc4aa31d02f669ac22bad9c41301cc21475875d64a6bdc2d5d16df"
+        },
+        {
+          "path": "imports/TPS259470LRPWR/TPS259470LRPWR.tsx",
+          "bytes": 6302,
+          "sha256": "c207af6418d78a426e7e4cefec2454bcdc46bf24f2f15f0c2faf49bf8b934a2d"
+        }
+      ],
+      "model_present": true
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 This checkout is a deliberately incomplete phone study, not a full hardware release. No footprint, board, battery or protection system is approved by these software checks.
 
-Use Node.js 24, npm 11 and Python 3. Install the locked dependencies with `npm ci --ignore-scripts`. No dependency versions were changed for this recovery. The install currently reports pre-existing peer-version warnings from `jscad-electronics`; they remain unresolved. If npm's normal cache is not writable, select a writable directory with `--cache /absolute/path/to/cache`.
+Use Node.js 24, npm 11 and Python 3. Install the locked dependencies with `npm ci --ignore-scripts`. The November7 recovery did not change dependencies. The November8 JLCPCB checkpoint updates core to0.0.2302 to include the already-merged multi-pad connection fix. The install currently reports pre-existing peer-version warnings from `jscad-electronics`; they remain unresolved. If npm's normal cache is not writable, select a writable directory with `--cache /absolute/path/to/cache`.
 
 ## Checks supported by the included sources
 
@@ -16,6 +16,8 @@ Run `npm run check:public` from the repository root. It runs:
 The commands load TypeScript using the supported `node --import tsx` hook. They do not require the `tsx` CLI's optional local IPC server. No simulation assertion has been removed.
 
 ## Checks that remain blocked
+
+Six normal JLCPCB imports now exist and have independent isolated checks: `npm run typecheck:jlc-imports` and `npm run test:jlc-imports`. See [the import checkpoint](qualification-jlc-imports/README.md) for IDs, exact scope, source differences and the repaired old-core issue. These tests do not claim the original full-board input gap is closed.
 
 `npm run check:pcb-inputs` exits nonzero while three omitted footprint-data files are unavailable, naming each path and the required action. File existence, if restored, is not proof of geometry, provenance or import rights. Do not add fake JSON, guessed pads, empty geometry or ambient module declarations to hide the missing sources.
 

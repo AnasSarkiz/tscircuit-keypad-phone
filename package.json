@@ -24,7 +24,9 @@
     "test:battery": "python3 -m unittest discover -s qualification-v113 -p 'test_*.py' -v",
     "build:keypad": "node --import tsx tests/build.tsx",
     "check:public": "npm run typecheck:host && npm run test:host && npm run test:battery && npm run build:keypad",
-    "check:pcb-inputs": "node scripts/check-pcb-inputs.mjs"
+    "check:pcb-inputs": "node scripts/check-pcb-inputs.mjs",
+    "typecheck:jlc-imports": "tsc --project tsconfig.jlc-imports.json",
+    "test:jlc-imports": "node scripts/check-jlc-imports.mjs && TSX_TSCONFIG_PATH=tsconfig.jlc-imports.json node --import ./scripts/register-cad-assets.mjs --import tsx tests/jlc-imports.tsx"
   },
   "keywords": [],
   "author": "",
@@ -32,7 +34,7 @@
   "type": "module",
   "dependencies": {
     "@tscircuit/copper-pour-solver": "^0.0.67",
-    "@tscircuit/core": "^0.0.2272",
+    "@tscircuit/core": "0.0.2302",
     "@tscircuit/image-utils": "^0.0.10",
     "@tscircuit/infer-cable-insertion-point": "^0.0.5",
     "@tscircuit/manifold-2d": "^0.0.8",
