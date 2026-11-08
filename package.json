@@ -14,9 +14,9 @@
     "test:footprint": "node --import tsx tests/footprints.tsx",
     "test:integration": "node --import tsx tests/usb-integrated.tsx && node --import tsx tests/power-integrated.tsx && python tests/usb_startup_v6.py",
     "test:control": "node --import tsx tests/power-policy.ts && node --import tsx tests/charge-qualification.ts && node --import tsx tests/modem-sequencer.ts && node --import tsx tests/system-shutdown-v16.ts && node --import tsx tests/modem-startup-faults.ts && node --import tsx tests/modem-brownout-v44.ts",
-    "test:modem-safety": "node --import tsx tests/modem-clearance-v21.tsx && python3 tests/modem-clearance-v21.py",
+    "test:modem-safety": "TSX_TSCONFIG_PATH=tsconfig.json node --import ./scripts/register-cad-assets.mjs --import tsx tests/modem-clearance-v21.tsx && python3 tests/modem-clearance-v21.py",
     "check:placement": "python3 engineering/modem_clearance.py",
-    "test:placement": "node --import tsx tests/usb-placement-v66.tsx",
+    "test:placement": "TSX_TSCONFIG_PATH=tsconfig.json node --import ./scripts/register-cad-assets.mjs --import tsx tests/usb-placement-v66.tsx",
     "check:board": ".venv/bin/python engineering/usb_layered_v66.py",
     "check:current": ".venv/bin/python scripts/check-current.py",
     "typecheck:host": "tsc --project tsconfig.host.json",
@@ -26,7 +26,8 @@
     "check:public": "npm run typecheck:host && npm run test:host && npm run test:battery && npm run build:keypad",
     "check:pcb-inputs": "node scripts/check-pcb-inputs.mjs",
     "typecheck:jlc-imports": "tsc --project tsconfig.jlc-imports.json",
-    "test:jlc-imports": "node scripts/check-jlc-imports.mjs && TSX_TSCONFIG_PATH=tsconfig.jlc-imports.json node --import ./scripts/register-cad-assets.mjs --import tsx tests/jlc-imports.tsx"
+    "test:jlc-imports": "node scripts/check-jlc-imports.mjs && TSX_TSCONFIG_PATH=tsconfig.jlc-imports.json node --import ./scripts/register-cad-assets.mjs --import tsx tests/jlc-imports.tsx",
+    "test:board-imports": "TSX_TSCONFIG_PATH=tsconfig.json node --import ./scripts/register-cad-assets.mjs --import tsx tests/modem-footprint-v19.tsx && TSX_TSCONFIG_PATH=tsconfig.json node --import ./scripts/register-cad-assets.mjs --import tsx tests/reviewed-lands-v24.tsx && TSX_TSCONFIG_PATH=tsconfig.json node --import ./scripts/register-cad-assets.mjs --import tsx tests/modem-clearance-v21.tsx && npm run test:placement && python3 tests/board-migration-clearance.py"
   },
   "keywords": [],
   "author": "",

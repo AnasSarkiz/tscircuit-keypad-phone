@@ -15,17 +15,19 @@ Run `npm run check:public` from the repository root. It runs:
 
 The commands load TypeScript using the supported `node --import tsx` hook. They do not require the `tsx` CLI's optional local IPC server. No simulation assertion has been removed.
 
-## Checks that remain blocked
+## JLC imports and migrated placement (2026-11-08)
 
-Six normal JLCPCB imports now exist and have independent isolated checks: `npm run typecheck:jlc-imports` and `npm run test:jlc-imports`. See [the import checkpoint](qualification-jlc-imports/README.md) for IDs, exact scope, source differences and the repaired old-core issue. These tests do not claim the original full-board input gap is closed.
+The six exact JLCPCB imports are verified with `npm run typecheck:jlc-imports` and `npm run test:jlc-imports`. Their raw source/model files remain hash-checked and untouched. See [the import checkpoint](qualification-jlc-imports/README.md).
 
-`npm run check:pcb-inputs` exits nonzero while three omitted footprint-data files are unavailable, naming each path and the required action. File existence, if restored, is not proof of geometry, provenance or import rights. Do not add fake JSON, guessed pads, empty geometry or ambient module declarations to hide the missing sources.
+The three active footprint consumers now use these imports. `npm run typecheck` and `npm run check:pcb-inputs` both pass. No placeholder JSON or fabricated source data was added. Historical code and tests are retained under `historical-footprints/before-jlc-migration/`.
 
-`npm run typecheck` still checks the entire original source tree and fails on these missing JSON imports and consequent type errors. `npm test` was also run independently and passed: it covers keypad generation, schematic interface contracts, GPIO and host behavior, not the complete PCB. The wider board, footprint, placement and mechanical checks were not run in this recovery; their missing assets and wider requirements remain. Never infer their success from either passing command.
+Run `npm run test:board-imports` for the migrated modem/TI footprints, preserved modem courtyard, 139-component placement, mapped MCU ground lands, numbered-pin net contracts, and SMT-pad copper overlap/bounds checks. These checks produce circuit JSON/SVG and reports under `output/`. They do not run copper routing or inspect models. See [migration scope](qualification-board-migration/README.md).
 
-To close the PCB gap, obtain appropriately licensed parts using the project's standard `tsci import <LCSC-ID> --jlcpcb --download` workflow; check the exact part and package, pad numbering, dimensions, model orientation and stock/assembly constraints. Update the consuming components and independent tests together. Preserve the previous studies for comparison. An imported part or successful build alone is not fabrication approval.
+## Checks that remain unavailable
 
-The last accepted engineering candidate remains V66: 133/210 components placed and 186 open minimum joins. This recovery does not modify that layout or the enclosure. Exact modem/carrier compatibility, battery/protection pulse behavior, independent charging interlocks, RF/audio and physical assembly remain open.
+The complete routed-board and mechanical release are not recovered. The existing `check:board`, `check:current` and `check:placement` commands reference absent `engineering/` or historical scripts and are not a passing validation path. Historical Python integration tests also require absent manufacturer snapshots or routed outputs. Their assertions were not weakened or supplied fake inputs.
+
+The last routed acceptance figures were V66: 133/210 components placed and186 open minimum joins. Those are historical results, not revalidated results of the new footprints. Component placement maps and logical nets are preserved, but catalog copper differs from the former manufacturer-derived lands, so any old route endpoints and clearance assumptions must be rechecked before reuse. Mask/stencil, exact modem/carrier compatibility, battery/protection pulses, charging interlocks, RF/audio and physical assembly remain open.
 
 ## Recovery validation (2026-11-07)
 

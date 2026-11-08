@@ -1,8 +1,6 @@
 import React from 'react'
-import '@tscircuit/core'
-import data from '../sourcing/reviewed-lands-v24.json'
-/** Isolated review candidates. No paste, no automatic assignment to the phone. */
-export function ReviewedLandV24({kind}:{kind:keyof typeof data.packages}){
- const f=data.packages[kind]
- return <footprint>{f.pads.map(p=><React.Fragment key={p.pin}><smtpad portHints={[`pin${p.pin}`]} shape="rect" pcbX={p.x} pcbY={-p.y_down} width={p.width} height={p.height} cornerRadius={p.corner_radius} solderMaskMargin={f.mask_margin} noSolderPaste/></React.Fragment>)}{'polygons' in f && f.polygons.map(p=><React.Fragment key={p.pin}><smtpad portHints={[`pin${p.pin}`]} shape="polygon" points={p.points.map(q=>({x:q.x,y:-q.y_down}))} solderMaskMargin={f.mask_margin} noSolderPaste/></React.Fragment>)}</footprint>
-}
+import { JlcBoardLands } from './jlc-board-lands'
+export const reviewedJlcParts = { DLA0010A: 'C2845237', RUK0020B: 'C2876380', DMQ0006A: 'C3189972', RPW0010A: 'C3662793' } as const
+// Compatibility export: catalog copper, not the historical TI mask/radius construction.
+// No paste is released. Manufacturing qualification remains separate.
+export function ReviewedLandV24({ kind }: { kind: keyof typeof reviewedJlcParts }) { return <JlcBoardLands part={reviewedJlcParts[kind]} /> }

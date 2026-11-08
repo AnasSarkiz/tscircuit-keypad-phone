@@ -1,0 +1,13 @@
+{
+  "smt_pads": 510,
+  "polygons": 4,
+  "different_net_overlaps": [],
+  "minimum_different_net_pad_spacing": {
+    "mm": 0.1900808999999981,
+    "pads": [
+      "pcb_smtpad_70",
+      "pcb_smtpad_73"
+    ]
+  },
+  "scope": "SMT pad copper and rectangular board bounds only; no traces, vias, holes, solder mask, body/courtyard or routed-board DRC"
+}

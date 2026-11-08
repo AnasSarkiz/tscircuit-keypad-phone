@@ -1,0 +1,7 @@
+{
+  "date_utc": "2026-11-08",
+  "base_commit": "1cdd7ca02a6546b9a68ac9fdde3ebd208e91b395",
+  "passed": ["npm run typecheck", "npm run check:pcb-inputs", "npm run test:board-imports", "npm run test:jlc-imports", "npm run check:public", "npm test", "npm run test:power", "git diff --check"],
+  "blocked": {"npm run test:modem-safety": "Courtyard TSX portion passes; historical Python stage cannot import absent engineering.modem_clearance", "routed_board": "Original engineering routing scripts and routed outputs absent"},
+  "scope": "Placement, source-net contracts and SMT-pad copper only. No routed-board or physical manufacturing qualification."
+}

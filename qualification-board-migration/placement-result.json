@@ -1,0 +1,13 @@
+{
+  "components": 139,
+  "placementMapEntries": 139,
+  "migrated": [
+    "U_MCU",
+    "U_MODEM_LOGICAL_ONLY",
+    "U_CC_PROTECT",
+    "U_USB_PROTECT"
+  ],
+  "mcuGroundPads": 9,
+  "pasteApertures": 0,
+  "scope": "Placement, physical pad anchors and source-net contracts only. No routed-board/ERC/DRC or manufacturing approval."
+}

@@ -51,7 +51,7 @@ The import test checks exact identities, all terminals and222 copper primitives,
 
 ## Remaining integration work
 
-The historical board still references three absent JSON sources. Those historical records were not replaced by invented data or relabeled catalog exports. Full-project typecheck and historical PCB-input checks remain blocked until the consuming board and independent placement tests are migrated together, accounting for origin, copper changes, clearances and routing.
+Follow-up migration now replaces the three active JSON consumers with actual imported copper while preserving component datums and logical nets. Full-project typecheck and active PCB-input checks pass. See [the migration checkpoint](../qualification-board-migration/README.md). Original historical sources/tests are retained; they were not replaced by invented JSON or relabeled catalog records. Routed-output requalification remains open.
 
 V66 routing and the enclosure are unchanged. There is no complete-board DRC, mask/stencil approval, model-fit approval or fabrication release. Battery/protection pulse capability and exact modem variant/carrier remain open.
 
