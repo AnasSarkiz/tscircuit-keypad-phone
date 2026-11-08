@@ -17,3 +17,11 @@ Local mitigation: all review adapters explicitly suppress paste. Do not remove t
 ## Not converter defects
 
 Exact-source comparison across all47 TI copper pads confirms the generated geometry is faithful:43 rectangles and four polygons preserve the catalog coordinates/dimensions under one translation and Y inversion per part. The TPS25947 polygon vertices match to floating-point tolerance below1.1e-13 mm. Catalog SBU typos and cross-variant aliases are also already present in the source symbols. They are corrected in the local review adapters without changing downloaded imports. The MCU's approximately0.03 mm bottom-row asymmetry is similarly present in catalog data.
+
+## Existing upstream stack verified against this phone part (2026-11-08)
+
+Do not open a duplicate report. User-authored [easyeda-converter PR612](https://github.com/tscircuit/easyeda-converter/pull/612) is an open draft stacked on [reproduction PR611](https://github.com/tscircuit/easyeda-converter/pull/611), which currently reports conflicts. Focused C2876380 reproduction against current converter main9d377ea2 produces0 paste apertures and21 copper pads. PR612 heada70bb8f3 produces all21 paste polygons and21 copper pads, with all84 vertices matching the supplier transform within2.28e-13 mm; EP aperture remains1.36000744 mm square.
+
+[props PR955](https://github.com/tscircuit/props/pull/955) and [core PR4865](https://github.com/tscircuit/core/pull/4865) were closed unmerged by stale bots. Their functionality is not superseded in current main: solderpaste still supports rect/circle rather than polygon, and footprint-level paste suppression is absent. Installed props0.0.718 rejects the polygon output. Therefore converter-only publication is insufficient. The appropriate general fix is to refresh and test the existing dependency stack, not add another PR.
+
+This is source-conversion evidence only. Native rendering and Gerber/stencil export of the complete stack remain unverified. The phone's no-paste guards stay in place. No upstream branches, PR statuses or merges were changed during this investigation.

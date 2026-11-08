@@ -1,0 +1,1050 @@
+{
+  "placed_net_islands": {
+    "GND": [
+      [
+        "U_CC_PROTECT.pin21",
+        "U_CC_PROTECT.pin20",
+        "U_CC_PROTECT.pin19",
+        "U_CC_PROTECT.pin18",
+        "U_CC_PROTECT.pin17",
+        "U_CC_PROTECT.pin16",
+        "U_CC_PROTECT.pin13",
+        "U_CC_PROTECT.pin8",
+        "C_CC_VBIAS.pin2",
+        "C_CC_PROTECT.pin2",
+        "R_USB_SENSE_BOTTOM.pin2",
+        "C_USB_SENSE.pin2",
+        "U_USB_POR.pin2",
+        "C_USB_POR.pin2",
+        "U_USB_AUX.pin2",
+        "U_USB_3A.pin3",
+        "C_USB_AUX_IN.pin2",
+        "C_USB_AUX_OUT.pin2",
+        "C_USB_3A.pin2",
+        "U_USB_PROTECT.pin8",
+        "R_USB_OFF.pin2",
+        "R_USB_OV_BOTTOM.pin2",
+        "R_USB_ILM.pin2",
+        "C_USB_DVDT.pin2",
+        "C_USB_RAW.pin2",
+        "U_TX.pin2",
+        "C_A_TX.pin2",
+        "C_B_TX.pin2",
+        "U_RX.pin2",
+        "U_RX.pin5",
+        "C_A_RX.pin2",
+        "C_B_RX.pin2",
+        "U_RTS.pin2",
+        "C_A_RTS.pin2",
+        "C_B_RTS.pin2",
+        "U_CTS.pin2",
+        "U_CTS.pin5",
+        "C_A_CTS.pin2",
+        "C_B_CTS.pin2",
+        "U_STATUS.pin2",
+        "U_STATUS.pin5",
+        "C_A_STATUS.pin2",
+        "C_B_STATUS.pin2",
+        "U_MODEM_LOGICAL_ONLY.pin3",
+        "U_MODEM_LOGICAL_ONLY.pin31",
+        "U_MODEM_LOGICAL_ONLY.pin47",
+        "U_MODEM_LOGICAL_ONLY.pin48",
+        "U_MODEM_LOGICAL_ONLY.pin50",
+        "U_MODEM_LOGICAL_ONLY.pin54",
+        "U_MODEM_LOGICAL_ONLY.pin55",
+        "U_MODEM_LOGICAL_ONLY.pin58",
+        "U_MODEM_LOGICAL_ONLY.pin59",
+        "U_MODEM_LOGICAL_ONLY.pin61",
+        "U_MODEM_LOGICAL_ONLY.pin62",
+        "U_MODEM_LOGICAL_ONLY.pin79",
+        "U_MODEM_LOGICAL_ONLY.pin80",
+        "U_MODEM_LOGICAL_ONLY.pin81",
+        "U_MODEM_LOGICAL_ONLY.pin82",
+        "U_MODEM_LOGICAL_ONLY.pin67",
+        "U_MODEM_LOGICAL_ONLY.pin68",
+        "U_MODEM_LOGICAL_ONLY.pin69",
+        "U_MODEM_LOGICAL_ONLY.pin70",
+        "U_MODEM_LOGICAL_ONLY.pin71",
+        "U_MODEM_LOGICAL_ONLY.pin72",
+        "U_MODEM_LOGICAL_ONLY.pin73",
+        "U_MODEM_LOGICAL_ONLY.pin74",
+        "U_MODEM_LOGICAL_ONLY.pin100",
+        "U_MODEM_LOGICAL_ONLY.pin101",
+        "U_MODEM_LOGICAL_ONLY.pin102",
+        "U_MODEM_LOGICAL_ONLY.pin89",
+        "U_MODEM_LOGICAL_ONLY.pin90",
+        "U_MODEM_LOGICAL_ONLY.pin91",
+        "C_MODEM_VDD_EXT.pin2",
+        "U_MODEM_KEY_BUF.pin3",
+        "Q_MODEM_KEY.pin2",
+        "R_MODEM_KEY_INPUT_OFF.pin2",
+        "R_MODEM_KEY_GATE_OFF.pin2",
+        "C_MODEM_KEY_BUF.pin2",
+        "U_MODEM_RESET_BUF.pin3",
+        "Q_MODEM_RESET.pin2",
+        "R_MODEM_RESET_INPUT_OFF.pin2",
+        "R_MODEM_RESET_GATE_OFF.pin2",
+        "C_MODEM_RESET_BUF.pin2",
+        "C_SIM_RST.pin2",
+        "C_SIM_CLK.pin2",
+        "C_SIM_DATA.pin2",
+        "C_SIM_VDD.pin2",
+        "U_SIM_ESD.pin3",
+        "J_SIM_CANDIDATE.pin5",
+        "U_MCU.pin1",
+        "U_MCU.pin40",
+        "U_MCU.pin41",
+        "U_MCU.pin41",
+        "U_MCU.pin41",
+        "U_MCU.pin41",
+        "U_MCU.pin41",
+        "U_MCU.pin41",
+        "U_MCU.pin41",
+        "U_MCU.pin41",
+        "U_MCU.pin41",
+        "C_MCU_EN.pin2",
+        "C_MCU_BULK.pin2",
+        "C_MCU_HF.pin2",
+        "TP_GND.pin1",
+        "R_BACKLIGHT_OFF.pin2",
+        "R_LCD_RST.pin1",
+        "R_CHARGE_REQUEST_OFF.pin2",
+        "R_BUTTON_KILL_OFF.pin2",
+        "Q_BUTTON_KILL.pin2",
+        "U_BUTTON_BRANCH.pin4",
+        "C_BUTTON_BYPASS.pin2",
+        "C_BUTTON_PDT.pin2",
+        "R_BUTTON_EN_DOWN.pin2",
+        "U_BUTTON_EN_BUFFER.pin3",
+        "C_BUTTON_BUFFER.pin2",
+        "R_EN_OFF.pin2",
+        "R_TEMP_COLD_GATE.pin2",
+        "R_TEMP_HOT_GATE.pin2",
+        "R_TEMP_REQUEST_OFF.pin2",
+        "Q_TEMP_REQUEST.pin2",
+        "R_TEMP_COLD_BOTTOM.pin2",
+        "R_TEMP_HOT_BOTTOM.pin2",
+        "U_TEMP.pin4",
+        "C_TEMP.pin2",
+        "R_CHG_TS_TRIM.pin2",
+        "U_CHARGE_POR.pin2",
+        "R_CHARGE_SENSE_BOTTOM.pin2",
+        "C_CHARGE_SENSE.pin2",
+        "C_CHARGE_POR.pin2",
+        "SW3.pin2",
+        "SW3.pin2",
+        "SW3.pin2",
+        "SW3.pin2",
+        "SW3.pin2",
+        "SW3.pin2",
+        "SW3.pin2",
+        "SW3.pin2"
+      ]
+    ],
+    "USB_CC1_PROTECTED_PENDING": [
+      [
+        "U_CC_PROTECT.pin12"
+      ]
+    ],
+    "USB_CC2_PROTECTED_PENDING": [
+      [
+        "U_CC_PROTECT.pin11"
+      ]
+    ],
+    "USB_AUX3V3_PENDING": [
+      [
+        "U_CC_PROTECT.pin10",
+        "C_CC_PROTECT.pin1",
+        "R_CC_FAULT.pin1",
+        "R_USB_SENSE_TOP.pin1",
+        "U_USB_POR.pin6",
+        "C_USB_POR.pin1",
+        "R_USB_POR_CT.pin1",
+        "U_USB_AUX.pin5",
+        "U_USB_3A.pin5",
+        "C_USB_AUX_OUT.pin1",
+        "C_USB_3A.pin1",
+        "R_CC_OUT1.pin1",
+        "R_CC_OUT2.pin1",
+        "R_USB_FAULT.pin1"
+      ]
+    ],
+    "USB_CC_FAULT_N": [
+      [
+        "U_CC_PROTECT.pin9",
+        "R_CC_FAULT.pin2",
+        "U_USB_POR.pin3"
+      ]
+    ],
+    "USB_CC1_RAW": [
+      [
+        "U_CC_PROTECT.pin7",
+        "U_CC_PROTECT.pin4"
+      ]
+    ],
+    "USB_CC2_RAW": [
+      [
+        "U_CC_PROTECT.pin6",
+        "U_CC_PROTECT.pin5"
+      ]
+    ],
+    "USB_CC_VBIAS": [
+      [
+        "U_CC_PROTECT.pin3",
+        "C_CC_VBIAS.pin1"
+      ]
+    ],
+    "USB_POR_SENSE": [
+      [
+        "R_USB_SENSE_TOP.pin2",
+        "R_USB_SENSE_BOTTOM.pin1",
+        "C_USB_SENSE.pin1",
+        "U_USB_POR.pin5"
+      ]
+    ],
+    "USB_3A_ENABLE_PENDING": [
+      [
+        "U_USB_POR.pin1",
+        "R_USB_3A_DRIVE.pin2",
+        "U_USB_PROTECT.pin1",
+        "R_USB_OFF.pin1"
+      ]
+    ],
+    "USB_POR_CT": [
+      [
+        "U_USB_POR.pin4",
+        "R_USB_POR_CT.pin2"
+      ]
+    ],
+    "USB_VBUS_RAW": [
+      [
+        "U_USB_AUX.pin1",
+        "C_USB_AUX_IN.pin1",
+        "U_USB_PROTECT.pin5",
+        "R_USB_OV_TOP.pin1",
+        "C_USB_RAW.pin1"
+      ]
+    ],
+    "CC_OUT1": [
+      [
+        "U_USB_3A.pin1",
+        "R_CC_OUT1.pin2"
+      ]
+    ],
+    "CC_OUT2": [
+      [
+        "U_USB_3A.pin2",
+        "R_CC_OUT2.pin2"
+      ]
+    ],
+    "USB_3A_LOGIC": [
+      [
+        "U_USB_3A.pin4",
+        "R_USB_3A_DRIVE.pin1"
+      ]
+    ],
+    "USB_FAULT_N": [
+      [
+        "U_USB_PROTECT.pin4",
+        "R_USB_FAULT.pin2"
+      ]
+    ],
+    "USB_DVDT": [
+      [
+        "U_USB_PROTECT.pin7",
+        "C_USB_DVDT.pin1"
+      ]
+    ],
+    "USB_5V_QUALIFIED": [
+      [
+        "U_USB_PROTECT.pin6"
+      ]
+    ],
+    "USB_OVLO": [
+      [
+        "U_USB_PROTECT.pin2",
+        "R_USB_OV_TOP.pin2",
+        "R_USB_OV_BOTTOM.pin1"
+      ]
+    ],
+    "USB_ILM": [
+      [
+        "U_USB_PROTECT.pin9",
+        "R_USB_ILM.pin1"
+      ]
+    ],
+    "VLOGIC_3V15": [
+      [
+        "U_TX.pin1",
+        "U_TX.pin5",
+        "C_A_TX.pin1",
+        "R_IDLE_TX.pin1",
+        "U_RX.pin1",
+        "C_A_RX.pin1",
+        "U_RTS.pin1",
+        "U_RTS.pin5",
+        "C_A_RTS.pin1",
+        "R_IDLE_RTS.pin1",
+        "U_CTS.pin1",
+        "C_A_CTS.pin1",
+        "U_STATUS.pin1",
+        "C_A_STATUS.pin1",
+        "U_MODEM_KEY_BUF.pin5",
+        "C_MODEM_KEY_BUF.pin1",
+        "U_MODEM_RESET_BUF.pin5",
+        "C_MODEM_RESET_BUF.pin1",
+        "U_MCU.pin2",
+        "R_MCU_MCU_EN.pin1",
+        "R_MCU_MCU_BOOT_N.pin1",
+        "C_MCU_BULK.pin1",
+        "C_MCU_HF.pin1",
+        "TP_VREF.pin1",
+        "R_MCU_LCD_CS_N.pin1",
+        "R_MCU_COL0.pin1",
+        "R_MCU_COL1.pin1",
+        "R_MCU_COL2.pin1",
+        "R_LCD_CS.pin1",
+        "R_BUTTON_INT_UP.pin1",
+        "R_BUTTON_KILL_UP.pin1",
+        "U_CHARGE_POR.pin6",
+        "R_CHARGE_READY_PULLUP.pin1",
+        "R_CHARGE_CT.pin1",
+        "C_CHARGE_POR.pin1"
+      ]
+    ],
+    "HOST_TX": [
+      [
+        "U_TX.pin3",
+        "R_IDLE_TX.pin2",
+        "U_MCU.pin10"
+      ]
+    ],
+    "MODEM_RX": [
+      [
+        "U_TX.pin4",
+        "U_MODEM_LOGICAL_ONLY.pin34"
+      ]
+    ],
+    "MODEM_VDD_EXT_1V8": [
+      [
+        "U_TX.pin6",
+        "C_B_TX.pin1",
+        "U_RX.pin6",
+        "C_B_RX.pin1",
+        "R_IDLE_RX.pin1",
+        "U_RTS.pin6",
+        "C_B_RTS.pin1",
+        "U_CTS.pin6",
+        "C_B_CTS.pin1",
+        "R_IDLE_CTS.pin1",
+        "U_STATUS.pin6",
+        "C_B_STATUS.pin1",
+        "R_IDLE_STATUS.pin1",
+        "U_MODEM_LOGICAL_ONLY.pin29",
+        "C_MODEM_VDD_EXT.pin1"
+      ]
+    ],
+    "HOST_RX": [
+      [
+        "U_RX.pin3",
+        "U_MCU.pin11"
+      ]
+    ],
+    "MODEM_TX": [
+      [
+        "U_RX.pin4",
+        "R_IDLE_RX.pin2",
+        "U_MODEM_LOGICAL_ONLY.pin35"
+      ]
+    ],
+    "HOST_RTS": [
+      [
+        "U_RTS.pin3",
+        "R_IDLE_RTS.pin2",
+        "U_MCU.pin8"
+      ]
+    ],
+    "MODEM_RTS": [
+      [
+        "U_RTS.pin4",
+        "U_MODEM_LOGICAL_ONLY.pin37"
+      ]
+    ],
+    "HOST_CTS": [
+      [
+        "U_CTS.pin3",
+        "U_MCU.pin9"
+      ]
+    ],
+    "MODEM_CTS": [
+      [
+        "U_CTS.pin4",
+        "R_IDLE_CTS.pin2",
+        "U_MODEM_LOGICAL_ONLY.pin36"
+      ]
+    ],
+    "MODEM_STATUS_HOST_PENDING": [
+      [
+        "U_STATUS.pin3",
+        "U_MCU.pin38"
+      ]
+    ],
+    "MODEM_STATUS": [
+      [
+        "U_STATUS.pin4",
+        "R_IDLE_STATUS.pin2",
+        "U_MODEM_LOGICAL_ONLY.pin20"
+      ]
+    ],
+    "MODEM_PWRKEY_OD": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin15",
+        "Q_MODEM_KEY.pin3"
+      ]
+    ],
+    "MODEM_RESET_OD": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin17",
+        "Q_MODEM_RESET.pin3"
+      ]
+    ],
+    "MODEM_BB_SUPPLY_UNQUALIFIED": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin32"
+      ],
+      [
+        "U_MODEM_LOGICAL_ONLY.pin33"
+      ]
+    ],
+    "USIM1_VDD_PENDING": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin43",
+        "C_SIM_VDD.pin1",
+        "U_SIM_ESD.pin5",
+        "J_SIM_CANDIDATE.pin1"
+      ]
+    ],
+    "USIM1_RST_MODEM_PENDING": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin44",
+        "R_SIM_RST.pin1"
+      ]
+    ],
+    "USIM1_DATA_MODEM_PENDING": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin45",
+        "R_SIM_DATA.pin1"
+      ]
+    ],
+    "USIM1_CLK_MODEM_PENDING": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin46",
+        "R_SIM_CLK.pin1"
+      ]
+    ],
+    "MODEM_RF_SUPPLY_UNQUALIFIED": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin52"
+      ],
+      [
+        "U_MODEM_LOGICAL_ONLY.pin53"
+      ]
+    ],
+    "ANT_MAIN_MATCH_IN_PENDING": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin60"
+      ]
+    ],
+    "MODEM_MIC_P_PENDING": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin126"
+      ]
+    ],
+    "MODEM_MIC_N_PENDING": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin119"
+      ]
+    ],
+    "MODEM_MICBIAS_PENDING": [
+      [
+        "U_MODEM_LOGICAL_ONLY.pin120"
+      ]
+    ],
+    "ON_OFF_MCU": [
+      [
+        "U_MODEM_KEY_BUF.pin2",
+        "R_MODEM_KEY_INPUT_OFF.pin1",
+        "U_MCU.pin28"
+      ]
+    ],
+    "MODEM_KEY_GATE": [
+      [
+        "U_MODEM_KEY_BUF.pin4",
+        "Q_MODEM_KEY.pin1",
+        "R_MODEM_KEY_GATE_OFF.pin1"
+      ]
+    ],
+    "RESET_MCU": [
+      [
+        "U_MODEM_RESET_BUF.pin2",
+        "R_MODEM_RESET_INPUT_OFF.pin1",
+        "U_MCU.pin29"
+      ]
+    ],
+    "MODEM_RESET_GATE": [
+      [
+        "U_MODEM_RESET_BUF.pin4",
+        "Q_MODEM_RESET.pin1",
+        "R_MODEM_RESET_GATE_OFF.pin1"
+      ]
+    ],
+    "USIM1_RST_SOCKET_PENDING": [
+      [
+        "R_SIM_RST.pin2",
+        "C_SIM_RST.pin1",
+        "U_SIM_ESD.pin1",
+        "J_SIM_CANDIDATE.pin2"
+      ]
+    ],
+    "USIM1_CLK_SOCKET_PENDING": [
+      [
+        "R_SIM_CLK.pin2",
+        "C_SIM_CLK.pin1",
+        "U_SIM_ESD.pin2",
+        "J_SIM_CANDIDATE.pin3"
+      ]
+    ],
+    "USIM1_DATA_SOCKET_PENDING": [
+      [
+        "R_SIM_DATA.pin2",
+        "C_SIM_DATA.pin1",
+        "U_SIM_ESD.pin4",
+        "J_SIM_CANDIDATE.pin7"
+      ]
+    ],
+    "MCU_EN": [
+      [
+        "U_MCU.pin3",
+        "R_MCU_MCU_EN.pin2",
+        "C_MCU_EN.pin1",
+        "TP_EN.pin1",
+        "U_CHARGE_POR.pin3"
+      ]
+    ],
+    "ROW0": [
+      [
+        "U_MCU.pin5",
+        "SW1.pin1",
+        "SW1.pin1",
+        "SW1.pin1",
+        "SW1.pin1",
+        "SW1.pin1",
+        "SW1.pin1",
+        "SW1.pin1",
+        "SW1.pin1",
+        "SW2.pin1",
+        "SW2.pin1",
+        "SW2.pin1",
+        "SW2.pin1",
+        "SW2.pin1",
+        "SW2.pin1",
+        "SW2.pin1",
+        "SW2.pin1"
+      ]
+    ],
+    "ROW1": [
+      [
+        "U_MCU.pin6",
+        "SW4.pin1",
+        "SW4.pin1",
+        "SW4.pin1",
+        "SW4.pin1",
+        "SW4.pin1",
+        "SW4.pin1",
+        "SW4.pin1",
+        "SW4.pin1",
+        "SW5.pin1",
+        "SW5.pin1",
+        "SW5.pin1",
+        "SW5.pin1",
+        "SW5.pin1",
+        "SW5.pin1",
+        "SW5.pin1",
+        "SW5.pin1",
+        "SW6.pin1",
+        "SW6.pin1",
+        "SW6.pin1",
+        "SW6.pin1",
+        "SW6.pin1",
+        "SW6.pin1",
+        "SW6.pin1",
+        "SW6.pin1"
+      ]
+    ],
+    "ROW2": [
+      [
+        "U_MCU.pin7",
+        "SW7.pin1",
+        "SW7.pin1",
+        "SW7.pin1",
+        "SW7.pin1",
+        "SW7.pin1",
+        "SW7.pin1",
+        "SW7.pin1",
+        "SW7.pin1",
+        "SW8.pin1",
+        "SW8.pin1",
+        "SW8.pin1",
+        "SW8.pin1",
+        "SW8.pin1",
+        "SW8.pin1",
+        "SW8.pin1",
+        "SW8.pin1",
+        "SW9.pin1",
+        "SW9.pin1",
+        "SW9.pin1",
+        "SW9.pin1",
+        "SW9.pin1",
+        "SW9.pin1",
+        "SW9.pin1",
+        "SW9.pin1"
+      ]
+    ],
+    "ROW3": [
+      [
+        "U_MCU.pin12",
+        "SW10.pin1",
+        "SW10.pin1",
+        "SW10.pin1",
+        "SW10.pin1",
+        "SW10.pin1",
+        "SW10.pin1",
+        "SW10.pin1",
+        "SW10.pin1",
+        "SW11.pin1",
+        "SW11.pin1",
+        "SW11.pin1",
+        "SW11.pin1",
+        "SW11.pin1",
+        "SW11.pin1",
+        "SW11.pin1",
+        "SW11.pin1",
+        "SW12.pin1",
+        "SW12.pin1",
+        "SW12.pin1",
+        "SW12.pin1",
+        "SW12.pin1",
+        "SW12.pin1",
+        "SW12.pin1",
+        "SW12.pin1"
+      ]
+    ],
+    "ROW4": [
+      [
+        "U_MCU.pin17",
+        "SW13.pin1",
+        "SW13.pin1",
+        "SW13.pin1",
+        "SW13.pin1",
+        "SW13.pin1",
+        "SW13.pin1",
+        "SW13.pin1",
+        "SW13.pin1",
+        "SW14.pin1",
+        "SW14.pin1",
+        "SW14.pin1",
+        "SW14.pin1",
+        "SW14.pin1",
+        "SW14.pin1",
+        "SW14.pin1",
+        "SW14.pin1",
+        "SW15.pin1",
+        "SW15.pin1",
+        "SW15.pin1",
+        "SW15.pin1",
+        "SW15.pin1",
+        "SW15.pin1",
+        "SW15.pin1",
+        "SW15.pin1"
+      ]
+    ],
+    "COL0": [
+      [
+        "U_MCU.pin18",
+        "R_MCU_COL0.pin2",
+        "SW1.pin2",
+        "SW1.pin2",
+        "SW1.pin2",
+        "SW1.pin2",
+        "SW1.pin2",
+        "SW1.pin2",
+        "SW1.pin2",
+        "SW1.pin2",
+        "SW4.pin2",
+        "SW4.pin2",
+        "SW4.pin2",
+        "SW4.pin2",
+        "SW4.pin2",
+        "SW4.pin2",
+        "SW4.pin2",
+        "SW4.pin2",
+        "SW7.pin2",
+        "SW7.pin2",
+        "SW7.pin2",
+        "SW7.pin2",
+        "SW7.pin2",
+        "SW7.pin2",
+        "SW7.pin2",
+        "SW7.pin2",
+        "SW10.pin2",
+        "SW10.pin2",
+        "SW10.pin2",
+        "SW10.pin2",
+        "SW10.pin2",
+        "SW10.pin2",
+        "SW10.pin2",
+        "SW10.pin2",
+        "SW13.pin2",
+        "SW13.pin2",
+        "SW13.pin2",
+        "SW13.pin2",
+        "SW13.pin2",
+        "SW13.pin2",
+        "SW13.pin2",
+        "SW13.pin2"
+      ]
+    ],
+    "LCD_SDIO": [
+      [
+        "U_MCU.pin19"
+      ]
+    ],
+    "LCD_SCL": [
+      [
+        "U_MCU.pin20"
+      ]
+    ],
+    "COL1": [
+      [
+        "U_MCU.pin21",
+        "R_MCU_COL1.pin2",
+        "SW2.pin2",
+        "SW2.pin2",
+        "SW2.pin2",
+        "SW2.pin2",
+        "SW2.pin2",
+        "SW2.pin2",
+        "SW2.pin2",
+        "SW2.pin2",
+        "SW5.pin2",
+        "SW5.pin2",
+        "SW5.pin2",
+        "SW5.pin2",
+        "SW5.pin2",
+        "SW5.pin2",
+        "SW5.pin2",
+        "SW5.pin2",
+        "SW8.pin2",
+        "SW8.pin2",
+        "SW8.pin2",
+        "SW8.pin2",
+        "SW8.pin2",
+        "SW8.pin2",
+        "SW8.pin2",
+        "SW8.pin2",
+        "SW11.pin2",
+        "SW11.pin2",
+        "SW11.pin2",
+        "SW11.pin2",
+        "SW11.pin2",
+        "SW11.pin2",
+        "SW11.pin2",
+        "SW11.pin2",
+        "SW14.pin2",
+        "SW14.pin2",
+        "SW14.pin2",
+        "SW14.pin2",
+        "SW14.pin2",
+        "SW14.pin2",
+        "SW14.pin2",
+        "SW14.pin2"
+      ]
+    ],
+    "COL2": [
+      [
+        "U_MCU.pin22",
+        "R_MCU_COL2.pin2",
+        "SW6.pin2",
+        "SW6.pin2",
+        "SW6.pin2",
+        "SW6.pin2",
+        "SW6.pin2",
+        "SW6.pin2",
+        "SW6.pin2",
+        "SW6.pin2",
+        "SW9.pin2",
+        "SW9.pin2",
+        "SW9.pin2",
+        "SW9.pin2",
+        "SW9.pin2",
+        "SW9.pin2",
+        "SW9.pin2",
+        "SW9.pin2",
+        "SW12.pin2",
+        "SW12.pin2",
+        "SW12.pin2",
+        "SW12.pin2",
+        "SW12.pin2",
+        "SW12.pin2",
+        "SW12.pin2",
+        "SW12.pin2",
+        "SW15.pin2",
+        "SW15.pin2",
+        "SW15.pin2",
+        "SW15.pin2",
+        "SW15.pin2",
+        "SW15.pin2",
+        "SW15.pin2",
+        "SW15.pin2"
+      ]
+    ],
+    "LCD_CS_N": [
+      [
+        "U_MCU.pin23",
+        "R_MCU_LCD_CS_N.pin2",
+        "R_LCD_CS.pin2"
+      ]
+    ],
+    "CHARGE_REQUEST_MCU": [
+      [
+        "U_MCU.pin24",
+        "R_CHARGE_REQUEST_OFF.pin1"
+      ]
+    ],
+    "SYSTEM_OFF_REQUEST": [
+      [
+        "U_MCU.pin25",
+        "R_BUTTON_KILL_OFF.pin1",
+        "Q_BUTTON_KILL.pin1"
+      ]
+    ],
+    "MCU_BOOT_N": [
+      [
+        "U_MCU.pin27",
+        "R_MCU_MCU_BOOT_N.pin2",
+        "TP_BOOT.pin1"
+      ]
+    ],
+    "LCD_RST_N": [
+      [
+        "U_MCU.pin31",
+        "R_LCD_RST.pin2"
+      ]
+    ],
+    "LCD_DC": [
+      [
+        "U_MCU.pin32"
+      ]
+    ],
+    "BACKLIGHT_PWM": [
+      [
+        "U_MCU.pin35",
+        "R_BACKLIGHT_OFF.pin1"
+      ]
+    ],
+    "DEBUG_RX_3V15": [
+      [
+        "U_MCU.pin36",
+        "TP_RX.pin1"
+      ]
+    ],
+    "DEBUG_TX_3V15": [
+      [
+        "U_MCU.pin37",
+        "TP_TX.pin1"
+      ]
+    ],
+    "BUTTON_INT_N": [
+      [
+        "U_MCU.pin39",
+        "R_BUTTON_INT_UP.pin2",
+        "U_BUTTON_BRANCH.pin5"
+      ]
+    ],
+    "BUTTON_KILL_BRANCH": [
+      [
+        "R_BUTTON_KILL_UP.pin2",
+        "Q_BUTTON_KILL.pin3",
+        "U_BUTTON_BRANCH.pin8"
+      ]
+    ],
+    "SYS_CANDIDATE": [
+      [
+        "U_BUTTON_BRANCH.pin1",
+        "C_BUTTON_BYPASS.pin1",
+        "R_BUTTON_EN_UP.pin1",
+        "U_BUTTON_EN_BUFFER.pin5",
+        "C_BUTTON_BUFFER.pin1"
+      ]
+    ],
+    "BUTTON_BRANCH_UNQUALIFIED": [
+      [
+        "U_BUTTON_BRANCH.pin2",
+        "SW3.pin1",
+        "SW3.pin1",
+        "SW3.pin1",
+        "SW3.pin1",
+        "SW3.pin1",
+        "SW3.pin1",
+        "SW3.pin1",
+        "SW3.pin1"
+      ]
+    ],
+    "BUTTON_ENABLE_RAW": [
+      [
+        "U_BUTTON_BRANCH.pin6",
+        "R_BUTTON_EN_UP.pin2",
+        "R_BUTTON_EN_DOWN.pin1",
+        "U_BUTTON_EN_BUFFER.pin2"
+      ]
+    ],
+    "BUTTON_PDT_BRANCH": [
+      [
+        "U_BUTTON_BRANCH.pin7",
+        "C_BUTTON_PDT.pin1"
+      ]
+    ],
+    "LOGIC_ENABLE": [
+      [
+        "U_BUTTON_EN_BUFFER.pin4",
+        "R_EN_OFF.pin1"
+      ]
+    ],
+    "TEMP_COLD_OK": [
+      [
+        "R_TEMP_COLD_GATE.pin1",
+        "Q_TEMP_COLD.pin1",
+        "R_TEMP_COLD_HYST.pin1",
+        "U_TEMP.pin1"
+      ]
+    ],
+    "TEMP_HOT_OK": [
+      [
+        "R_TEMP_HOT_GATE.pin1",
+        "Q_TEMP_HOT.pin1",
+        "R_TEMP_HOT_HYST.pin1",
+        "U_TEMP.pin7"
+      ]
+    ],
+    "CHARGE_REQUEST_QUALIFIED_PENDING": [
+      [
+        "R_TEMP_REQUEST_OFF.pin1",
+        "Q_TEMP_REQUEST.pin1"
+      ]
+    ],
+    "CE_MID1": [
+      [
+        "Q_TEMP_COLD.pin2",
+        "Q_TEMP_HOT.pin3"
+      ]
+    ],
+    "CHARGE_DISABLE": [
+      [
+        "Q_TEMP_COLD.pin3"
+      ]
+    ],
+    "CE_MID2": [
+      [
+        "Q_TEMP_HOT.pin2",
+        "Q_TEMP_REQUEST.pin3"
+      ]
+    ],
+    "CHG_REGN": [
+      [
+        "R_TEMP_COLD_TOP.pin1",
+        "R_TEMP_HOT_TOP.pin1",
+        "U_TEMP.pin8",
+        "C_TEMP.pin1",
+        "R_CHG_TS_TOP.pin1",
+        "R_CHARGE_SENSE_TOP.pin1"
+      ]
+    ],
+    "TEMP_COLD_REF": [
+      [
+        "R_TEMP_COLD_TOP.pin2",
+        "R_TEMP_COLD_BOTTOM.pin1",
+        "R_TEMP_COLD_HYST.pin2",
+        "U_TEMP.pin3"
+      ]
+    ],
+    "TEMP_HOT_REF": [
+      [
+        "R_TEMP_HOT_TOP.pin2",
+        "R_TEMP_HOT_BOTTOM.pin1",
+        "U_TEMP.pin6"
+      ]
+    ],
+    "BAT_NTC": [
+      [
+        "R_TEMP_HOT_INPUT.pin1",
+        "U_TEMP.pin2",
+        "R_CHG_TS_TOP.pin2",
+        "R_CHG_TS_BOTTOM.pin1"
+      ]
+    ],
+    "TEMP_HOT_SENSE": [
+      [
+        "R_TEMP_HOT_INPUT.pin2",
+        "R_TEMP_HOT_HYST.pin2",
+        "U_TEMP.pin5"
+      ]
+    ],
+    "TS_SERIES": [
+      [
+        "R_CHG_TS_BOTTOM.pin2",
+        "R_CHG_TS_TRIM.pin1"
+      ]
+    ],
+    "CHARGE_REGN_READY": [
+      [
+        "U_CHARGE_POR.pin1",
+        "R_CHARGE_READY_PULLUP.pin2"
+      ]
+    ],
+    "CHARGE_POR_CT": [
+      [
+        "U_CHARGE_POR.pin4",
+        "R_CHARGE_CT.pin2"
+      ]
+    ],
+    "CHARGE_REGN_SENSE": [
+      [
+        "U_CHARGE_POR.pin5",
+        "R_CHARGE_SENSE_TOP.pin2",
+        "R_CHARGE_SENSE_BOTTOM.pin1",
+        "C_CHARGE_SENSE.pin1"
+      ]
+    ]
+  },
+  "minimum_foreign_copper_gap_mm": 0.14999999999999147,
+  "foreign_geometry_pairs_checked": 688889,
+  "via_count": 249,
+  "layer_count": 4,
+  "ground_plane_layer": "inner1",
+  "discarded_floating_plane_area_mm2": 0.1206168654589419,
+  "plane_area_mm2": 6967.670594111687,
+  "keypad_PTH_lands_integrated": 60,
+  "keypad_internal_common_pairs": 30,
+  "plane_components": 1,
+  "plane_minimum_neck_screen_mm": 0.2,
+  "plane_triangles_exported": 51633,
+  "all_placed_supply_and_ground_joined": true,
+  "release": false,
+  "unverified": [
+    "via fabrication/drill tolerance",
+    "thermal relief/process",
+    "plane impedance and EMI",
+    "unplaced bottom component lands",
+    "poweroff and transient behavior"
+  ]
+}

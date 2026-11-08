@@ -23,11 +23,19 @@ The three active footprint consumers now use these imports. `npm run typecheck` 
 
 Run `npm run test:board-imports` for the migrated modem/TI footprints, preserved modem courtyard, 139-component placement, mapped MCU ground lands, numbered-pin net contracts, and SMT-pad copper overlap/bounds checks. These checks produce circuit JSON/SVG and reports under `output/`. They do not run copper routing or inspect models. See [migration scope](qualification-board-migration/README.md).
 
-## Checks that remain unavailable
+## Recovered routing checks
 
-The complete routed-board and mechanical release are not recovered. The existing `check:board`, `check:current` and `check:placement` commands reference absent `engineering/` or historical scripts and are not a passing validation path. Historical Python integration tests also require absent manufacturer snapshots or routed outputs. Their assertions were not weakened or supplied fake inputs.
+Original V66 routing and modem-clearance sources have now been recovered and verified against the saved complete-history bundle. The unmodified routing checker reproduced its original results exactly in isolation. The current checker handles explicit internal terminal groups, and17 migration-related clearance violations were repaired without moving components or deleting routes.
 
-The last routed acceptance figures were V66: 133/210 components placed and186 open minimum joins. Those are historical results, not revalidated results of the new footprints. Component placement maps and logical nets are preserved, but catalog copper differs from the former manufacturer-derived lands, so any old route endpoints and clearance assumptions must be rechecked before reuse. Mask/stencil, exact modem/carrier compatibility, battery/protection pulses, charging interlocks, RF/audio and physical assembly remain open.
+Install the isolated geometry dependencies with `python3 -m venv .venv` and `.venv/bin/python -m pip install -r requirements-routing.txt`. Run `npm run check:current` for the recovered aggregate, or `.venv/bin/python scripts/check-current.py --negative` to include the full routing-mutation suite. `check:board` now runs the recovered layered-copper checker. `test:modem-safety` now passes its historical boundary checks using the hardened recovered module; it still does not validate every physical body in the complete board.
+
+The routed candidate retains539 routes,249 vias and95 historical copper islands. Coverage is freshly reproduced at133/210 electronic components placed,336/522 minimum joins completed and186 open. See [routing recovery](qualification-routing-recovery/README.md).
+
+## Checks that remain unavailable or unqualified
+
+Mechanical/model-fit and manufacturing acceptance are separate from recovered copper checks. `check:placement` intentionally requires an explicit verified-body placement file; no missing/unverified envelope is silently accepted. Historical Python integration tests may still require manufacturer snapshots or mechanical fixtures not restored into the public repository. `check:current` clearly defines its present scope and does not silently claim those historical mechanical/process stages passed.
+
+Mask/stencil approval, physical body clearances, stackup/impedance/thermal validation, exact modem/carrier compatibility, battery/protection pulses, charging interlocks, RF/audio and physical assembly remain open. The remaining186 minimum joins must still be completed and reviewed. No fabrication release is implied.
 
 ## Recovery validation (2026-11-07)
 

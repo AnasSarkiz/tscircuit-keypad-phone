@@ -1,0 +1,4457 @@
+{
+  "scope": "Current PowerIntegrated candidate only; includes unpopulated RF reserves and deliberately open design gates, excludes alternative circuits. Not a complete final phone netlist or hardware certification.",
+  "candidate_components": 216,
+  "electronic_candidate_components": 210,
+  "electronic_candidate_placed": 133,
+  "copper_only_test_features": 6,
+  "components_placed": 139,
+  "components_unplaced": [
+    "C_BACKLIGHT",
+    "C_BL_IN1",
+    "C_BL_IN2",
+    "C_BL_OUT1",
+    "C_BL_OUT2",
+    "C_BL_OUT3",
+    "C_BL_OUT4",
+    "C_CC",
+    "C_CHARGE_AND",
+    "C_CHG_BAT",
+    "C_CHG_BOOT",
+    "C_CHG_IN",
+    "C_CHG_PMID",
+    "C_CHG_REGN",
+    "C_CHG_SYS1",
+    "C_CHG_SYS2",
+    "C_IN_0",
+    "C_IN_1",
+    "C_LCD_IO",
+    "C_LCD_VDD",
+    "C_MIC_BIAS",
+    "C_MIC_N_AC",
+    "C_MIC_P_AC",
+    "C_MODEM_FF",
+    "C_MODEM_IN",
+    "C_MODEM_OUT1",
+    "C_MODEM_OUT2",
+    "C_OUT_0",
+    "C_OUT_1",
+    "C_OUT_2",
+    "C_OUT_3",
+    "C_VINA",
+    "J_LCD",
+    "L_BL",
+    "L_CHG",
+    "L_LOGIC",
+    "L_MODEM",
+    "NTC_EXTERNAL",
+    "RF_SHUNT_IN_DNP_RESERVE",
+    "RF_SHUNT_OUT_DNP_RESERVE",
+    "R_BACKLIGHT_SET",
+    "R_BL_BOTTOM",
+    "R_BL_DISABLE",
+    "R_BL_TOP",
+    "R_CC_NO_AUDIO_ACCESSORY",
+    "R_CC_SINK0",
+    "R_CC_SINK1",
+    "R_CC_SINK2",
+    "R_CC_VBUS",
+    "R_CHG_DISABLE",
+    "R_CHG_ICHG",
+    "R_CHG_ILIM",
+    "R_CHG_PG",
+    "R_CHG_STAT",
+    "R_CHG_VSET",
+    "R_FB_BOTTOM",
+    "R_FB_TOP",
+    "R_FB_TRIM",
+    "R_MIC_BIAS_BOTTOM",
+    "R_MIC_BIAS_N",
+    "R_MIC_BIAS_P",
+    "R_MIC_BIAS_TOP",
+    "R_MIC_N_SERIES",
+    "R_MIC_P_SERIES",
+    "R_MODEM_BOTTOM",
+    "R_MODEM_ENABLE",
+    "R_MODEM_PG",
+    "R_MODEM_TOP",
+    "R_PG",
+    "R_RF_SERIES_CANDIDATE",
+    "U_BACKLIGHT",
+    "U_BL_BOOST",
+    "U_CC",
+    "U_CHARGE_AND",
+    "U_CHG",
+    "U_LOGIC",
+    "U_MODEM_BUCK"
+  ],
+  "declared_connected_terminals": 654,
+  "minimum_joins_required": 522,
+  "minimum_joins_completed": 336,
+  "minimum_joins_open": 186,
+  "multi_terminal_nets": 131,
+  "complete_multi_terminal_nets": 64,
+  "unconnected_declared_ports": [
+    {
+      "reference": "U_USB_AUX",
+      "pin": 3,
+      "port_name": "EN_NC",
+      "source_port_id": "source_port_2",
+      "labels": [
+        "EN_NC",
+        "pin3",
+        "3"
+      ]
+    },
+    {
+      "reference": "U_USB_AUX",
+      "pin": 4,
+      "port_name": "NC",
+      "source_port_id": "source_port_3",
+      "labels": [
+        "NC",
+        "pin4",
+        "4"
+      ]
+    },
+    {
+      "reference": "U_CC_PROTECT",
+      "pin": 1,
+      "port_name": "C_SBU1_NC",
+      "source_port_id": "source_port_34",
+      "labels": [
+        "C_SBU1_NC",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "U_CC_PROTECT",
+      "pin": 2,
+      "port_name": "C_SBU2_NC",
+      "source_port_id": "source_port_35",
+      "labels": [
+        "C_SBU2_NC",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "U_CC_PROTECT",
+      "pin": 14,
+      "port_name": "SBU2_NC",
+      "source_port_id": "source_port_47",
+      "labels": [
+        "SBU2_NC",
+        "pin14",
+        "14"
+      ]
+    },
+    {
+      "reference": "U_CC_PROTECT",
+      "pin": 15,
+      "port_name": "SBU1_NC",
+      "source_port_id": "source_port_48",
+      "labels": [
+        "SBU1_NC",
+        "pin15",
+        "15"
+      ]
+    },
+    {
+      "reference": "U_CC",
+      "pin": 5,
+      "port_name": "ADDR_NC",
+      "source_port_id": "source_port_65",
+      "labels": [
+        "ADDR_NC",
+        "pin5",
+        "5"
+      ]
+    },
+    {
+      "reference": "U_CC",
+      "pin": 9,
+      "port_name": "ID_NC",
+      "source_port_id": "source_port_69",
+      "labels": [
+        "ID_NC",
+        "pin9",
+        "9"
+      ]
+    },
+    {
+      "reference": "U_USB_PROTECT",
+      "pin": 3,
+      "port_name": "AUXOFF_NC",
+      "source_port_id": "source_port_91",
+      "labels": [
+        "AUXOFF_NC",
+        "pin3",
+        "3"
+      ]
+    },
+    {
+      "reference": "U_USB_PROTECT",
+      "pin": 10,
+      "port_name": "ITIMER_NC",
+      "source_port_id": "source_port_98",
+      "labels": [
+        "ITIMER_NC",
+        "pin10",
+        "10"
+      ]
+    },
+    {
+      "reference": "U_CHG",
+      "pin": 2,
+      "port_name": "ACDRV",
+      "source_port_id": "source_port_114",
+      "labels": [
+        "ACDRV",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "U_CHG",
+      "pin": 3,
+      "port_name": "DP",
+      "source_port_id": "source_port_115",
+      "labels": [
+        "DP",
+        "pin3",
+        "3"
+      ]
+    },
+    {
+      "reference": "U_CHG",
+      "pin": 4,
+      "port_name": "DM",
+      "source_port_id": "source_port_116",
+      "labels": [
+        "DM",
+        "pin4",
+        "4"
+      ]
+    },
+    {
+      "reference": "U_BACKLIGHT",
+      "pin": 3,
+      "port_name": "LED3_UNUSED",
+      "source_port_id": "source_port_327",
+      "labels": [
+        "LED3_UNUSED",
+        "pin3",
+        "3"
+      ]
+    },
+    {
+      "reference": "U_BACKLIGHT",
+      "pin": 4,
+      "port_name": "LED4_UNUSED",
+      "source_port_id": "source_port_328",
+      "labels": [
+        "LED4_UNUSED",
+        "pin4",
+        "4"
+      ]
+    },
+    {
+      "reference": "J_LCD",
+      "pin": 12,
+      "port_name": "TE",
+      "source_port_id": "source_port_389",
+      "labels": [
+        "TE",
+        "pin12",
+        "12"
+      ]
+    },
+    {
+      "reference": "J_LCD",
+      "pin": 13,
+      "port_name": "NC13",
+      "source_port_id": "source_port_390",
+      "labels": [
+        "NC13",
+        "pin13",
+        "13"
+      ]
+    },
+    {
+      "reference": "J_LCD",
+      "pin": 14,
+      "port_name": "NC14",
+      "source_port_id": "source_port_391",
+      "labels": [
+        "NC14",
+        "pin14",
+        "14"
+      ]
+    },
+    {
+      "reference": "J_LCD",
+      "pin": 15,
+      "port_name": "NC15",
+      "source_port_id": "source_port_392",
+      "labels": [
+        "NC15",
+        "pin15",
+        "15"
+      ]
+    },
+    {
+      "reference": "J_LCD",
+      "pin": 16,
+      "port_name": "NC16",
+      "source_port_id": "source_port_393",
+      "labels": [
+        "NC16",
+        "pin16",
+        "16"
+      ]
+    },
+    {
+      "reference": "J_LCD",
+      "pin": 21,
+      "port_name": "NC21",
+      "source_port_id": "source_port_398",
+      "labels": [
+        "NC21",
+        "pin21",
+        "21"
+      ]
+    },
+    {
+      "reference": "J_LCD",
+      "pin": 22,
+      "port_name": "NC22",
+      "source_port_id": "source_port_399",
+      "labels": [
+        "NC22",
+        "pin22",
+        "22"
+      ]
+    },
+    {
+      "reference": "J_LCD",
+      "pin": 23,
+      "port_name": "NC23",
+      "source_port_id": "source_port_400",
+      "labels": [
+        "NC23",
+        "pin23",
+        "23"
+      ]
+    },
+    {
+      "reference": "J_LCD",
+      "pin": 24,
+      "port_name": "NC24",
+      "source_port_id": "source_port_401",
+      "labels": [
+        "NC24",
+        "pin24",
+        "24"
+      ]
+    },
+    {
+      "reference": "U_MCU",
+      "pin": 4,
+      "port_name": "IO4",
+      "source_port_id": "source_port_413",
+      "labels": [
+        "IO4",
+        "pin4",
+        "4"
+      ]
+    },
+    {
+      "reference": "U_MCU",
+      "pin": 13,
+      "port_name": "IO19",
+      "source_port_id": "source_port_422",
+      "labels": [
+        "IO19",
+        "pin13",
+        "13"
+      ]
+    },
+    {
+      "reference": "U_MCU",
+      "pin": 14,
+      "port_name": "IO20",
+      "source_port_id": "source_port_423",
+      "labels": [
+        "IO20",
+        "pin14",
+        "14"
+      ]
+    },
+    {
+      "reference": "U_MCU",
+      "pin": 15,
+      "port_name": "IO3",
+      "source_port_id": "source_port_424",
+      "labels": [
+        "IO3",
+        "pin15",
+        "15"
+      ]
+    },
+    {
+      "reference": "U_MCU",
+      "pin": 16,
+      "port_name": "IO46",
+      "source_port_id": "source_port_425",
+      "labels": [
+        "IO46",
+        "pin16",
+        "16"
+      ]
+    },
+    {
+      "reference": "U_MCU",
+      "pin": 26,
+      "port_name": "IO45",
+      "source_port_id": "source_port_435",
+      "labels": [
+        "IO45",
+        "pin26",
+        "26"
+      ]
+    },
+    {
+      "reference": "U_MCU",
+      "pin": 30,
+      "port_name": "IO37",
+      "source_port_id": "source_port_439",
+      "labels": [
+        "IO37",
+        "pin30",
+        "30"
+      ]
+    },
+    {
+      "reference": "U_MCU",
+      "pin": 33,
+      "port_name": "IO40",
+      "source_port_id": "source_port_442",
+      "labels": [
+        "IO40",
+        "pin33",
+        "33"
+      ]
+    },
+    {
+      "reference": "U_MCU",
+      "pin": 34,
+      "port_name": "IO41",
+      "source_port_id": "source_port_443",
+      "labels": [
+        "IO41",
+        "pin34",
+        "34"
+      ]
+    },
+    {
+      "reference": "J_SIM_CANDIDATE",
+      "pin": 6,
+      "port_name": "C6_VPP_NC",
+      "source_port_id": "source_port_492",
+      "labels": [
+        "C6_VPP_NC",
+        "pin6",
+        "6"
+      ]
+    },
+    {
+      "reference": "J_SIM_CANDIDATE",
+      "pin": 8,
+      "port_name": "MOUNT_L_NC",
+      "source_port_id": "source_port_494",
+      "labels": [
+        "MOUNT_L_NC",
+        "pin8",
+        "8"
+      ]
+    },
+    {
+      "reference": "J_SIM_CANDIDATE",
+      "pin": 9,
+      "port_name": "MOUNT_R_NC",
+      "source_port_id": "source_port_495",
+      "labels": [
+        "MOUNT_R_NC",
+        "pin9",
+        "9"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 1,
+      "port_name": "UNREVIEWED_1",
+      "source_port_id": "source_port_523",
+      "labels": [
+        "UNREVIEWED_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 2,
+      "port_name": "UNREVIEWED_2",
+      "source_port_id": "source_port_524",
+      "labels": [
+        "UNREVIEWED_2",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 4,
+      "port_name": "UNREVIEWED_4",
+      "source_port_id": "source_port_526",
+      "labels": [
+        "UNREVIEWED_4",
+        "pin4",
+        "4"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 5,
+      "port_name": "UNREVIEWED_5",
+      "source_port_id": "source_port_527",
+      "labels": [
+        "UNREVIEWED_5",
+        "pin5",
+        "5"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 6,
+      "port_name": "UNREVIEWED_6",
+      "source_port_id": "source_port_528",
+      "labels": [
+        "UNREVIEWED_6",
+        "pin6",
+        "6"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 7,
+      "port_name": "UNREVIEWED_7",
+      "source_port_id": "source_port_529",
+      "labels": [
+        "UNREVIEWED_7",
+        "pin7",
+        "7"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 8,
+      "port_name": "USB_VBUS",
+      "source_port_id": "source_port_530",
+      "labels": [
+        "USB_VBUS",
+        "pin8",
+        "8"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 9,
+      "port_name": "USB_DP",
+      "source_port_id": "source_port_531",
+      "labels": [
+        "USB_DP",
+        "pin9",
+        "9"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 10,
+      "port_name": "USB_DM",
+      "source_port_id": "source_port_532",
+      "labels": [
+        "USB_DM",
+        "pin10",
+        "10"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 11,
+      "port_name": "UNREVIEWED_11",
+      "source_port_id": "source_port_533",
+      "labels": [
+        "UNREVIEWED_11",
+        "pin11",
+        "11"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 12,
+      "port_name": "UNREVIEWED_12",
+      "source_port_id": "source_port_534",
+      "labels": [
+        "UNREVIEWED_12",
+        "pin12",
+        "12"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 13,
+      "port_name": "UNREVIEWED_13",
+      "source_port_id": "source_port_535",
+      "labels": [
+        "UNREVIEWED_13",
+        "pin13",
+        "13"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 14,
+      "port_name": "UNREVIEWED_14",
+      "source_port_id": "source_port_536",
+      "labels": [
+        "UNREVIEWED_14",
+        "pin14",
+        "14"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 16,
+      "port_name": "UNREVIEWED_16",
+      "source_port_id": "source_port_538",
+      "labels": [
+        "UNREVIEWED_16",
+        "pin16",
+        "16"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 18,
+      "port_name": "UNREVIEWED_18",
+      "source_port_id": "source_port_540",
+      "labels": [
+        "UNREVIEWED_18",
+        "pin18",
+        "18"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 19,
+      "port_name": "UNREVIEWED_19",
+      "source_port_id": "source_port_541",
+      "labels": [
+        "UNREVIEWED_19",
+        "pin19",
+        "19"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 21,
+      "port_name": "NET_STATUS",
+      "source_port_id": "source_port_543",
+      "labels": [
+        "NET_STATUS",
+        "pin21",
+        "21"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 22,
+      "port_name": "DBG_RXD",
+      "source_port_id": "source_port_544",
+      "labels": [
+        "DBG_RXD",
+        "pin22",
+        "22"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 23,
+      "port_name": "DBG_TXD",
+      "source_port_id": "source_port_545",
+      "labels": [
+        "DBG_TXD",
+        "pin23",
+        "23"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 24,
+      "port_name": "UNREVIEWED_24",
+      "source_port_id": "source_port_546",
+      "labels": [
+        "UNREVIEWED_24",
+        "pin24",
+        "24"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 25,
+      "port_name": "UNREVIEWED_25",
+      "source_port_id": "source_port_547",
+      "labels": [
+        "UNREVIEWED_25",
+        "pin25",
+        "25"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 26,
+      "port_name": "UNREVIEWED_26",
+      "source_port_id": "source_port_548",
+      "labels": [
+        "UNREVIEWED_26",
+        "pin26",
+        "26"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 27,
+      "port_name": "UNREVIEWED_27",
+      "source_port_id": "source_port_549",
+      "labels": [
+        "UNREVIEWED_27",
+        "pin27",
+        "27"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 28,
+      "port_name": "UNREVIEWED_28",
+      "source_port_id": "source_port_550",
+      "labels": [
+        "UNREVIEWED_28",
+        "pin28",
+        "28"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 30,
+      "port_name": "DTR_UNVERIFIED",
+      "source_port_id": "source_port_552",
+      "labels": [
+        "DTR_UNVERIFIED",
+        "pin30",
+        "30"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 38,
+      "port_name": "UNREVIEWED_38",
+      "source_port_id": "source_port_560",
+      "labels": [
+        "UNREVIEWED_38",
+        "pin38",
+        "38"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 39,
+      "port_name": "RI_UNVERIFIED",
+      "source_port_id": "source_port_561",
+      "labels": [
+        "RI_UNVERIFIED",
+        "pin39",
+        "39"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 40,
+      "port_name": "UNREVIEWED_40",
+      "source_port_id": "source_port_562",
+      "labels": [
+        "UNREVIEWED_40",
+        "pin40",
+        "40"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 41,
+      "port_name": "UNREVIEWED_41",
+      "source_port_id": "source_port_563",
+      "labels": [
+        "UNREVIEWED_41",
+        "pin41",
+        "41"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 42,
+      "port_name": "SIM_DET",
+      "source_port_id": "source_port_564",
+      "labels": [
+        "SIM_DET",
+        "pin42",
+        "42"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 49,
+      "port_name": "UNREVIEWED_49",
+      "source_port_id": "source_port_571",
+      "labels": [
+        "UNREVIEWED_49",
+        "pin49",
+        "49"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 51,
+      "port_name": "UNREVIEWED_51",
+      "source_port_id": "source_port_573",
+      "labels": [
+        "UNREVIEWED_51",
+        "pin51",
+        "51"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 56,
+      "port_name": "UNREVIEWED_56",
+      "source_port_id": "source_port_578",
+      "labels": [
+        "UNREVIEWED_56",
+        "pin56",
+        "56"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 57,
+      "port_name": "UNREVIEWED_57",
+      "source_port_id": "source_port_579",
+      "labels": [
+        "UNREVIEWED_57",
+        "pin57",
+        "57"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 63,
+      "port_name": "UNREVIEWED_63",
+      "source_port_id": "source_port_585",
+      "labels": [
+        "UNREVIEWED_63",
+        "pin63",
+        "63"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 64,
+      "port_name": "UNREVIEWED_64",
+      "source_port_id": "source_port_586",
+      "labels": [
+        "UNREVIEWED_64",
+        "pin64",
+        "64"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 65,
+      "port_name": "UNREVIEWED_65",
+      "source_port_id": "source_port_587",
+      "labels": [
+        "UNREVIEWED_65",
+        "pin65",
+        "65"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 66,
+      "port_name": "UNREVIEWED_66",
+      "source_port_id": "source_port_588",
+      "labels": [
+        "UNREVIEWED_66",
+        "pin66",
+        "66"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 75,
+      "port_name": "USB_BOOT",
+      "source_port_id": "source_port_597",
+      "labels": [
+        "USB_BOOT",
+        "pin75",
+        "75"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 76,
+      "port_name": "UNREVIEWED_76",
+      "source_port_id": "source_port_598",
+      "labels": [
+        "UNREVIEWED_76",
+        "pin76",
+        "76"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 77,
+      "port_name": "UNREVIEWED_77",
+      "source_port_id": "source_port_599",
+      "labels": [
+        "UNREVIEWED_77",
+        "pin77",
+        "77"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 78,
+      "port_name": "UNREVIEWED_78",
+      "source_port_id": "source_port_600",
+      "labels": [
+        "UNREVIEWED_78",
+        "pin78",
+        "78"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 83,
+      "port_name": "UNREVIEWED_83",
+      "source_port_id": "source_port_605",
+      "labels": [
+        "UNREVIEWED_83",
+        "pin83",
+        "83"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 84,
+      "port_name": "UNREVIEWED_84",
+      "source_port_id": "source_port_606",
+      "labels": [
+        "UNREVIEWED_84",
+        "pin84",
+        "84"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 85,
+      "port_name": "UNREVIEWED_85",
+      "source_port_id": "source_port_607",
+      "labels": [
+        "UNREVIEWED_85",
+        "pin85",
+        "85"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 86,
+      "port_name": "UNREVIEWED_86",
+      "source_port_id": "source_port_608",
+      "labels": [
+        "UNREVIEWED_86",
+        "pin86",
+        "86"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 87,
+      "port_name": "UNREVIEWED_87",
+      "source_port_id": "source_port_609",
+      "labels": [
+        "UNREVIEWED_87",
+        "pin87",
+        "87"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 88,
+      "port_name": "UNREVIEWED_88",
+      "source_port_id": "source_port_610",
+      "labels": [
+        "UNREVIEWED_88",
+        "pin88",
+        "88"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 92,
+      "port_name": "UNREVIEWED_92",
+      "source_port_id": "source_port_614",
+      "labels": [
+        "UNREVIEWED_92",
+        "pin92",
+        "92"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 93,
+      "port_name": "UNREVIEWED_93",
+      "source_port_id": "source_port_615",
+      "labels": [
+        "UNREVIEWED_93",
+        "pin93",
+        "93"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 94,
+      "port_name": "UNREVIEWED_94",
+      "source_port_id": "source_port_616",
+      "labels": [
+        "UNREVIEWED_94",
+        "pin94",
+        "94"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 95,
+      "port_name": "UNREVIEWED_95",
+      "source_port_id": "source_port_617",
+      "labels": [
+        "UNREVIEWED_95",
+        "pin95",
+        "95"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 96,
+      "port_name": "UNREVIEWED_96",
+      "source_port_id": "source_port_618",
+      "labels": [
+        "UNREVIEWED_96",
+        "pin96",
+        "96"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 97,
+      "port_name": "UNREVIEWED_97",
+      "source_port_id": "source_port_619",
+      "labels": [
+        "UNREVIEWED_97",
+        "pin97",
+        "97"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 98,
+      "port_name": "UNREVIEWED_98",
+      "source_port_id": "source_port_620",
+      "labels": [
+        "UNREVIEWED_98",
+        "pin98",
+        "98"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 99,
+      "port_name": "UNREVIEWED_99",
+      "source_port_id": "source_port_621",
+      "labels": [
+        "UNREVIEWED_99",
+        "pin99",
+        "99"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 103,
+      "port_name": "UNREVIEWED_103",
+      "source_port_id": "source_port_625",
+      "labels": [
+        "UNREVIEWED_103",
+        "pin103",
+        "103"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 104,
+      "port_name": "UNREVIEWED_104",
+      "source_port_id": "source_port_626",
+      "labels": [
+        "UNREVIEWED_104",
+        "pin104",
+        "104"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 105,
+      "port_name": "UNREVIEWED_105",
+      "source_port_id": "source_port_627",
+      "labels": [
+        "UNREVIEWED_105",
+        "pin105",
+        "105"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 106,
+      "port_name": "UNREVIEWED_106",
+      "source_port_id": "source_port_628",
+      "labels": [
+        "UNREVIEWED_106",
+        "pin106",
+        "106"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 107,
+      "port_name": "UNREVIEWED_107",
+      "source_port_id": "source_port_629",
+      "labels": [
+        "UNREVIEWED_107",
+        "pin107",
+        "107"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 108,
+      "port_name": "UNREVIEWED_108",
+      "source_port_id": "source_port_630",
+      "labels": [
+        "UNREVIEWED_108",
+        "pin108",
+        "108"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 109,
+      "port_name": "UNREVIEWED_109",
+      "source_port_id": "source_port_631",
+      "labels": [
+        "UNREVIEWED_109",
+        "pin109",
+        "109"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 110,
+      "port_name": "UNREVIEWED_110",
+      "source_port_id": "source_port_632",
+      "labels": [
+        "UNREVIEWED_110",
+        "pin110",
+        "110"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 111,
+      "port_name": "UNREVIEWED_111",
+      "source_port_id": "source_port_633",
+      "labels": [
+        "UNREVIEWED_111",
+        "pin111",
+        "111"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 112,
+      "port_name": "UNREVIEWED_112",
+      "source_port_id": "source_port_634",
+      "labels": [
+        "UNREVIEWED_112",
+        "pin112",
+        "112"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 113,
+      "port_name": "UNREVIEWED_113",
+      "source_port_id": "source_port_635",
+      "labels": [
+        "UNREVIEWED_113",
+        "pin113",
+        "113"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 114,
+      "port_name": "UNREVIEWED_114",
+      "source_port_id": "source_port_636",
+      "labels": [
+        "UNREVIEWED_114",
+        "pin114",
+        "114"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 115,
+      "port_name": "UNREVIEWED_115",
+      "source_port_id": "source_port_637",
+      "labels": [
+        "UNREVIEWED_115",
+        "pin115",
+        "115"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 116,
+      "port_name": "UNREVIEWED_116",
+      "source_port_id": "source_port_638",
+      "labels": [
+        "UNREVIEWED_116",
+        "pin116",
+        "116"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 117,
+      "port_name": "UNREVIEWED_117",
+      "source_port_id": "source_port_639",
+      "labels": [
+        "UNREVIEWED_117",
+        "pin117",
+        "117"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 118,
+      "port_name": "UNREVIEWED_118",
+      "source_port_id": "source_port_640",
+      "labels": [
+        "UNREVIEWED_118",
+        "pin118",
+        "118"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 121,
+      "port_name": "SPK_P",
+      "source_port_id": "source_port_643",
+      "labels": [
+        "SPK_P",
+        "pin121",
+        "121"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 122,
+      "port_name": "SPK_N",
+      "source_port_id": "source_port_644",
+      "labels": [
+        "SPK_N",
+        "pin122",
+        "122"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 123,
+      "port_name": "UNREVIEWED_123",
+      "source_port_id": "source_port_645",
+      "labels": [
+        "UNREVIEWED_123",
+        "pin123",
+        "123"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 124,
+      "port_name": "UNREVIEWED_124",
+      "source_port_id": "source_port_646",
+      "labels": [
+        "UNREVIEWED_124",
+        "pin124",
+        "124"
+      ]
+    },
+    {
+      "reference": "U_MODEM_LOGICAL_ONLY",
+      "pin": 125,
+      "port_name": "UNREVIEWED_125",
+      "source_port_id": "source_port_647",
+      "labels": [
+        "UNREVIEWED_125",
+        "pin125",
+        "125"
+      ]
+    },
+    {
+      "reference": "U_MODEM_KEY_BUF",
+      "pin": 1,
+      "port_name": "NC",
+      "source_port_id": "source_port_651",
+      "labels": [
+        "NC",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "U_MODEM_RESET_BUF",
+      "pin": 1,
+      "port_name": "NC",
+      "source_port_id": "source_port_665",
+      "labels": [
+        "NC",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "U_BUTTON_BRANCH",
+      "pin": 3,
+      "port_name": "ONT",
+      "source_port_id": "source_port_681",
+      "labels": [
+        "ONT",
+        "pin3",
+        "3"
+      ]
+    },
+    {
+      "reference": "U_BUTTON_EN_BUFFER",
+      "pin": 1,
+      "port_name": "NC",
+      "source_port_id": "source_port_704",
+      "labels": [
+        "NC",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW1",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_713",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW1",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_714",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW2",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_717",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW2",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_718",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW3",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_721",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW3",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_722",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW4",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_725",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW4",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_726",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW5",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_729",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW5",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_730",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW6",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_733",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW6",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_734",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW7",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_737",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW7",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_738",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW8",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_741",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW8",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_742",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW9",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_745",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW9",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_746",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW10",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_749",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW10",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_750",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW11",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_753",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW11",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_754",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW12",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_757",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW12",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_758",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW13",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_761",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW13",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_762",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW14",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_765",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW14",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_766",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    },
+    {
+      "reference": "SW15",
+      "pin": null,
+      "port_name": "pin1_internal_1",
+      "source_port_id": "source_port_769",
+      "labels": [
+        "pin1_internal_1",
+        "pin1",
+        "1"
+      ]
+    },
+    {
+      "reference": "SW15",
+      "pin": null,
+      "port_name": "pin2_internal_1",
+      "source_port_id": "source_port_770",
+      "labels": [
+        "pin2_internal_1",
+        "pin2",
+        "2"
+      ]
+    }
+  ],
+  "nets": [
+    {
+      "net": "ANT_MAIN_MATCH_IN_PENDING",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "U_MODEM_LOGICAL_ONLY.pin60"
+        ],
+        [
+          "R_RF_SERIES_CANDIDATE.pin1"
+        ],
+        [
+          "RF_SHUNT_IN_DNP_RESERVE.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "ANT_TO_RECEPTACLE_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_RF_SERIES_CANDIDATE.pin2"
+        ],
+        [
+          "RF_SHUNT_OUT_DNP_RESERVE.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BACKLIGHT_5V_PENDING",
+      "terminal_count": 8,
+      "minimum_joins_required": 7,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 7,
+      "copper_islands": [
+        [
+          "U_BL_BOOST.pin5"
+        ],
+        [
+          "C_BL_OUT4.pin1"
+        ],
+        [
+          "C_BL_OUT3.pin1"
+        ],
+        [
+          "U_BACKLIGHT.pin7"
+        ],
+        [
+          "R_BL_TOP.pin1"
+        ],
+        [
+          "C_BACKLIGHT.pin1"
+        ],
+        [
+          "C_BL_OUT2.pin1"
+        ],
+        [
+          "C_BL_OUT1.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BACKLIGHT_ANODE_PENDING",
+      "terminal_count": 1,
+      "minimum_joins_required": 0,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "J_LCD.pin17"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": true
+    },
+    {
+      "net": "BACKLIGHT_PWM",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_BACKLIGHT_OFF.pin1",
+          "U_MCU.pin35"
+        ],
+        [
+          "U_BACKLIGHT.pin6"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BACKLIGHT_RSET",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_BACKLIGHT.pin8"
+        ],
+        [
+          "R_BACKLIGHT_SET.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BACKLIGHT_SINK1_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_BACKLIGHT.pin1"
+        ],
+        [
+          "J_LCD.pin18"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BACKLIGHT_SINK2_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_BACKLIGHT.pin2"
+        ],
+        [
+          "J_LCD.pin19"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BAT_NTC",
+      "terminal_count": 6,
+      "minimum_joins_required": 5,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "R_CHG_TS_BOTTOM.pin1",
+          "R_CHG_TS_TOP.pin2",
+          "R_TEMP_HOT_INPUT.pin1",
+          "U_TEMP.pin2"
+        ],
+        [
+          "U_CHG.pin11"
+        ],
+        [
+          "NTC_EXTERNAL.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BL_BOOST_ENABLE_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_BL_DISABLE.pin1"
+        ],
+        [
+          "U_BL_BOOST.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BL_FB",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "R_BL_BOTTOM.pin1"
+        ],
+        [
+          "U_BL_BOOST.pin4"
+        ],
+        [
+          "R_BL_TOP.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BL_SW",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "L_BL.pin2"
+        ],
+        [
+          "U_BL_BOOST.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BUTTON_BRANCH_UNQUALIFIED",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "SW3.pin1",
+          "U_BUTTON_BRANCH.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BUTTON_ENABLE_RAW",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_BUTTON_EN_DOWN.pin1",
+          "R_BUTTON_EN_UP.pin2",
+          "U_BUTTON_BRANCH.pin6",
+          "U_BUTTON_EN_BUFFER.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BUTTON_INT_N",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_BUTTON_INT_UP.pin2",
+          "U_BUTTON_BRANCH.pin5",
+          "U_MCU.pin39"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BUTTON_KILL_BRANCH",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_BUTTON_KILL.pin3",
+          "R_BUTTON_KILL_UP.pin2",
+          "U_BUTTON_BRANCH.pin8"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "BUTTON_PDT_BRANCH",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_BUTTON_PDT.pin1",
+          "U_BUTTON_BRANCH.pin7"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CC_NO_AUDIO_ACCESSORY",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_CC.pin6"
+        ],
+        [
+          "R_CC_NO_AUDIO_ACCESSORY.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CC_OUT1",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CC_OUT1.pin2",
+          "U_USB_3A.pin1"
+        ],
+        [
+          "U_CC.pin7"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CC_OUT2",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CC_OUT2.pin2",
+          "U_USB_3A.pin2"
+        ],
+        [
+          "U_CC.pin8"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CC_SINK_CHAIN1",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CC_SINK1.pin1"
+        ],
+        [
+          "R_CC_SINK0.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CC_SINK_CHAIN2",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CC_SINK2.pin1"
+        ],
+        [
+          "R_CC_SINK1.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CC_SINK_CONFIG",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CC_SINK0.pin1"
+        ],
+        [
+          "U_CC.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CC_VBUS_SENSE",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CC_VBUS.pin2"
+        ],
+        [
+          "U_CC.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CE_MID1",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_TEMP_COLD.pin2",
+          "Q_TEMP_HOT.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CE_MID2",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_TEMP_HOT.pin2",
+          "Q_TEMP_REQUEST.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGER_ICHG",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_CHG.pin10"
+        ],
+        [
+          "R_CHG_ICHG.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGER_ILIM",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CHG_ILIM.pin1"
+        ],
+        [
+          "U_CHG.pin8"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGER_VSET",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_CHG.pin12"
+        ],
+        [
+          "R_CHG_VSET.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGE_DISABLE",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "Q_TEMP_COLD.pin3"
+        ],
+        [
+          "R_CHG_DISABLE.pin2"
+        ],
+        [
+          "U_CHG.pin9"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGE_POR_CT",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_CHARGE_CT.pin2",
+          "U_CHARGE_POR.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGE_REGN_READY",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CHARGE_READY_PULLUP.pin2",
+          "U_CHARGE_POR.pin1"
+        ],
+        [
+          "U_CHARGE_AND.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGE_REGN_SENSE",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_CHARGE_SENSE.pin1",
+          "R_CHARGE_SENSE_BOTTOM.pin1",
+          "R_CHARGE_SENSE_TOP.pin2",
+          "U_CHARGE_POR.pin5"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGE_REQUEST_MCU",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CHARGE_REQUEST_OFF.pin1",
+          "U_MCU.pin24"
+        ],
+        [
+          "U_CHARGE_AND.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGE_REQUEST_QUALIFIED_PENDING",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "Q_TEMP_REQUEST.pin1",
+          "R_TEMP_REQUEST_OFF.pin1"
+        ],
+        [
+          "U_CHARGE_AND.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHARGE_STATUS_N",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_CHG.pin5"
+        ],
+        [
+          "R_CHG_STAT.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHG_BOOT",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_CHG.pin21"
+        ],
+        [
+          "C_CHG_BOOT.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHG_PMID",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_CHG.pin23"
+        ],
+        [
+          "C_CHG_PMID.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHG_REGN",
+      "terminal_count": 8,
+      "minimum_joins_required": 7,
+      "minimum_joins_completed": 5,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "C_TEMP.pin1",
+          "R_CHARGE_SENSE_TOP.pin1",
+          "R_CHG_TS_TOP.pin1",
+          "R_TEMP_COLD_TOP.pin1",
+          "R_TEMP_HOT_TOP.pin1",
+          "U_TEMP.pin8"
+        ],
+        [
+          "U_CHG.pin22"
+        ],
+        [
+          "C_CHG_REGN.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "CHG_SW",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 3,
+      "copper_islands": [
+        [
+          "U_CHG.pin20"
+        ],
+        [
+          "L_CHG.pin1"
+        ],
+        [
+          "U_CHG.pin19"
+        ],
+        [
+          "C_CHG_BOOT.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "COL0",
+      "terminal_count": 7,
+      "minimum_joins_required": 6,
+      "minimum_joins_completed": 6,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_MCU_COL0.pin2",
+          "SW1.pin2",
+          "SW10.pin2",
+          "SW13.pin2",
+          "SW4.pin2",
+          "SW7.pin2",
+          "U_MCU.pin18"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "COL1",
+      "terminal_count": 7,
+      "minimum_joins_required": 6,
+      "minimum_joins_completed": 6,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_MCU_COL1.pin2",
+          "SW11.pin2",
+          "SW14.pin2",
+          "SW2.pin2",
+          "SW5.pin2",
+          "SW8.pin2",
+          "U_MCU.pin21"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "COL2",
+      "terminal_count": 6,
+      "minimum_joins_required": 5,
+      "minimum_joins_completed": 5,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_MCU_COL2.pin2",
+          "SW12.pin2",
+          "SW15.pin2",
+          "SW6.pin2",
+          "SW9.pin2",
+          "U_MCU.pin22"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "DEBUG_RX_3V15",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "TP_RX.pin1",
+          "U_MCU.pin36"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "DEBUG_TX_3V15",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "TP_TX.pin1",
+          "U_MCU.pin37"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "GND",
+      "terminal_count": 179,
+      "minimum_joins_required": 178,
+      "minimum_joins_completed": 121,
+      "minimum_joins_open": 57,
+      "copper_islands": [
+        [
+          "C_A_CTS.pin2",
+          "C_A_RTS.pin2",
+          "C_A_RX.pin2",
+          "C_A_STATUS.pin2",
+          "C_A_TX.pin2",
+          "C_BUTTON_BUFFER.pin2",
+          "C_BUTTON_BYPASS.pin2",
+          "C_BUTTON_PDT.pin2",
+          "C_B_CTS.pin2",
+          "C_B_RTS.pin2",
+          "C_B_RX.pin2",
+          "C_B_STATUS.pin2",
+          "C_B_TX.pin2",
+          "C_CC_PROTECT.pin2",
+          "C_CC_VBIAS.pin2",
+          "C_CHARGE_POR.pin2",
+          "C_CHARGE_SENSE.pin2",
+          "C_MCU_BULK.pin2",
+          "C_MCU_EN.pin2",
+          "C_MCU_HF.pin2",
+          "C_MODEM_KEY_BUF.pin2",
+          "C_MODEM_RESET_BUF.pin2",
+          "C_MODEM_VDD_EXT.pin2",
+          "C_SIM_CLK.pin2",
+          "C_SIM_DATA.pin2",
+          "C_SIM_RST.pin2",
+          "C_SIM_VDD.pin2",
+          "C_TEMP.pin2",
+          "C_USB_3A.pin2",
+          "C_USB_AUX_IN.pin2",
+          "C_USB_AUX_OUT.pin2",
+          "C_USB_DVDT.pin2",
+          "C_USB_POR.pin2",
+          "C_USB_RAW.pin2",
+          "C_USB_SENSE.pin2",
+          "J_SIM_CANDIDATE.pin5",
+          "Q_BUTTON_KILL.pin2",
+          "Q_MODEM_KEY.pin2",
+          "Q_MODEM_RESET.pin2",
+          "Q_TEMP_REQUEST.pin2",
+          "R_BACKLIGHT_OFF.pin2",
+          "R_BUTTON_EN_DOWN.pin2",
+          "R_BUTTON_KILL_OFF.pin2",
+          "R_CHARGE_REQUEST_OFF.pin2",
+          "R_CHARGE_SENSE_BOTTOM.pin2",
+          "R_CHG_TS_TRIM.pin2",
+          "R_EN_OFF.pin2",
+          "R_LCD_RST.pin1",
+          "R_MODEM_KEY_GATE_OFF.pin2",
+          "R_MODEM_KEY_INPUT_OFF.pin2",
+          "R_MODEM_RESET_GATE_OFF.pin2",
+          "R_MODEM_RESET_INPUT_OFF.pin2",
+          "R_TEMP_COLD_BOTTOM.pin2",
+          "R_TEMP_COLD_GATE.pin2",
+          "R_TEMP_HOT_BOTTOM.pin2",
+          "R_TEMP_HOT_GATE.pin2",
+          "R_TEMP_REQUEST_OFF.pin2",
+          "R_USB_ILM.pin2",
+          "R_USB_OFF.pin2",
+          "R_USB_OV_BOTTOM.pin2",
+          "R_USB_SENSE_BOTTOM.pin2",
+          "SW3.pin2",
+          "TP_GND.pin1",
+          "U_BUTTON_BRANCH.pin4",
+          "U_BUTTON_EN_BUFFER.pin3",
+          "U_CC_PROTECT.pin13",
+          "U_CC_PROTECT.pin16",
+          "U_CC_PROTECT.pin17",
+          "U_CC_PROTECT.pin18",
+          "U_CC_PROTECT.pin19",
+          "U_CC_PROTECT.pin20",
+          "U_CC_PROTECT.pin21",
+          "U_CC_PROTECT.pin8",
+          "U_CHARGE_POR.pin2",
+          "U_CTS.pin2",
+          "U_CTS.pin5",
+          "U_MCU.pin1",
+          "U_MCU.pin40",
+          "U_MCU.pin41",
+          "U_MODEM_KEY_BUF.pin3",
+          "U_MODEM_LOGICAL_ONLY.pin100",
+          "U_MODEM_LOGICAL_ONLY.pin101",
+          "U_MODEM_LOGICAL_ONLY.pin102",
+          "U_MODEM_LOGICAL_ONLY.pin3",
+          "U_MODEM_LOGICAL_ONLY.pin31",
+          "U_MODEM_LOGICAL_ONLY.pin47",
+          "U_MODEM_LOGICAL_ONLY.pin48",
+          "U_MODEM_LOGICAL_ONLY.pin50",
+          "U_MODEM_LOGICAL_ONLY.pin54",
+          "U_MODEM_LOGICAL_ONLY.pin55",
+          "U_MODEM_LOGICAL_ONLY.pin58",
+          "U_MODEM_LOGICAL_ONLY.pin59",
+          "U_MODEM_LOGICAL_ONLY.pin61",
+          "U_MODEM_LOGICAL_ONLY.pin62",
+          "U_MODEM_LOGICAL_ONLY.pin67",
+          "U_MODEM_LOGICAL_ONLY.pin68",
+          "U_MODEM_LOGICAL_ONLY.pin69",
+          "U_MODEM_LOGICAL_ONLY.pin70",
+          "U_MODEM_LOGICAL_ONLY.pin71",
+          "U_MODEM_LOGICAL_ONLY.pin72",
+          "U_MODEM_LOGICAL_ONLY.pin73",
+          "U_MODEM_LOGICAL_ONLY.pin74",
+          "U_MODEM_LOGICAL_ONLY.pin79",
+          "U_MODEM_LOGICAL_ONLY.pin80",
+          "U_MODEM_LOGICAL_ONLY.pin81",
+          "U_MODEM_LOGICAL_ONLY.pin82",
+          "U_MODEM_LOGICAL_ONLY.pin89",
+          "U_MODEM_LOGICAL_ONLY.pin90",
+          "U_MODEM_LOGICAL_ONLY.pin91",
+          "U_MODEM_RESET_BUF.pin3",
+          "U_RTS.pin2",
+          "U_RX.pin2",
+          "U_RX.pin5",
+          "U_SIM_ESD.pin3",
+          "U_STATUS.pin2",
+          "U_STATUS.pin5",
+          "U_TEMP.pin4",
+          "U_TX.pin2",
+          "U_USB_3A.pin3",
+          "U_USB_AUX.pin2",
+          "U_USB_POR.pin2",
+          "U_USB_PROTECT.pin8"
+        ],
+        [
+          "R_MODEM_ENABLE.pin2"
+        ],
+        [
+          "C_IN_0.pin2"
+        ],
+        [
+          "C_LCD_VDD.pin2"
+        ],
+        [
+          "U_BL_BOOST.pin2"
+        ],
+        [
+          "C_CHG_SYS2.pin2"
+        ],
+        [
+          "U_CHG.pin6"
+        ],
+        [
+          "C_VINA.pin2"
+        ],
+        [
+          "C_OUT_3.pin2"
+        ],
+        [
+          "C_MODEM_IN.pin2"
+        ],
+        [
+          "U_CHG.pin18"
+        ],
+        [
+          "R_MODEM_BOTTOM.pin2"
+        ],
+        [
+          "J_LCD.pin1"
+        ],
+        [
+          "J_LCD.pin20"
+        ],
+        [
+          "U_CC.pin11"
+        ],
+        [
+          "J_LCD.pin10"
+        ],
+        [
+          "C_BL_IN2.pin2"
+        ],
+        [
+          "R_FB_BOTTOM.pin2"
+        ],
+        [
+          "C_CHG_SYS1.pin2"
+        ],
+        [
+          "U_CHARGE_AND.pin3"
+        ],
+        [
+          "U_CHG.pin25"
+        ],
+        [
+          "C_CHARGE_AND.pin2"
+        ],
+        [
+          "C_OUT_2.pin2"
+        ],
+        [
+          "C_BACKLIGHT.pin2"
+        ],
+        [
+          "U_LOGIC.pin15"
+        ],
+        [
+          "R_CHG_VSET.pin2"
+        ],
+        [
+          "U_MODEM_BUCK.pin4"
+        ],
+        [
+          "C_BL_OUT2.pin2"
+        ],
+        [
+          "U_CHG.pin17"
+        ],
+        [
+          "NTC_EXTERNAL.pin2"
+        ],
+        [
+          "J_LCD.pin7"
+        ],
+        [
+          "R_CC_SINK2.pin2"
+        ],
+        [
+          "C_MODEM_OUT2.pin2"
+        ],
+        [
+          "C_MODEM_OUT1.pin2"
+        ],
+        [
+          "U_BACKLIGHT.pin5"
+        ],
+        [
+          "C_BL_OUT1.pin2"
+        ],
+        [
+          "C_BL_OUT3.pin2"
+        ],
+        [
+          "C_LCD_IO.pin2"
+        ],
+        [
+          "R_BL_BOTTOM.pin2"
+        ],
+        [
+          "C_BL_OUT4.pin2"
+        ],
+        [
+          "U_CC.pin10"
+        ],
+        [
+          "C_BL_IN1.pin2"
+        ],
+        [
+          "C_OUT_1.pin2"
+        ],
+        [
+          "U_LOGIC.pin2"
+        ],
+        [
+          "C_CHG_IN.pin2"
+        ],
+        [
+          "R_MIC_BIAS_BOTTOM.pin2"
+        ],
+        [
+          "R_CHG_ILIM.pin2"
+        ],
+        [
+          "RF_SHUNT_OUT_DNP_RESERVE.pin2"
+        ],
+        [
+          "RF_SHUNT_IN_DNP_RESERVE.pin2"
+        ],
+        [
+          "R_BL_DISABLE.pin2"
+        ],
+        [
+          "C_CC.pin2"
+        ],
+        [
+          "C_CHG_REGN.pin2"
+        ],
+        [
+          "C_IN_1.pin2"
+        ],
+        [
+          "C_OUT_0.pin2"
+        ],
+        [
+          "C_CHG_PMID.pin2"
+        ],
+        [
+          "R_BACKLIGHT_SET.pin2"
+        ],
+        [
+          "R_CHG_ICHG.pin2"
+        ],
+        [
+          "C_CHG_BAT.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "HOST_CTS",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "U_CTS.pin3",
+          "U_MCU.pin9"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "HOST_RTS",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_IDLE_RTS.pin2",
+          "U_MCU.pin8",
+          "U_RTS.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "HOST_RX",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "U_MCU.pin11",
+          "U_RX.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "HOST_TX",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_IDLE_TX.pin2",
+          "U_MCU.pin10",
+          "U_TX.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "LCD_CS_N",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_LCD_CS.pin2",
+          "R_MCU_LCD_CS_N.pin2",
+          "U_MCU.pin23"
+        ],
+        [
+          "J_LCD.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "LCD_DC",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_MCU.pin32"
+        ],
+        [
+          "J_LCD.pin8"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "LCD_RST_N",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_LCD_RST.pin2",
+          "U_MCU.pin31"
+        ],
+        [
+          "J_LCD.pin5"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "LCD_SCL",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_MCU.pin20"
+        ],
+        [
+          "J_LCD.pin9"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "LCD_SDIO",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_MCU.pin19"
+        ],
+        [
+          "J_LCD.pin6"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "LOGIC_ENABLE",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_EN_OFF.pin1",
+          "U_BUTTON_EN_BUFFER.pin4"
+        ],
+        [
+          "U_LOGIC.pin12"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "LOGIC_FB",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "R_FB_BOTTOM.pin1"
+        ],
+        [
+          "R_FB_TRIM.pin2"
+        ],
+        [
+          "U_LOGIC.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "LOGIC_FB_SERIES",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_FB_TRIM.pin1"
+        ],
+        [
+          "R_FB_TOP.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "LOGIC_POWER_GOOD",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_PG.pin2"
+        ],
+        [
+          "U_LOGIC.pin14"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MCU_BOOT_N",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_MCU_MCU_BOOT_N.pin2",
+          "TP_BOOT.pin1",
+          "U_MCU.pin27"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MCU_EN",
+      "terminal_count": 5,
+      "minimum_joins_required": 4,
+      "minimum_joins_completed": 4,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_MCU_EN.pin1",
+          "R_MCU_MCU_EN.pin2",
+          "TP_EN.pin1",
+          "U_CHARGE_POR.pin3",
+          "U_MCU.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MIC_BIAS_LOWER_PENDING",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "C_MIC_BIAS.pin2"
+        ],
+        [
+          "R_MIC_BIAS_BOTTOM.pin1"
+        ],
+        [
+          "R_MIC_BIAS_N.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MIC_BIAS_UPPER_PENDING",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "C_MIC_BIAS.pin1"
+        ],
+        [
+          "R_MIC_BIAS_P.pin1"
+        ],
+        [
+          "R_MIC_BIAS_TOP.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MIC_N_AC_NODE",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "C_MIC_N_AC.pin1"
+        ],
+        [
+          "R_MIC_N_SERIES.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MIC_N_FILTER_INPUT_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "C_MIC_N_AC.pin2"
+        ],
+        [
+          "R_MIC_BIAS_N.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MIC_P_AC_NODE",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "C_MIC_P_AC.pin1"
+        ],
+        [
+          "R_MIC_P_SERIES.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MIC_P_FILTER_INPUT_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "C_MIC_P_AC.pin2"
+        ],
+        [
+          "R_MIC_BIAS_P.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_3V8_CANDIDATE",
+      "terminal_count": 5,
+      "minimum_joins_required": 4,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 4,
+      "copper_islands": [
+        [
+          "C_MODEM_FF.pin1"
+        ],
+        [
+          "C_MODEM_OUT2.pin1"
+        ],
+        [
+          "C_MODEM_OUT1.pin1"
+        ],
+        [
+          "L_MODEM.pin2"
+        ],
+        [
+          "R_MODEM_TOP.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_BB_SUPPLY_UNQUALIFIED",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_MODEM_LOGICAL_ONLY.pin32"
+        ],
+        [
+          "U_MODEM_LOGICAL_ONLY.pin33"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_CTS",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_IDLE_CTS.pin2",
+          "U_CTS.pin4",
+          "U_MODEM_LOGICAL_ONLY.pin36"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_FB",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 3,
+      "copper_islands": [
+        [
+          "R_MODEM_TOP.pin2"
+        ],
+        [
+          "U_MODEM_BUCK.pin3"
+        ],
+        [
+          "C_MODEM_FF.pin2"
+        ],
+        [
+          "R_MODEM_BOTTOM.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_KEY_GATE",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_MODEM_KEY.pin1",
+          "R_MODEM_KEY_GATE_OFF.pin1",
+          "U_MODEM_KEY_BUF.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_MICBIAS_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_MODEM_LOGICAL_ONLY.pin120"
+        ],
+        [
+          "R_MIC_BIAS_TOP.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_MIC_N_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_MODEM_LOGICAL_ONLY.pin119"
+        ],
+        [
+          "R_MIC_N_SERIES.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_MIC_P_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_MODEM_LOGICAL_ONLY.pin126"
+        ],
+        [
+          "R_MIC_P_SERIES.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_PWRKEY_OD",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_MODEM_KEY.pin3",
+          "U_MODEM_LOGICAL_ONLY.pin15"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_RESET_GATE",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_MODEM_RESET.pin1",
+          "R_MODEM_RESET_GATE_OFF.pin1",
+          "U_MODEM_RESET_BUF.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_RESET_OD",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_MODEM_RESET.pin3",
+          "U_MODEM_LOGICAL_ONLY.pin17"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_RF_SUPPLY_UNQUALIFIED",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_MODEM_LOGICAL_ONLY.pin52"
+        ],
+        [
+          "U_MODEM_LOGICAL_ONLY.pin53"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_RTS",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "U_MODEM_LOGICAL_ONLY.pin37",
+          "U_RTS.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_RX",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "U_MODEM_LOGICAL_ONLY.pin34",
+          "U_TX.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_STATUS",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_IDLE_STATUS.pin2",
+          "U_MODEM_LOGICAL_ONLY.pin20",
+          "U_STATUS.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_STATUS_HOST_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "U_MCU.pin38",
+          "U_STATUS.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_SUPPLY_ENABLE_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_MODEM_BUCK.pin1"
+        ],
+        [
+          "R_MODEM_ENABLE.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_SUPPLY_GOOD",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_MODEM_PG.pin2"
+        ],
+        [
+          "U_MODEM_BUCK.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_SW",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "L_MODEM.pin1"
+        ],
+        [
+          "U_MODEM_BUCK.pin5"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_TX",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_IDLE_RX.pin2",
+          "U_MODEM_LOGICAL_ONLY.pin35",
+          "U_RX.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "MODEM_VDD_EXT_1V8",
+      "terminal_count": 15,
+      "minimum_joins_required": 14,
+      "minimum_joins_completed": 14,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_B_CTS.pin1",
+          "C_B_RTS.pin1",
+          "C_B_RX.pin1",
+          "C_B_STATUS.pin1",
+          "C_B_TX.pin1",
+          "C_MODEM_VDD_EXT.pin1",
+          "R_IDLE_CTS.pin1",
+          "R_IDLE_RX.pin1",
+          "R_IDLE_STATUS.pin1",
+          "U_CTS.pin6",
+          "U_MODEM_LOGICAL_ONLY.pin29",
+          "U_RTS.pin6",
+          "U_RX.pin6",
+          "U_STATUS.pin6",
+          "U_TX.pin6"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "ON_OFF_MCU",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_MODEM_KEY_INPUT_OFF.pin1",
+          "U_MCU.pin28",
+          "U_MODEM_KEY_BUF.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "PACK_POS",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "C_CHG_BAT.pin1"
+        ],
+        [
+          "U_CHG.pin13"
+        ],
+        [
+          "U_CHG.pin14"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "RESET_MCU",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_MODEM_RESET_INPUT_OFF.pin1",
+          "U_MCU.pin29",
+          "U_MODEM_RESET_BUF.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "ROW0",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "SW1.pin1",
+          "SW2.pin1",
+          "U_MCU.pin5"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "ROW1",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "SW4.pin1",
+          "SW5.pin1",
+          "SW6.pin1",
+          "U_MCU.pin6"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "ROW2",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "SW7.pin1",
+          "SW8.pin1",
+          "SW9.pin1",
+          "U_MCU.pin7"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "ROW3",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "SW10.pin1",
+          "SW11.pin1",
+          "SW12.pin1",
+          "U_MCU.pin12"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "ROW4",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "SW13.pin1",
+          "SW14.pin1",
+          "SW15.pin1",
+          "U_MCU.pin17"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "SW_L1",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "U_LOGIC.pin9"
+        ],
+        [
+          "U_LOGIC.pin8"
+        ],
+        [
+          "L_LOGIC.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "SW_L2",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 2,
+      "copper_islands": [
+        [
+          "U_LOGIC.pin7"
+        ],
+        [
+          "L_LOGIC.pin2"
+        ],
+        [
+          "U_LOGIC.pin6"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "SYSTEM_OFF_REQUEST",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_BUTTON_KILL.pin1",
+          "R_BUTTON_KILL_OFF.pin1",
+          "U_MCU.pin25"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "SYS_CANDIDATE",
+      "terminal_count": 24,
+      "minimum_joins_required": 23,
+      "minimum_joins_completed": 4,
+      "minimum_joins_open": 19,
+      "copper_islands": [
+        [
+          "C_BUTTON_BUFFER.pin1",
+          "C_BUTTON_BYPASS.pin1",
+          "R_BUTTON_EN_UP.pin1",
+          "U_BUTTON_BRANCH.pin1",
+          "U_BUTTON_EN_BUFFER.pin5"
+        ],
+        [
+          "U_LOGIC.pin13"
+        ],
+        [
+          "R_CHG_DISABLE.pin1"
+        ],
+        [
+          "C_VINA.pin1"
+        ],
+        [
+          "U_MODEM_BUCK.pin6"
+        ],
+        [
+          "U_LOGIC.pin11"
+        ],
+        [
+          "C_CHG_SYS1.pin1"
+        ],
+        [
+          "L_CHG.pin2"
+        ],
+        [
+          "U_BL_BOOST.pin6"
+        ],
+        [
+          "C_CHG_SYS2.pin1"
+        ],
+        [
+          "U_CHG.pin16"
+        ],
+        [
+          "C_MODEM_IN.pin1"
+        ],
+        [
+          "C_BL_IN2.pin1"
+        ],
+        [
+          "C_IN_1.pin1"
+        ],
+        [
+          "U_LOGIC.pin10"
+        ],
+        [
+          "L_BL.pin1"
+        ],
+        [
+          "C_BL_IN1.pin1"
+        ],
+        [
+          "U_LOGIC.pin1"
+        ],
+        [
+          "C_IN_0.pin1"
+        ],
+        [
+          "U_CHG.pin15"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "TEMP_COLD_OK",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_TEMP_COLD.pin1",
+          "R_TEMP_COLD_GATE.pin1",
+          "R_TEMP_COLD_HYST.pin1",
+          "U_TEMP.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "TEMP_COLD_REF",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_TEMP_COLD_BOTTOM.pin1",
+          "R_TEMP_COLD_HYST.pin2",
+          "R_TEMP_COLD_TOP.pin2",
+          "U_TEMP.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "TEMP_HOT_OK",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "Q_TEMP_HOT.pin1",
+          "R_TEMP_HOT_GATE.pin1",
+          "R_TEMP_HOT_HYST.pin1",
+          "U_TEMP.pin7"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "TEMP_HOT_REF",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_TEMP_HOT_BOTTOM.pin1",
+          "R_TEMP_HOT_TOP.pin2",
+          "U_TEMP.pin6"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "TEMP_HOT_SENSE",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_TEMP_HOT_HYST.pin2",
+          "R_TEMP_HOT_INPUT.pin2",
+          "U_TEMP.pin5"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "TS_SERIES",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_CHG_TS_BOTTOM.pin2",
+          "R_CHG_TS_TRIM.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_3A_ENABLE_PENDING",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_USB_3A_DRIVE.pin2",
+          "R_USB_OFF.pin1",
+          "U_USB_POR.pin1",
+          "U_USB_PROTECT.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_3A_LOGIC",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_USB_3A_DRIVE.pin1",
+          "U_USB_3A.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_5V_QUALIFIED",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 3,
+      "copper_islands": [
+        [
+          "U_USB_PROTECT.pin6"
+        ],
+        [
+          "U_CHG.pin24"
+        ],
+        [
+          "U_CHG.pin1"
+        ],
+        [
+          "C_CHG_IN.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_AUX3V3_PENDING",
+      "terminal_count": 17,
+      "minimum_joins_required": 16,
+      "minimum_joins_completed": 13,
+      "minimum_joins_open": 3,
+      "copper_islands": [
+        [
+          "C_CC_PROTECT.pin1",
+          "C_USB_3A.pin1",
+          "C_USB_AUX_OUT.pin1",
+          "C_USB_POR.pin1",
+          "R_CC_FAULT.pin1",
+          "R_CC_OUT1.pin1",
+          "R_CC_OUT2.pin1",
+          "R_USB_FAULT.pin1",
+          "R_USB_POR_CT.pin1",
+          "R_USB_SENSE_TOP.pin1",
+          "U_CC_PROTECT.pin10",
+          "U_USB_3A.pin5",
+          "U_USB_AUX.pin5",
+          "U_USB_POR.pin6"
+        ],
+        [
+          "C_CC.pin1"
+        ],
+        [
+          "R_CC_NO_AUDIO_ACCESSORY.pin1"
+        ],
+        [
+          "U_CC.pin12"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_CC1_PROTECTED_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_CC_PROTECT.pin12"
+        ],
+        [
+          "U_CC.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_CC1_RAW",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "U_CC_PROTECT.pin4",
+          "U_CC_PROTECT.pin7"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_CC2_PROTECTED_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "U_CC_PROTECT.pin11"
+        ],
+        [
+          "U_CC.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_CC2_RAW",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "U_CC_PROTECT.pin5",
+          "U_CC_PROTECT.pin6"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_CC_FAULT_N",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_CC_FAULT.pin2",
+          "U_CC_PROTECT.pin9",
+          "U_USB_POR.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_CC_VBIAS",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_CC_VBIAS.pin1",
+          "U_CC_PROTECT.pin3"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_DVDT",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_USB_DVDT.pin1",
+          "U_USB_PROTECT.pin7"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_FAULT_N",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_USB_FAULT.pin2",
+          "U_USB_PROTECT.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_GOOD_N",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 0,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "R_CHG_PG.pin2"
+        ],
+        [
+          "U_CHG.pin7"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_ILM",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_USB_ILM.pin1",
+          "U_USB_PROTECT.pin9"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_OVLO",
+      "terminal_count": 3,
+      "minimum_joins_required": 2,
+      "minimum_joins_completed": 2,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_USB_OV_BOTTOM.pin1",
+          "R_USB_OV_TOP.pin2",
+          "U_USB_PROTECT.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_POR_CT",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_USB_POR_CT.pin2",
+          "U_USB_POR.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_POR_SENSE",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_USB_SENSE.pin1",
+          "R_USB_SENSE_BOTTOM.pin1",
+          "R_USB_SENSE_TOP.pin2",
+          "U_USB_POR.pin5"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USB_VBUS_RAW",
+      "terminal_count": 6,
+      "minimum_joins_required": 5,
+      "minimum_joins_completed": 4,
+      "minimum_joins_open": 1,
+      "copper_islands": [
+        [
+          "C_USB_AUX_IN.pin1",
+          "C_USB_RAW.pin1",
+          "R_USB_OV_TOP.pin1",
+          "U_USB_AUX.pin1",
+          "U_USB_PROTECT.pin5"
+        ],
+        [
+          "R_CC_VBUS.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USIM1_CLK_MODEM_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_SIM_CLK.pin1",
+          "U_MODEM_LOGICAL_ONLY.pin46"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USIM1_CLK_SOCKET_PENDING",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_SIM_CLK.pin1",
+          "J_SIM_CANDIDATE.pin3",
+          "R_SIM_CLK.pin2",
+          "U_SIM_ESD.pin2"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USIM1_DATA_MODEM_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_SIM_DATA.pin1",
+          "U_MODEM_LOGICAL_ONLY.pin45"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USIM1_DATA_SOCKET_PENDING",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_SIM_DATA.pin1",
+          "J_SIM_CANDIDATE.pin7",
+          "R_SIM_DATA.pin2",
+          "U_SIM_ESD.pin4"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USIM1_RST_MODEM_PENDING",
+      "terminal_count": 2,
+      "minimum_joins_required": 1,
+      "minimum_joins_completed": 1,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "R_SIM_RST.pin1",
+          "U_MODEM_LOGICAL_ONLY.pin44"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USIM1_RST_SOCKET_PENDING",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_SIM_RST.pin1",
+          "J_SIM_CANDIDATE.pin2",
+          "R_SIM_RST.pin2",
+          "U_SIM_ESD.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "USIM1_VDD_PENDING",
+      "terminal_count": 4,
+      "minimum_joins_required": 3,
+      "minimum_joins_completed": 3,
+      "minimum_joins_open": 0,
+      "copper_islands": [
+        [
+          "C_SIM_VDD.pin1",
+          "J_SIM_CANDIDATE.pin1",
+          "U_MODEM_LOGICAL_ONLY.pin43",
+          "U_SIM_ESD.pin5"
+        ]
+      ],
+      "complete_among_declared_terminals": true,
+      "external_single_terminal": false
+    },
+    {
+      "net": "VLOGIC_3V15",
+      "terminal_count": 53,
+      "minimum_joins_required": 52,
+      "minimum_joins_completed": 34,
+      "minimum_joins_open": 18,
+      "copper_islands": [
+        [
+          "C_A_CTS.pin1",
+          "C_A_RTS.pin1",
+          "C_A_RX.pin1",
+          "C_A_STATUS.pin1",
+          "C_A_TX.pin1",
+          "C_CHARGE_POR.pin1",
+          "C_MCU_BULK.pin1",
+          "C_MCU_HF.pin1",
+          "C_MODEM_KEY_BUF.pin1",
+          "C_MODEM_RESET_BUF.pin1",
+          "R_BUTTON_INT_UP.pin1",
+          "R_BUTTON_KILL_UP.pin1",
+          "R_CHARGE_CT.pin1",
+          "R_CHARGE_READY_PULLUP.pin1",
+          "R_IDLE_RTS.pin1",
+          "R_IDLE_TX.pin1",
+          "R_LCD_CS.pin1",
+          "R_MCU_COL0.pin1",
+          "R_MCU_COL1.pin1",
+          "R_MCU_COL2.pin1",
+          "R_MCU_LCD_CS_N.pin1",
+          "R_MCU_MCU_BOOT_N.pin1",
+          "R_MCU_MCU_EN.pin1",
+          "TP_VREF.pin1",
+          "U_CHARGE_POR.pin6",
+          "U_CTS.pin1",
+          "U_MCU.pin2",
+          "U_MODEM_KEY_BUF.pin5",
+          "U_MODEM_RESET_BUF.pin5",
+          "U_RTS.pin1",
+          "U_RTS.pin5",
+          "U_RX.pin1",
+          "U_STATUS.pin1",
+          "U_TX.pin1",
+          "U_TX.pin5"
+        ],
+        [
+          "R_PG.pin1"
+        ],
+        [
+          "J_LCD.pin11"
+        ],
+        [
+          "C_CHARGE_AND.pin1"
+        ],
+        [
+          "C_OUT_0.pin1"
+        ],
+        [
+          "J_LCD.pin3"
+        ],
+        [
+          "R_MODEM_PG.pin1"
+        ],
+        [
+          "C_OUT_1.pin1"
+        ],
+        [
+          "C_LCD_VDD.pin1"
+        ],
+        [
+          "C_OUT_2.pin1"
+        ],
+        [
+          "J_LCD.pin2"
+        ],
+        [
+          "U_LOGIC.pin4"
+        ],
+        [
+          "U_LOGIC.pin5"
+        ],
+        [
+          "R_CHG_PG.pin1"
+        ],
+        [
+          "U_CHARGE_AND.pin5"
+        ],
+        [
+          "C_OUT_3.pin1"
+        ],
+        [
+          "C_LCD_IO.pin1"
+        ],
+        [
+          "R_CHG_STAT.pin1"
+        ],
+        [
+          "R_FB_TOP.pin1"
+        ]
+      ],
+      "complete_among_declared_terminals": false,
+      "external_single_terminal": false
+    }
+  ],
+  "release": false
+}

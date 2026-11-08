@@ -1,0 +1,26 @@
+{
+  "source_revision": "f0bb2eea05b9f0cf50d171c38730f680fc7e4da3",
+  "source_revision_date_utc": "2026-11-05T11:05:50Z",
+  "recovered_utc": "2026-11-08",
+  "verification": "Original source ZIP, full study ZIP and complete-history Git bundle contain byte-identical copies of these files. The original routing checker was rerun in isolation against its original placement before migration edits.",
+  "files": [
+    {
+      "path": "engineering/usb_layered_v66.py",
+      "sha256": "30ce028889cf3db1bcc8bb10f940e566bb559654fca064e6fff9edb70f7e4de7"
+    },
+    {
+      "path": "engineering/modem_clearance.py",
+      "sha256": "4c3a410971ceaf27376e52844a7258ac5cccca3bb8aa175b7a529c5940f508d4"
+    },
+    {
+      "path": "routing/usb-layered-v66.json",
+      "sha256": "191f70f598fd68439dc1cea853bf73bf28f6c00d4b8c5cf09ad3c98276e5ba37"
+    },
+    {
+      "path": "evidence/usb-layered-v66-checks.json",
+      "sha256": "09bc7a0e67861927fa882d0f237159477bda9cb37bdb290b03c313ed6e723def"
+    }
+  ],
+  "original_placement_sha256": "61a8060dc13400a96a5d73a3554b430e9f81508d42835fe5540f5a90905dd3d9",
+  "historical_release": false
+}

@@ -1,0 +1,29 @@
+{
+  "reference_document": "EG912U-GL QuecOpen Hardware Design V1.0 printed64/PDF65 Figure31",
+  "R_RF_SERIES_CANDIDATE": {
+    "default_population": "candidate0ohm",
+    "MPN": "RC0603JR-070RL",
+    "RF_qualified": false
+  },
+  "RF_SHUNT_IN_DNP_RESERVE": {
+    "default_population": "DO_NOT_POPULATE",
+    "capacitance": null,
+    "MPN": null
+  },
+  "RF_SHUNT_OUT_DNP_RESERVE": {
+    "default_population": "DO_NOT_POPULATE",
+    "capacitance": null,
+    "MPN": null
+  },
+  "antenna_endpoint": "ANT_TO_RECEPTACLE_PENDING",
+  "limitations": [
+    "0603 jumper parasitics and power handling need RF qualification",
+    "No approved shunt lands or tuning values",
+    "No receptacle pin map inferred",
+    "50ohm controlled impedance requires selected stackup",
+    "matching placement near antenna per document",
+    "antenna OTA and carrier testing outstanding"
+  ],
+  "fabrication_ready": false,
+  "reference_url": "https://developer.quectel.com/en/wp-content/uploads/sites/2/2024/11/Quectel_EG912U-GL_QuecOpen_Hardware_Design_V1.0.pdf"
+}

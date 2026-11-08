@@ -27,8 +27,8 @@ Generated PCB bounding-box centers can change while physical datums stay fixed. 
 
 `output/usb-placement-v66.circuit.json`, its SVG, `board-migration-report.json` and `board-migration-clearance.json` contain generated evidence. The compatibility V66 export name remains; this output is the migrated candidate, not a reproduction of historical routedV66.
 
-## Concrete remaining blocker
+## Original routing blocker, subsequently resolved
 
-The recovered checkout does not contain the original `engineering/` routing scripts or historical routed-board artifacts. Commands such as `check:board` therefore cannot revalidate route endpoints, completed joins, vias, trace clearances or the historical186-open-join count. Recover those inputs or implement and independently qualify a new routing pipeline before claiming routing progress.
+At this migration checkpoint, original routing scripts/artifacts were absent. They were subsequently recovered and revalidated, with17 clearance repairs and explicit internal-terminal resolution. See [the routing recovery checkpoint](../qualification-routing-recovery/README.md). The original limitation is preserved in this checkpoint's validation record; it is no longer the current routing blocker.
 
 The new copper checks exclude traces, vias, drilled holes, solder mask, component bodies and mechanical fit. Model orientation, mask/stencil, RF/antenna keepouts, battery/protection pulse capability, exact modem firmware/carrier and fabrication approval remain separate. A pre-existing React missing-key warning in the inherited placement tree is informational and is not hidden as an electrical result.

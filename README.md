@@ -1,13 +1,53 @@
 # Physical-keypad phone study
 
-Early tscircuit cellular-phone engineering study. **Incomplete and not fabrication-ready.** Preferred architecture is a single custom rigid four-layer PCB with separate display ribbon, wired battery and audio. The carrier, exact modem SKU, power path and physical assembly remain unqualified.
+A low-cost cellular-phone engineering study in tscircuit. **Incomplete and not fabrication-ready.** Preferred architecture: one custom four-layer rigid PCB, physical keypad, separate display ribbon, wired battery and audio. Exact modem/VoLTE compatibility, battery/protection pulses and physical assembly remain unqualified.
 
-The V66 placement study contains 133 of 210 electronic components and 186 open minimum joins. This release publishes project-authored design, host firmware and test sources. It does not include historical generated CAD, supplier models, raw catalog records, prior build outputs or private archives. These omissions mean full board and mechanical tests require regenerating fixtures and obtaining appropriately licensed parts through the standard `tsci import <LCSC-ID> --jlcpcb --download` workflow. Verify supplier symbols, pads, model orientation, stock and assembly process before use. JLCEDA/EasyEDA Official Library: https://lceda.cn/ and https://easyeda.com.
+## Current reproducible checkpoint
 
-Major gates: exact modem/VoLTE acceptance for intended country and carrier; battery and protection pulse impedance; charging control under faults; capacitor bias and transient limits; display and SIM fit; RF/audio and antenna validation; actual enclosure fit, factory mask/stencil acceptance and physical testing. No fabrication, purchase or operational readiness is implied.
+Six exact JLCPCB parts have been imported through the normal tscircuit/EasyEDA workflow. Their source and downloaded models are hash-recorded. Core0.0.2302 includes the upstream multi-pad grounding fix. The MCU, modem and USB-protection footprints are migrated into the placement candidate while preserving component datums and logical nets.
 
-Run `npm ci --ignore-scripts`, then `npm run check:public` to reproduce the included host, battery calculation and keypad-only geometry checks. See [PUBLIC_CHECKS.md](PUBLIC_CHECKS.md) for exact coverage and remaining failures. `npm run check:pcb-inputs` deliberately fails while the three omitted footprint inputs remain unavailable. The full-project typecheck and board/physical validation remain blocked; the separate host typecheck does not conceal or replace those failures. The assembly API smoke test does not load the omitted mechanical mesh or establish enclosure fit. Some notes link to additional studies retained in the engineering checkout, which are not included here.
+Verified in the recovered checkout:
 
-Recent public-safe work adds host-side stale-charge-request checks and an optimistic battery/connector power screen. The connected-pack current rating, modem waveform, intended carrier and independent charging protection remain unresolved. The calculation assumes a sustained load and does not establish the modem's actual pulse duration. Earlier upstream converter changes are recorded at https://github.com/tscircuit/easyeda-converter/pull/645 and https://github.com/tscircuit/easyeda-converter/pull/646.
+- Full TypeScript check and active footprint-input checks pass.
+- 139 components render with510 mapped SMT pads, including all nine grounded MCU exposed-pad lands.
+- Independent pad anchors, required ground/control/supply connections and deliberately open modem pins are tested.
+- No different-net same-layer SMT-pad overlaps were found. All paste remains disabled pending manufacturing review.
+- Host control, keypad, SMS, charging-policy and illustrative battery-power calculation tests pass.
 
-`npm run typecheck` currently fails: the clean release omits `sourcing/mcu-lands-v44.json`, `sourcing/modem-pad-transcription-v19.json`, and `sourcing/reviewed-lands-v24.json`, with additional type errors cascading from the missing data. Replace these dependencies through qualified, rights-cleared standard JLCPCB imports before attempting a complete board build. The successful keypad geometry check alone does not close this gap.
+Original V66 routing sources were recovered and revalidated against the migrated footprints after repairing17 clearance violations. All539 routes and249 vias remain;95 prior copper islands are preserved. Coverage is133/210 electronic components placed,336/522 minimum joins completed and186 open. This is a provisional geometry/connectivity screen, **not electrical simulation, factory acceptance or physical safety approval**.
+
+## Reproduce
+
+Use Node24, npm11 and Python3:
+
+```
+npm ci --ignore-scripts
+npm run typecheck
+npm run check:pcb-inputs
+npm run test:jlc-imports
+npm run test:board-imports
+npm run check:public
+npm test
+npm run test:power
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-routing.txt
+npm run check:current
+# Optional full routing fault-injection suite:
+.venv/bin/python scripts/check-current.py --negative
+```
+
+Generated circuit JSON/SVG and reports go under `output/`. See [PUBLIC_CHECKS.md](PUBLIC_CHECKS.md) for the exact scope and historical checks that still need recovered inputs.
+
+The `.obj` and `.step` imports use ordinary bundler asset handling. Node-only geometry tests use the checked-in asset loader, which supplies actual local URLs but does not parse models or establish enclosure fit.
+
+## Sources and qualification
+
+- [JLC import checkpoint](qualification-jlc-imports/README.md): exact catalog IDs, source hashes, copper/symbol review and remaining mask/stencil concerns.
+- [Datum-aware board migration](qualification-board-migration/README.md): preserved datums, net checks, pad-clearance evidence and remaining routing limitations.
+- [Routing recovery](qualification-routing-recovery/README.md): recovered source lineage, clearance repairs, connectivity and negative-test scope.
+- [Verified tscircuit issue list](qualification-jlc-imports/tscircuit-issues.md): old-core grounding problem already resolved upstream; current explicit paste-region omission recorded separately.
+- [Preserved historical source/tests](historical-footprints/before-jlc-migration/): previous consumers are retained for comparison, not hidden by invented JSON.
+
+Major release gates remain: country/carrier and exact modem firmware/VoLTE acceptance; real battery/connector/protection pulse impedance; independent charging interlocks under faults; capacitor bias/transient limits; mask/stencil and assembly review; display/SIM fit; RF/audio and antenna clearance; complete routing and physical enclosure testing. No fabrication, purchase or operational readiness is implied.
+
+Earlier upstream resistor-converter work: [PR645](https://github.com/tscircuit/easyeda-converter/pull/645) and [PR646](https://github.com/tscircuit/easyeda-converter/pull/646). MCU ground-port repair: [core PR5177](https://github.com/tscircuit/core/pull/5177).
