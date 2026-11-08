@@ -1,0 +1,130 @@
+{
+  "source_url": "https://easyeda.com/api/products/C93151/components?version=6.4.19.5",
+  "symbol_uuid": "e1d43d7addfb4a7496e83af283c8a57c",
+  "package_uuid": "153ed004b0794cb6b8a2ebde7a1aabdf",
+  "pads": [
+    {
+      "pin": "1",
+      "source_mm": {
+        "x": -3.2499300000000186,
+        "y": 2.2499320000000442,
+        "outer": 1.7999964,
+        "hole": 1.1999976
+      },
+      "import_mm": {
+        "x": -3.24993,
+        "y": 2.249932,
+        "outer": 1.7999964,
+        "hole": 1.1999976
+      }
+    },
+    {
+      "pin": "2",
+      "source_mm": {
+        "x": 3.2499300000000186,
+        "y": 2.2499320000000442,
+        "outer": 1.7999964,
+        "hole": 1.1999976
+      },
+      "import_mm": {
+        "x": 3.24993,
+        "y": 2.249932,
+        "outer": 1.7999964,
+        "hole": 1.1999976
+      }
+    },
+    {
+      "pin": "3",
+      "source_mm": {
+        "x": -3.2499300000000186,
+        "y": -2.2499320000000442,
+        "outer": 1.7999964,
+        "hole": 1.1999976
+      },
+      "import_mm": {
+        "x": -3.24993,
+        "y": -2.249932,
+        "outer": 1.7999964,
+        "hole": 1.1999976
+      }
+    },
+    {
+      "pin": "4",
+      "source_mm": {
+        "x": 3.2499300000000186,
+        "y": -2.2499320000000442,
+        "outer": 1.7999964,
+        "hole": 1.1999976
+      },
+      "import_mm": {
+        "x": 3.24993,
+        "y": -2.249932,
+        "outer": 1.7999964,
+        "hole": 1.1999976
+      }
+    }
+  ],
+  "raw_obj_bounds_mm": [
+    [
+      -3.0,
+      3.0
+    ],
+    [
+      -4.102491,
+      4.102491
+    ],
+    [
+      -3.5,
+      4.9
+    ]
+  ],
+  "sha256": {
+    "imports/B3F_1050/B3F_1050.obj": "054e28d061d703c830c907befb5b7aefb940ad777f807727cfbee922e5dbaaf1",
+    "imports/B3F_1050/B3F_1050.tsx": "de5872c0769f10fc2ff53e06de62fb395b83a5a4c1635f0031be7098ae6bf4e9",
+    "imports/B3F_1050/B3F_1050.step": "03f7ccc59bf21c1f6dd3dd6def9bbf152d37eef7bca618cad0ef46a7362ea6bd"
+  },
+  "source_response_sha256": "2dec250095c6fcb747f8707326acacf72d7672c7d81ce690034f36ff31653e1a",
+  "source_graphical_common_pairs": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "source_graphics_are_not_machine_connectivity": true,
+  "manufacturer_reference": {
+    "url": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+    "page": 5,
+    "nominal_hole_mm": 1,
+    "reference_hole_range_mm": [
+      0.95,
+      1.05
+    ],
+    "actuator_height_range_mm": [
+      7.1,
+      7.5
+    ]
+  },
+  "factory_reference": {
+    "url": "https://jlcpcb.com/capabilities/Capabilities",
+    "checked_date": "2026-11-08",
+    "ordinary_through_hole_tolerance_mm": {
+      "minus": 0.08,
+      "plus": 0.13
+    },
+    "hole_position_tolerance_mm": 0.075,
+    "tighter_offering": {
+      "label": "press-fit",
+      "tolerance_mm": 0.05,
+      "circular_diameter_range_mm": [
+        0.55,
+        2.0
+      ],
+      "conditions": "multilayer ENIG with specific PCB remarks; not approved for this soldered switch"
+    },
+    "factory_acceptance_or_engineering_deviation": "pending; no order or outreach authorized"
+  }
+}

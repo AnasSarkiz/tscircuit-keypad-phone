@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-08",
+  "parent_checkpoint": "894d591c3d98281ae3bf993aafb2ac9c456e9562",
+  "core_version": "0.0.2302",
+  "checks": [
+    {
+      "command": "npm run test:keypad-import",
+      "result": "pass",
+      "placements": 8,
+      "rejected_mutations": 48,
+      "raw_file_hash_checks": true,
+      "factory_tolerance_interval_check": true
+    },
+    {
+      "command": ".venv/bin/python scripts/check-current.py",
+      "result": "pass"
+    },
+    {
+      "command": "git diff --cached --check",
+      "result": "pass"
+    }
+  ],
+  "live_board_sources_changed": false,
+  "routing_changed": false,
+  "full_route_fault_suite_rerun": false,
+  "prior_route_fault_suite": "All 22 cases passed at a1b24bb; no routing/checker changes in this checkpoint.",
+  "manufacturing_release": false,
+  "unresolved": [
+    "Exact finished-hole acceptance and assembly process",
+    "Physical switch/keycap engagement and panel/PCB tolerance",
+    "Catalog CAD model mismatch",
+    "Whole-phone outstanding 186 minimum joins and 77 electronic placements",
+    "Battery/protection pulses, modem/carrier, RF/audio and physical safety qualification"
+  ]
+}

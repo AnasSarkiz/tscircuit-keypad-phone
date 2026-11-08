@@ -25,6 +25,8 @@ Run `npm run test:board-imports` for the migrated modem/TI footprints, preserved
 
 ## Recovered routing checks
 
+The separate C93151 keypad-switch review runs with `npm run test:keypad-import` and is included in `check:current`. It checks the unmodified import hashes, eight isolated placements, explicit common contacts, absence of unqualified model/paste, 48 deliberate geometry/contact/model mutations, and the factory-versus-manufacturer hole tolerance interval. The candidate remains quarantined and is not substituted into the live board. See [the keypad import review](qualification-keypad-import/README.md).
+
 Original V66 routing and modem-clearance sources have now been recovered and verified against the saved complete-history bundle. The unmodified routing checker reproduced its original results exactly in isolation. The current checker handles explicit internal terminal groups, and17 migration-related clearance violations were repaired without moving components or deleting routes.
 
 Install the isolated geometry dependencies with `python3 -m venv .venv` and `.venv/bin/python -m pip install -r requirements-routing.txt`. Run `npm run check:current` for the recovered aggregate, or `.venv/bin/python scripts/check-current.py --negative` to include the full routing-mutation suite. `check:board` now runs the recovered layered-copper checker. `test:modem-safety` now passes its historical boundary checks using the hardened recovered module; it still does not validate every physical body in the complete board.

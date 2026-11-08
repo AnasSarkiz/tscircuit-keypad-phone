@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parents[1]
 py=sys.executable
 commands=[
  ['npm','run','typecheck'],['npm','run','check:pcb-inputs'],
- ['npm','run','test:jlc-imports'],['npm','run','test:board-imports'],
+ ['npm','run','test:jlc-imports'],['npm','run','test:keypad-import'],['npm','run','test:board-imports'],
  ['npm','run','test:logical-phone'],['npm','run','check:public'],['npm','test'],['npm','run','test:power'],
  ['npm','run','test:modem-safety'],
  [py,'-m','unittest','discover','-s','tests','-p','test_modem_clearance_recovery.py','-v'],

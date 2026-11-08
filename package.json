@@ -31,7 +31,8 @@
     "test:logical-phone": "TSX_TSCONFIG_PATH=tsconfig.json node --import ./scripts/register-cad-assets.mjs --import tsx tests/power-integrated-v45.tsx",
     "test:routing-negative": ".venv/bin/python tests/usb-layered-negative-v66.py",
     "test:routing-source-groups": ".venv/bin/python -m unittest discover -s tests -p test_routing_source_groups.py -v",
-    "test:modem-clearance-inputs": "python3 -m unittest discover -s tests -p test_modem_clearance_recovery.py -v"
+    "test:modem-clearance-inputs": "python3 -m unittest discover -s tests -p test_modem_clearance_recovery.py -v",
+    "test:keypad-import": "tsc --project tsconfig.keypad-import.json && TSX_TSCONFIG_PATH=tsconfig.keypad-import.json node --import ./qualification-keypad-import/tests/register-cad-assets.mjs --import tsx qualification-keypad-import/tests/check.tsx"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,8 @@
+# Downloaded catalog artifacts are hash-verified byte-for-byte. Do not normalize
+# their line endings; model files are reviewed geometrically rather than as diffs.
+imports/**/*.tsx -text
+imports/**/*.obj -text -diff
+imports/**/*.step -text -diff
+qualification-keypad-import/imports/**/*.tsx -text
+qualification-keypad-import/imports/**/*.obj -text -diff
+qualification-keypad-import/imports/**/*.step -text -diff

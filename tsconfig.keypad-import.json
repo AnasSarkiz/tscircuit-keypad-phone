@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {"strict":true,"noEmit":true,"target":"ES2022","skipLibCheck":true,"esModuleInterop":true},
+  "include": ["qualification-keypad-import/**/*.tsx", "qualification-keypad-import/**/*.d.ts"]
+}
