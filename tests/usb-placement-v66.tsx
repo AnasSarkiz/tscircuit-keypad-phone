@@ -9,6 +9,9 @@ const c=new Circuit();c.schematicDisabled=true;c.add(<UsbPlacementV66/>);await c
 fs.mkdirSync('output',{recursive:true});fs.writeFileSync('output/usb-placement-v66.circuit.json',JSON.stringify(j,null,2));fs.writeFileSync('output/usb-placement-v66.svg',convertCircuitJsonToPcbSvg(j))
 const sources=j.filter(x=>x.type==='source_component'),components=j.filter(x=>x.type==='pcb_component')
 assert.equal(sources.length,139)
+const modemIdentity=sources.find(x=>x.name==='U_MODEM_LOGICAL_ONLY');assert(modemIdentity)
+assert.equal(modemIdentity.manufacturer_part_number,'EG912UGLAC-I05-SNNSA','placed candidate must retain the exact imported modem identity')
+assert.deepEqual(modemIdentity.supplier_part_numbers?.jlcpcb,['C7472750'])
 const migrated=new Set(['U_MCU','U_MODEM_LOGICAL_ONLY','U_CC_PROTECT','U_USB_PROTECT'])
 for(const [name,a]of Object.entries(placementV66) as [string,any][]){
  const s=sources.find(x=>x.name===name);assert(s,name);const p=components.find(x=>x.source_component_id===s.source_component_id);assert(p,name)

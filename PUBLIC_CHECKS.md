@@ -44,3 +44,7 @@ Mask/stencil approval, physical body clearances, stackup/impedance/thermal valid
 ## Recovery validation (2026-11-07)
 
 The saved public-safe history was restored at `1baed9a26356d5fa335dd4993838d121b3ad1fe0` into a separate checkout, preserving the unavailable original engineering checkout. Locked installation, `check:public` and `npm test` passed here. `check:pcb-inputs` exited 1 and full `typecheck` exited 2 with the missing-input errors above. No verified GitHub remote was available and no push occurred. The local bundle remote is only a recovery source, not GitHub.
+
+## Candidate modem identity
+
+The live modem candidate now carries exact MPN `EG912UGLAC-I05-SNNSA` and JLC ID `C7472750`, rather than a synthetic QuecOpen placeholder. Both logical and placed-board tests check these fields. The repaired identity does not qualify firmware, carrier service or the battery path; the standard-source review records the remaining gates.

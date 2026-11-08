@@ -8,6 +8,9 @@ const c=new Circuit({platform:{pcbDisabled:true}});c.add(<PowerIntegratedV45/>);
 const j:any[]=c.getCircuitJson();const all=(t:string)=>j.filter(x=>x.type===t)
 assert.deepEqual(j.filter(x=>/error$/.test(x.type)),[])
 const comps=all('source_component');assert.equal(new Set(comps.map(x=>x.name)).size,comps.length)
+const modemIdentity=comps.find(x=>x.name==='U_MODEM_LOGICAL_ONLY');assert(modemIdentity)
+assert.equal(modemIdentity.manufacturer_part_number,'EG912UGLAC-I05-SNNSA','candidate BOM must name the actual imported part, not an unorderable firmware placeholder')
+assert.deepEqual(modemIdentity.supplier_part_numbers?.jlcpcb,['C7472750'])
 assert.equal(comps.find(c=>c.name==='U_CC').manufacturer_part_number,'HUSB320-BA000-QN12R');
 const nets=all('source_net');assert.equal(new Set(nets.map(x=>x.name)).size,nets.length,'shared nets must merge on one board')
 function pins(net:string){const n=nets.find(x=>x.name===net);assert.ok(n,net);return [...new Set(all('source_trace').filter(t=>t.connected_source_net_ids.includes(n.source_net_id)).flatMap(t=>t.connected_source_port_ids))].map(id=>{const p=all('source_port').find(p=>p.source_port_id===id);return comps.find(c=>c.source_component_id===p.source_component_id).name+'.'+p.pin_number})}

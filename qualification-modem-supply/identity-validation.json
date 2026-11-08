@@ -1,0 +1,46 @@
+{
+  "checked_date_utc": "2026-11-08",
+  "baseline_commit": "876b051",
+  "change": "Replace synthetic modem MPN with the exact already-imported candidate ordering code and supplier ID.",
+  "old_mpn": "EG912U-GL_QUECOPEN_VARIANT_UNCONFIRMED",
+  "new_mpn": "EG912UGLAC-I05-SNNSA",
+  "new_supplier_part_numbers": {
+    "jlcpcb": [
+      "C7472750"
+    ]
+  },
+  "baseline_new_assertion_failed": true,
+  "baseline_failure": "tests/power-integrated-v45.tsx detected the synthetic MPN instead of EG912UGLAC-I05-SNNSA before the repair.",
+  "commands_passed": [
+    ".venv/bin/python scripts/check-current.py",
+    "git -c core.whitespace=cr-at-eol diff --check"
+  ],
+  "csv_line_endings": "Existing CRLF convention retained; only the modem MPN cell changes.",
+  "before_after_comparisons": [
+    {
+      "render": "placement",
+      "identical_pcb_and_connectivity_records": 2618,
+      "identical_other_source_component_fields": true,
+      "before_sha256": "da12db62c93ee1be0297ec705fb0311374923315c304df20a93e1d52b2e73092",
+      "after_sha256": "cbc9b49e36c16119ce68c50f8e3cf92ab464716c42f74a4a7625a0f3da76dd9e"
+    },
+    {
+      "render": "logical",
+      "identical_pcb_and_connectivity_records": 1587,
+      "identical_other_source_component_fields": true,
+      "before_sha256": "a04a5c5fddd605b7c537affc2426d26d727af0049dfcb961d019f6e5208f56b3",
+      "after_sha256": "d8812f8fae7566fda6acb37c93e4e60a6ff6a4e0ecd4d0b8912197e790a441a0"
+    }
+  ],
+  "comparison_scope": "Every pcb_* record and source_port/source_trace/source_net record compared exactly. All source_component fields compared after excluding only the modem MPN and supplier fields.",
+  "component_placement_count_electronic": 133,
+  "minimum_joins_completed": 336,
+  "minimum_joins_open": 186,
+  "full_22_routing_fault_suite_rerun": false,
+  "firmware_logic_changed": false,
+  "schematic_wiring_changed": false,
+  "pcb_geometry_changed": false,
+  "exact_shipped_revision_qualified": false,
+  "carrier_approved": false,
+  "fabrication_ready": false
+}

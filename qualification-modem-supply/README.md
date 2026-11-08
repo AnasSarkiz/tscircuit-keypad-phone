@@ -33,3 +33,9 @@ If modem USB is connected later, the p37 late-USB startup requirement needs an e
 ## Regression checks
 
 The integrated logical-net test already requires modem USB pins 8/9/10 to stay open. The placed-board test now checks the same physical-pad scope and rejects three injected ties to charging VBUS, one per USB pin. These tests preserve an unresolved interface; they do not approve leaving the pins open in production. Run `npm run typecheck`, `npm run test:placement` and `npm run test:logical-phone`. The wider `npm run check:current` also includes these checks.
+
+## Candidate BOM identity repair
+
+The imported copper already came from C7472750, but the live logical component and generated placement inventory still named `EG912U-GL_QUECOPEN_VARIANT_UNCONFIRMED`, which is not an ordering code. The candidate now records **EG912UGLAC-I05-SNNSA / JLC C7472750**, matching the unmodified import and independently verified catalog/PCN identity. This is candidate traceability, not approval to order or use that SKU on a carrier.
+
+The logical and placed-board tests assert both identifiers. The new logical assertion reproduced the old mismatch before the repair. A before/after Circuit JSON comparison confirmed all 2,618 placement PCB/connectivity records and 1,587 logical connectivity records are identical; all other source-component fields are unchanged. The placement inventory is regenerated from the corrected netlist. No pins, wiring, copper, component positions, unqualified interfaces or release gates changed. See `identity-validation.json` for the checks and exact scope.
