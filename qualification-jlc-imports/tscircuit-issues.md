@@ -25,3 +25,10 @@ Do not open a duplicate report. User-authored [easyeda-converter PR612](https://
 [props PR955](https://github.com/tscircuit/props/pull/955) and [core PR4865](https://github.com/tscircuit/core/pull/4865) were closed unmerged by stale bots. Their functionality is not superseded in current main: solderpaste still supports rect/circle rather than polygon, and footprint-level paste suppression is absent. Installed props0.0.718 rejects the polygon output. Therefore converter-only publication is insufficient. The appropriate general fix is to refresh and test the existing dependency stack, not add another PR.
 
 This is source-conversion evidence only. Native rendering and Gerber/stencil export of the complete stack remain unverified. The phone's no-paste guards stay in place. No upstream branches, PR statuses or merges were changed during this investigation.
+
+
+## Focused downstream Gerber check (2026-11-08)
+
+Current `circuit-json-to-gerber` main `35583a5c5fea6fba05bf5b56c62427d800e97876` (version 0.0.122) already supports polygon paste. Feeding the 21 C2876380 polygons from the PR612 conversion into that exporter preserves all 84 unique vertices, with 21 closed regions per face. Top/bottom and Y-reflection combinations pass; maximum serialized coordinate error is 0.00000036 mm. An independent `gerber-to-svg` 4.2.8 parser reports no geometry warnings. Other Gerber/drill files remain unchanged against a board-only control. Exact versions and results are in `paste-gerber-geometry.json`.
+
+This check starts at converted Circuit JSON and does not validate the released generated-TSX/Core pipeline. The existing props/Core/converter refresh is separate and still requires its own verification and publication. No new exporter PR is needed for these apertures. The supplier's single-square EP aperture remains distinct from TI's example stencil pattern, and the phone's no-paste guards remain unchanged.
